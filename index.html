@@ -22,6 +22,25 @@
   <meta name="theme-color" content="#0F8060">
 
   <!-- iOS meta tags & icons -->
+  <!--
+    NOT — 13 Ağustos 2026: iPhone klavye sorunu (artık tekrarlamıyor)
+
+    Aşağıdaki "apple-mobile-web-app-capable = yes", iPhone'a uygulamayı
+    ana ekrandan tam ekran (standalone) kipinde açmasını söyler.
+
+    O gün bir kez şu yaşandı: ana ekrana eklenen uygulamada giriş
+    ekranındaki e-posta/şifre alanlarına dokununca KLAVYE AÇILMADI; aynı
+    sayfa normal Safari sekmesinde sorunsuz çalışıyordu. Sonradan
+    kendiliğinden düzeldi, sebebi anlaşılmadı.
+
+    Tam ekran kipini kapatmak (bu satırları "no" + manifest display
+    "browser") klavyeyi çalıştırıyor ama üstte Safari adres çubuğu
+    çıkarıyor; Yunus bunu reddetti ve gerek de kalmadı.
+
+    Tekrarlarsa: önce ana ekran simgesini silip yeniden ekletmeyi dene
+    (iPhone ayarları ekleme anında saklıyor), sonra Flutter yükseltmesine
+    bak. Şu an 3.44.9 kullanılıyor.
+  -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
