@@ -52,6 +52,59 @@
 
   <title>KPSS NET</title>
   <link rel="manifest" href="manifest.json">
+
+  <!--
+    iOS Safari klavye düzeltmesi — 14 Ağustos 2026
+
+    SORUN: iOS'ta klavye açılınca Safari, sayfanın DÜZEN alanını değil
+    yalnızca GÖRÜNEN alanını küçültür ve sayfayı yukarı kaydırır. Flutter
+    bunu bilmediği için mesaj yazma kutusu ve mesajlar ekranın dışına
+    fırlıyordu.
+
+    ÇÖZÜM: (1) sayfanın kendisi hiç kaymasın, (2) uygulama yüksekliği
+    Safari'nin bildirdiği GÖRÜNEN alana sabitlensin. Böylece klavye
+    açıldığında uygulama tam olarak kalan boşluğa oturur; yazma kutusu
+    klavyenin hemen üstünde, mesajlar onun üstünde kalır.
+
+    Bu yalnızca web sürümünü etkiler; APK'da böyle bir sorun yok.
+  -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      /* Sayfa kaymasın: iOS'un klavye açılınca yaptığı kaydırma böylece
+         devre dışı kalıyor. */
+      position: fixed;
+      overflow: hidden;
+      width: 100%;
+      /* --gorunen-yukseklik aşağıdaki betikle güncelleniyor; betik hiç
+         çalışmazsa 100vh'ye düşer ve eski davranış korunur. */
+      height: var(--gorunen-yukseklik, 100vh);
+    }
+  </style>
+  <script>
+    (function () {
+      // visualViewport, tarayıcının GERÇEKTEN görünen alanını bildirir —
+      // klavye açıkken bu alan küçülür. Desteklemeyen tarayıcılarda
+      // hiçbir şey yapmıyoruz, CSS'teki 100vh yedeği devreye giriyor.
+      var vv = window.visualViewport;
+      if (!vv) return;
+
+      function olcuyuUygula() {
+        document.documentElement.style.setProperty(
+          '--gorunen-yukseklik', vv.height + 'px');
+        // iOS klavye açılırken sayfayı kaydırmış olabilir; başa al.
+        window.scrollTo(0, 0);
+      }
+
+      vv.addEventListener('resize', olcuyuUygula);
+      vv.addEventListener('scroll', olcuyuUygula);
+      window.addEventListener('orientationchange', function () {
+        setTimeout(olcuyuUygula, 250);
+      });
+      olcuyuUygula();
+    })();
+  </script>
 </head>
 <body>
   <!--
