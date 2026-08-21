@@ -1,4 +1,0 @@
-Faz 15 Atamalara Katil: 5 kisilik yaris modu acildi (surum 0.3.0+15)
-
-Liderlik ekranindan girilir. Cekirdek calisiyor; profil rozeti ve panel
-ayar sayfasi henuz eklenmedi.
