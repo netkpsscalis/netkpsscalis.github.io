@@ -18,6 +18,19 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!--
+    NOT — 28 Ağustos 2026: BU SATIRI SİLME.
+
+    Bu satır bir ara index.html özelleştirilirken düşmüş. Yokken iPhone
+    Safari sayfanın 980 piksel genişliğinde olduğunu varsayıp ekrana
+    sığdırmak için küçültüyor. Sonuç: uygulama çizildikten sonra yeniden
+    ölçekleniyor, yazılar kayarken bulanıklaşıyor ve Yunus'un tarifiyle
+    "iç içe geçmiş gibi" akıyor. Flutter'ın kendi şablonunda bu satır
+    vardır; özelleştirme yaparken korunmalı.
+  -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta name="description" content="KPSS NET — yapay zekâ destekli KPSS hazırlık koçun: günlük plan, soru çözümü, bilgi kartları ve denemeler.">
   <meta name="theme-color" content="#0F8060">
 
