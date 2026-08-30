@@ -60,3 +60,64 @@ konusunda özellikle iyi.
 çizgi olarak çizilmiş, dokunulabilecek kapalı bir il şekli yok. İl/bölge
 seçtiren konular geldiğinde **illeri ayrı ayrı kapalı yol olarak içeren
 ikinci bir harita** eklenmeli (`base_map = 'turkiye_iller'`).
+
+---
+
+## `tr_iller.json` — 81 il sınırı (Faz 34, 30 Ağustos 2026)
+
+| | |
+|---|---|
+| **Kaynak** | https://github.com/alpers/Turkey-Maps-GeoJSON (`tr-cities.json`) |
+| **Lisans** | **Apache-2.0** |
+| **Biçim** | GeoJSON, gerçek enlem/boylam (WGS 84) |
+| **İçerik** | 81 il · `{"name": "Adana", "number": 1}` — ad ve **plaka kodu** |
+| **Boyut** | 241 KB → **116 KB** |
+
+### Yaptığımız değişiklikler
+
+1. **Koordinat basamağı 4'e indirildi.** Kaynak dosya 15 basamak
+   taşıyordu (`35.279026031494084` — nanometre hassasiyeti). Ülke
+   ölçeğinde 4 basamak ≈ 11 metre; fazlası boşuna yer kaplıyordu.
+   Dosya yarıya indi, görüntüde hiçbir fark yok.
+2. **`Afyon` → `Afyonkarahisar`.** İlin 2004'ten beri resmî adı bu;
+   KPSS'de resmî ad sorulur.
+
+### Bu lisans bizden ne istiyor
+
+Apache-2.0 atıf ister, **aynı lisansla paylaşmayı istemez**. Yani bu
+dosya uygulamanın kaynak kodunu hiçbir şekilde bağlamıyor —
+`turkiye.svg`'nin CC BY-SA'sından bu yönüyle daha rahat.
+
+---
+
+## `tr_komsular.json` — komşu ülkeler (Faz 34)
+
+| | |
+|---|---|
+| **Kaynak** | Natural Earth 1:50m · `ne_50m_admin_0_countries` |
+| **Lisans** | **Kamu malı** — atıf bile zorunlu değil |
+| **İçerik** | Suriye, Irak, İran, Yunanistan, Gürcistan, Kıbrıs, Bulgaristan, Azerbaycan, Ermenistan |
+| **Boyut** | 3,0 MB → **47 KB** |
+
+### Yaptığımız değişiklikler
+
+1. **Dokuz ülke ayıklandı**, kalan dünya atıldı.
+2. **Türkiye çevresine kırpıldı** (24–48° D, 33–45° K). İran'ın doğusu
+   ve uzak adalar gibi ekranda hiç görünmeyecek parçalar düştü.
+3. **Adlar Natural Earth'ün kendi `NAME_TR` alanından** alındı —
+   çevrilmedi, kaynağın Türkçesi kullanıldı.
+4. Koordinat basamağı 4'e indirildi (yukarıdaki gerekçe).
+
+> Komşular her katmanda çizilmez. `map_layers.show_neighbours` alanı
+> hangi katmanın komşuları göstereceğini tutar — sınır kapıları için
+> açılır, iç coğrafya konularında kapalı kalır.
+
+---
+
+## Hangi dosya nerede kullanılıyor
+
+| Dosya | Kullanan | Durum |
+|---|---|---|
+| `tr_iller.json` | `flutter_map` · `PolygonLayer` | **Etkin** |
+| `tr_komsular.json` | `flutter_map` · `PolygonLayer` | **Etkin** (katman isterse) |
+| `turkiye.svg` | `lib/core/turkiye_map.dart` | **Emekliye ayrılıyor** — sınır kapıları katmanı yeniden üretilince silinecek |
