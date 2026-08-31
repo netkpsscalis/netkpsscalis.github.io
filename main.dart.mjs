@@ -586,6 +586,7 @@ class CompiledApp {
             constructor, [null, ...args]);
         return new factoryFunction();
       },
+      _1555: (o, p) => p in o,
       _1556: (o, p) => o[p],
       _1557: (o, p, v) => o[p] = v,
       _1558: (o, m, a) => o[m].apply(o, a),
@@ -644,6 +645,18 @@ class CompiledApp {
           setValue(wasmArray, wasmArrayOffset + i, jsArray[jsArrayOffset + i]);
         }
       },
+      _1572: (jsArray, jsArrayOffset, wasmArray, wasmArrayOffset, length) => {
+        const getValue = dartInstance.exports.$wasmI16ArrayGet;
+        for (let i = 0; i < length; i++) {
+          jsArray[jsArrayOffset + i] = getValue(wasmArray, wasmArrayOffset + i);
+        }
+      },
+      _1573: (jsArray, jsArrayOffset, wasmArray, wasmArrayOffset, length) => {
+        const setValue = dartInstance.exports.$wasmI16ArraySet;
+        for (let i = 0; i < length; i++) {
+          setValue(wasmArray, wasmArrayOffset + i, jsArray[jsArrayOffset + i]);
+        }
+      },
       _1574: (jsArray, jsArrayOffset, wasmArray, wasmArrayOffset, length) => {
         const getValue = dartInstance.exports.$wasmI32ArrayGet;
         for (let i = 0; i < length; i++) {
@@ -688,6 +701,7 @@ class CompiledApp {
         return s;
       },
       _1583: x0 => x0.index,
+      _1584: x0 => x0.groups,
       _1585: x0 => x0.flags,
       _1586: x0 => x0.multiline,
       _1587: x0 => x0.ignoreCase,
@@ -925,6 +939,9 @@ class CompiledApp {
       WebAssembly: {
         JSTag: WebAssembly.JSTag,
       },
+      s: [
+        "([ \r\n\t]+)|([!-\\[\\]-‧‪-퟿豈-￿][̀-ͯ]*|[\ud800-\udbff][\udc00-\udfff][̀-ͯ]*|\\\\verb\\*([^]).*?\\3|\\\\verb([^*a-zA-Z]).*?\\4|\\\\operatorname\\*|\\\\[a-zA-Z@]+[ \r\n\t]*|\\\\[^\ud800-\udfff])",
+      ],
       "": new Proxy({}, { get(_, prop) { return prop; } }),
 
     };
