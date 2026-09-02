@@ -128,6 +128,48 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
-  <script src="flutter_bootstrap.js" async></script>
+  <!--
+    Firebase JS kütüphanesi — BİLEREK elle yükleniyor.
+
+    ⚠️ `firebase_core_web` paketi bunu normalde kendisi enjekte ediyor,
+    ama `--wasm` derlemesinde enjeksiyon HİÇ çalışmadı: sayfada tek bir
+    gstatic betiği yoktu ve `Firebase.initializeApp` "başlatılamadı"
+    diye düşüyordu (2 Eylül 2026, tarayıcıdan ölçüldü). Paketin kendi
+    kodu "kullanıcı betikleri kendi eklediyse atla" diyor; biz de tam
+    olarak onu yapıyoruz.
+
+    ⚠️ Flutter ancak modüller yüklendikten SONRA başlatılıyor. Sırayı
+    tarayıcıya bırakırsak Flutter önce başlar ve yine bulamaz.
+
+    Sürüm paketin beklediğiyle aynı olmak zorunda:
+    firebase_core_web/lib/src/firebase_sdk_version.dart → 12.18.0
+  -->
+  <script type="module">
+    const SURUM = '12.18.0';
+    const KOK = 'https://www.gstatic.com/firebasejs/' + SURUM + '/';
+
+    async function firebaseYukle() {
+      // Paket bu global adlara bakıyor; adlar birebir aynı olmalı.
+      window.firebase_core = await import(KOK + 'firebase-app.js');
+      window.firebase_messaging = await import(KOK + 'firebase-messaging.js');
+      window.flutterfire_web_sdk_version = SURUM;
+    }
+
+    async function baslat() {
+      try {
+        await firebaseYukle();
+      } catch (e) {
+        // Bildirim çalışmasa da uygulama açılmalı; sebebi konsolda
+        // görünsün diye yazıyoruz.
+        console.error('[KPSS NET] Firebase JS yüklenemedi:', e);
+      }
+      const b = document.createElement('script');
+      b.src = 'flutter_bootstrap.js';
+      b.async = true;
+      document.body.appendChild(b);
+    }
+
+    baslat();
+  </script>
 </body>
 </html>
