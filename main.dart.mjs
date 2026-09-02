@@ -512,6 +512,7 @@ class CompiledApp {
       _1418: (x0,x1,x2) => globalThis.firebase_core.registerVersion(x0,x1,x2),
       _1420: x0 => globalThis.firebase_messaging.getMessaging(x0),
       _1422: (x0,x1) => globalThis.firebase_messaging.getToken(x0,x1),
+      _1423: () => globalThis.firebase_messaging.isSupported(),
       _1424: (x0,x1) => globalThis.firebase_messaging.onMessage(x0,x1),
       _1425: (x0,x1) => ({next: x0,error: x1}),
       _1428: (x0,x1) => ({vapidKey: x0,serviceWorkerRegistration: x1}),
