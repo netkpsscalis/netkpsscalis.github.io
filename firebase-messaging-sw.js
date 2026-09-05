@@ -26,6 +26,22 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
+// ⚠️ HEMEN DEVRAL. Yunus 5 Eylül 2026'da düzeltmeden sonra da çift
+// bildirim aldı: yeni servis çalışanı indiriliyor ama BEKLEMEYE
+// geçiyor - tarayıcı, sitenin bütün sekmeleri kapanana kadar eskisini
+// çalıştırmayı sürdürüyor. Sayfayı yenilemek bunu değiştirmiyor.
+//
+// `skipWaiting` beklemeyi atlatıyor, `clients.claim` da açık sekmeleri
+// yeni çalışana bağlıyor. Bunlar olmadan her bildirim düzeltmesi
+// "sekmeleri kapat, öyle aç" talimatıyla birlikte gelmek zorunda.
+self.addEventListener('install', function () {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', function (event) {
+  event.waitUntil(self.clients.claim());
+});
+
 // Sekme kapalıyken gelen bildirim.
 //
 // ⚠️ ÇİFT BİLDİRİM. Yunus 5 Eylül 2026'da "tüm bildirimler arka arkaya
