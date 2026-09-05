@@ -27,16 +27,30 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 // Sekme kapalıyken gelen bildirim.
+//
+// ⚠️ ÇİFT BİLDİRİM. Yunus 5 Eylül 2026'da "tüm bildirimler arka arkaya
+// iki kez geliyor" dedi. Sebep: sunucu mesaja `notification` bloğu
+// koyuyordu ve tarayıcı O BLOĞU KENDİ GÖSTERİYOR. Bir de bu işlev
+// `showNotification` çağırınca aynı şey iki kez çıkıyordu.
+//
+// Sunucu artık YALNIZCA `data` gönderiyor: veri-yalnız mesajı hiçbir
+// tarayıcı kendiliğinden göstermez, gösterimin tek sahibi burasıdır.
+//
+// Alttaki koruma geçiş için: eski bir sunucu sürümünden `notification`
+// bloğu gelirse burası susuyor, tarayıcının gösterdiği tek bildirim
+// kalıyor. Böylece sunucu güncellenmeden de çift bildirim bitiyor.
 messaging.onBackgroundMessage(function (payload) {
-  const n = payload.notification || {};
-  self.registration.showNotification(n.title || 'KPSS NET', {
-    body: n.body || '',
+  if (payload.notification) return;
+
+  const d = payload.data || {};
+  self.registration.showNotification(d.title || 'KPSS NET', {
+    body: d.body || '',
     icon: '/icons/Icon-192.png',
     badge: '/icons/Icon-192.png',
     // Aynı etiketli bildirim üst üste birikmesin; ikinci gelen
     // birincinin yerini alır.
-    tag: (payload.data && payload.data.route) || 'kpss-net',
-    data: payload.data || {}
+    tag: d.route || 'kpss-net',
+    data: d
   });
 });
 
