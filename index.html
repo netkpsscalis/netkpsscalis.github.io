@@ -33,6 +33,24 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta name="description" content="KPSS NET — yapay zekâ destekli KPSS hazırlık koçun: günlük plan, soru çözümü, bilgi kartları ve denemeler.">
   <meta name="theme-color" content="#0F8060">
+  <meta name="theme-color" content="#101614" media="(prefers-color-scheme: dark)">
+
+  <!--
+    NOT — 14 Eylül 2026: KLAVYE ve ÜSTÜNDEKİ ÇUBUK KARANLIK TEMADA BEYAZDI.
+
+    Yunus: "karanlık temada klavyenin üzerinde, solda aşağı/yukarı oklar,
+    sağda tik işareti olan beyaz bir kısım var." O çubuk uygulamanın
+    DEĞİL, iPhone Safari'nin her yazı alanına eklediği kendi araç çubuğu
+    (önceki/sonraki alan, klavyeyi kapat). Web sayfası onu KALDIRAMAZ —
+    Apple buna izin vermiyor.
+
+    Beyaz görünmesinin sebebi bu satırın olmamasıydı: sayfa kendini
+    yalnızca açık temalı bildiriyordu, Safari de klavyeyi ve çubuğu açık
+    çiziyordu. Uygulama telefonun temasını izliyor (ThemeMode.system);
+    bu satır Safari'ye de izlemesini söylüyor, karanlık modda klavye ve
+    çubuk koyu çiziliyor.
+  -->
+  <meta name="color-scheme" content="light dark">
 
   <!-- iOS meta tags & icons -->
   <!--
