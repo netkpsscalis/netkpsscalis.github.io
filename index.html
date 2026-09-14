@@ -136,6 +136,63 @@
       olcuyuUygula();
     })();
   </script>
+
+  <!--
+    GÜNCELLEME BEKÇİSİ — 14 Eylül 2026. BU BETİĞİ SİLME.
+
+    Yunus art arda "kontrol ettim, değişmemiş" dedi. Sebep ölçüldü:
+    (1) GitHub Pages her dosyayı "10 dakika önbellekte tut" başlığıyla
+    veriyor (max-age=600); yayından sonra telefon eski dosyaları
+    kullanıyordu. (2) Ana ekrandan açılan uygulama arka plandan dönünce
+    YENİDEN YÜKLENMİYOR; bellekteki eski sürüm çalışmaya devam ediyordu.
+
+    Bu betik açılışta ve uygulama öne her geldiğinde sunucudaki sürüme
+    önbelleği ATLAYARAK bakıyor. Kendi sürümünden farklıysa uygulama
+    dosyalarını ağdan tazeleyip sayfayı BİR KEZ yeniden yüklüyor.
+    Kendi sürümünü `arac_web_yayinla.py` yayın sırasında aşağıdaki
+    damgaya yazıyor; damga yazılmamışsa (yerel çalıştırma) bekçi kapalı.
+  -->
+  <script>
+    (function () {
+      var SURUM = '100';
+      if (SURUM.charAt(0) === '_') return;
+
+      var DOSYALAR = ['./', 'index.html', 'flutter_bootstrap.js',
+        'main.dart.wasm', 'main.dart.mjs', 'main.dart.js', 'version.json',
+        'manifest.json', 'assets/AssetManifest.bin',
+        'assets/AssetManifest.bin.json', 'assets/FontManifest.json'];
+      var sonBakis = 0;
+
+      function denetle() {
+        var simdi = Date.now();
+        if (simdi - sonBakis < 30000) return;
+        sonBakis = simdi;
+        fetch('version.json?t=' + simdi, { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (v) {
+            var canli = v && v.build_number != null ? String(v.build_number) : '';
+            if (!canli || canli === SURUM) return;
+            // Aynı yeni sürüm için oturumda BİR kez: önbellek yine eski
+            // dönerse sonsuz yeniden yükleme olmasın. Depolama yoksa
+            // (özel pencere) kendiliğinden yenileme hiç denenmiyor.
+            var anahtar = 'kpss-guncelleme-' + canli;
+            try {
+              if (sessionStorage.getItem(anahtar)) return;
+              sessionStorage.setItem(anahtar, '1');
+            } catch (e) { return; }
+            return Promise.all(DOSYALAR.map(function (d) {
+              return fetch(d, { cache: 'reload' }).catch(function () {});
+            })).then(function () { location.reload(); });
+          })
+          .catch(function () { /* çevrimdışı: sessizce geç */ });
+      }
+
+      denetle();
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') denetle();
+      });
+    })();
+  </script>
 </head>
 <body>
   <!--
