@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>KPSS NET — Kamera/Mikrofon güvenlik testi</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: system-ui, -apple-system, sans-serif;
+    background: #f5f5f7; color: #111; padding: 16px; line-height: 1.5;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #101614; color: #eee; }
+    .kart { background: #1a201e !important; }
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .alt { font-size: 13px; opacity: 0.7; margin: 0 0 16px; }
+  .kart {
+    background: #fff; border-radius: 16px; padding: 16px; margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .kart h2 { font-size: 16px; margin: 0 0 10px; }
+  button {
+    font-size: 15px; font-weight: 600; padding: 12px 16px; border: none;
+    border-radius: 12px; background: #0F8060; color: #fff; width: 100%;
+    margin-bottom: 8px; cursor: pointer;
+  }
+  button.ikincil { background: #555; }
+  button:disabled { opacity: 0.4; }
+  video, canvas, img { width: 100%; border-radius: 12px; background: #000; margin-top: 8px; }
+  .durum { font-size: 13px; padding: 8px 10px; border-radius: 8px; margin-top: 8px; white-space: pre-wrap; }
+  .ok { background: rgba(15,128,96,0.15); }
+  .hata { background: rgba(200,40,40,0.15); }
+  .bar-dis { height: 14px; background: rgba(128,128,128,0.25); border-radius: 7px; margin-top: 10px; overflow: hidden; }
+  .bar-ic { height: 100%; width: 0; background: #0F8060; transition: width 0.05s; }
+  .not { font-size: 12px; opacity: 0.65; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h1>Kamera / Mikrofon güvenlik testi</h1>
+  <p class="alt">Bu sayfa uygulamanın parçası değildir; yalnızca tarayıcının neye izin verdiğini ölçmek içindir. Ses ve görüntü <b>hiçbir yere gönderilmez</b>, yalnızca bu ekranda görünür.</p>
+
+  <div class="kart">
+    <h2>1) Ortam sesi (mikrofon)</h2>
+    <button id="mikBtn">Mikrofonu iste ve dinle</button>
+    <button id="mikDur" class="ikincil" disabled>Durdur</button>
+    <div class="bar-dis"><div class="bar-ic" id="seviye"></div></div>
+    <div class="durum" id="mikDurum">Henüz denenmedi.</div>
+  </div>
+
+  <div class="kart">
+    <h2>2) Kameradan anlık fotoğraf</h2>
+    <button id="kamBtn">Kamerayı iste</button>
+    <button id="foto" class="ikincil" disabled>Anlık fotoğraf çek</button>
+    <button id="kamDur" class="ikincil" disabled>Kamerayı kapat</button>
+    <video id="onizleme" autoplay playsinline muted></video>
+    <img id="kare" alt="" style="display:none">
+    <div class="durum" id="kamDurum">Henüz denenmedi.</div>
+  </div>
+
+  <div class="kart">
+    <h2>3) İzin durumu</h2>
+    <button id="izinBtn" class="ikincil">İzin durumunu sorgula</button>
+    <div class="durum" id="izinDurum">—</div>
+    <p class="not">Tarayıcı, kamera ve mikrofona erişim için HER ZAMAN kullanıcıdan izin ister ve kayıt sırasında görünür bir gösterge (sekmede/ekranda kırmızı-turuncu nokta) çıkarır. Kod bunu atlayamaz.</p>
+  </div>
+
+<script>
+(function () {
+  var akisMik = null, akisKam = null, ses = null, raf = null;
+  function yaz(id, metin, sinif) {
+    var el = document.getElementById(id);
+    el.textContent = metin;
+    el.className = 'durum ' + (sinif || '');
+  }
+
+  // --- Mikrofon ---
+  document.getElementById('mikBtn').onclick = async function () {
+    yaz('mikDurum', 'İzin isteniyor…');
+    try {
+      var t0 = performance.now();
+      akisMik = await navigator.mediaDevices.getUserMedia({ audio: true });
+      var gecen = Math.round(performance.now() - t0);
+      yaz('mikDurum', 'İzin verildi (' + gecen + ' ms). Konuş, çubuk hareket etmeli.', 'ok');
+      document.getElementById('mikDur').disabled = false;
+      var ac = new (window.AudioContext || window.webkitAudioContext)();
+      var kaynak = ac.createMediaStreamSource(akisMik);
+      ses = ac.createAnalyser();
+      ses.fftSize = 512;
+      kaynak.connect(ses);
+      var veri = new Uint8Array(ses.fftSize);
+      (function olc() {
+        ses.getByteTimeDomainData(veri);
+        var enBuyuk = 0;
+        for (var i = 0; i < veri.length; i++) {
+          var d = Math.abs(veri[i] - 128);
+          if (d > enBuyuk) enBuyuk = d;
+        }
+        document.getElementById('seviye').style.width = Math.min(100, enBuyuk / 128 * 100 * 2) + '%';
+        raf = requestAnimationFrame(olc);
+      })();
+    } catch (e) {
+      yaz('mikDurum', 'REDDEDİLDİ / hata: ' + e.name + ' — ' + e.message, 'hata');
+    }
+  };
+  document.getElementById('mikDur').onclick = function () {
+    if (raf) cancelAnimationFrame(raf);
+    if (akisMik) akisMik.getTracks().forEach(function (t) { t.stop(); });
+    document.getElementById('seviye').style.width = '0';
+    document.getElementById('mikDur').disabled = true;
+    yaz('mikDurum', 'Durduruldu.', '');
+  };
+
+  // --- Kamera ---
+  document.getElementById('kamBtn').onclick = async function () {
+    yaz('kamDurum', 'İzin isteniyor…');
+    try {
+      var t0 = performance.now();
+      akisKam = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: 'user' }, audio: false
+      });
+      var gecen = Math.round(performance.now() - t0);
+      document.getElementById('onizleme').srcObject = akisKam;
+      var iz = akisKam.getVideoTracks()[0];
+      var a = iz.getSettings();
+      yaz('kamDurum', 'İzin verildi (' + gecen + ' ms). Çözünürlük: ' +
+          (a.width || '?') + '×' + (a.height || '?') + ' · ' + (iz.label || 'kamera'), 'ok');
+      document.getElementById('foto').disabled = false;
+      document.getElementById('kamDur').disabled = false;
+    } catch (e) {
+      yaz('kamDurum', 'REDDEDİLDİ / hata: ' + e.name + ' — ' + e.message, 'hata');
+    }
+  };
+  document.getElementById('foto').onclick = function () {
+    var v = document.getElementById('onizleme');
+    var c = document.createElement('canvas');
+    c.width = v.videoWidth; c.height = v.videoHeight;
+    c.getContext('2d').drawImage(v, 0, 0);
+    var img = document.getElementById('kare');
+    img.src = c.toDataURL('image/jpeg', 0.9);
+    img.style.display = 'block';
+    yaz('kamDurum', 'Kare yakalandı (' + c.width + '×' + c.height + '). Yalnızca burada duruyor.', 'ok');
+  };
+  document.getElementById('kamDur').onclick = function () {
+    if (akisKam) akisKam.getTracks().forEach(function (t) { t.stop(); });
+    document.getElementById('onizleme').srcObject = null;
+    document.getElementById('foto').disabled = true;
+    document.getElementById('kamDur').disabled = true;
+    yaz('kamDurum', 'Kamera kapatıldı.', '');
+  };
+
+  // --- İzin durumu ---
+  document.getElementById('izinBtn').onclick = async function () {
+    if (!navigator.permissions) {
+      yaz('izinDurum', 'Bu tarayıcı izin sorgulamayı desteklemiyor (iOS Safari böyle).', '');
+      return;
+    }
+    var satir = [];
+    for (var ad of ['camera', 'microphone']) {
+      try {
+        var s = await navigator.permissions.query({ name: ad });
+        satir.push(ad + ': ' + s.state);
+      } catch (e) {
+        satir.push(ad + ': sorgulanamadı (' + e.name + ')');
+      }
+    }
+    satir.push('Güvenli bağlam (HTTPS/localhost): ' + window.isSecureContext);
+    yaz('izinDurum', satir.join('\n'), 'ok');
+  };
+})();
+</script>
+</body>
+</html>
