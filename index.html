@@ -138,6 +138,38 @@
   </script>
 
   <!--
+    KLAVYE KORUMASI — 20 Eylül 2026. BU BETİĞİ SİLME.
+
+    Yunus: "mesajlaşırken (defter, DM, oda) gönder'e basınca klavye
+    yine kapanıp açılıyor." Uygulamanın kendi kodu odağı bırakmıyor:
+    tarayıcıda parmak dokunuşuyla ölçüldü (tool/klavye_deneme.dart),
+    gönderince yazı alanı odağı hiç kaybetmedi. Kapanmayı iPhone
+    Safari'nin KENDİSİ yapıyor: yazı alanı açıkken sayfanın başka bir
+    yerine dokunulunca dokunuşun varsayılan davranışı alanı bırakıyor
+    (klavye iniyor), sonra uygulama odağı geri istiyor (klavye çıkıyor).
+
+    Yazı alanı açıkken ve dokunulan yer alanın kendisi DEĞİLKEN
+    dokunuşun varsayılan davranışı engelleniyor. Uygulama dokunuşu yine
+    alıyor (Flutter pointer olaylarını kullanıyor, bu olaylar etkilenmez).
+    Klavyeyi kapatmak isteyen mesaj listesine dokunuyor: onu uygulama
+    kendisi kapatıyor, bu betik ona karışmıyor.
+  -->
+  <script>
+    (function () {
+      function yaziAlaniMi(el) {
+        return !!el && (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT');
+      }
+      document.addEventListener('touchend', function (e) {
+        var acik = document.activeElement;
+        if (!yaziAlaniMi(acik)) return;
+        // Yazı alanının kendisine dokunuş (imleç koyma, seçme) serbest.
+        if (e.target === acik || yaziAlaniMi(e.target)) return;
+        if (e.cancelable) e.preventDefault();
+      }, { capture: true, passive: false });
+    })();
+  </script>
+
+  <!--
     GÜNCELLEME BEKÇİSİ — 14 Eylül 2026. BU BETİĞİ SİLME.
 
     Yunus art arda "kontrol ettim, değişmemiş" dedi. Sebep ölçüldü:
@@ -154,7 +186,7 @@
   -->
   <script>
     (function () {
-      var SURUM = '103';
+      var SURUM = '104';
       if (SURUM.charAt(0) === '_') return;
 
       var DOSYALAR = ['./', 'index.html', 'flutter_bootstrap.js',
