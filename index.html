@@ -20,6 +20,44 @@
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 
   <!--
+    GÜVENLİK DUVARI (CSP) — 20 Eylül 2026. BU SATIRI SİLME.
+
+    Amaç: uygulamaya sızan kötü niyetli bir kod (enjekte script, ele geçmiş
+    bağımlılık) kameradan görüntü ya da mikrofondan ses alsa bile onu
+    UYGULAMA DIŞINA GÖNDEREMESİN. Tarayıcı zaten izin ister ve kayıtta
+    görünür gösterge çıkarır; eksik olan tek katman kaçırmayı engellemekti.
+
+    Kaçırmayı kapatan satırlar: connect-src (fetch/XHR/WebSocket/beacon),
+    img-src (görsel GET işareti), media-src, form-action (gizli POST),
+    frame-src (iframe), base-uri, object-src. Veri yalnızca uygulamanın
+    kendi arka ucuna (Supabase) ve zorunlu altyapıya (Firebase/Google,
+    YouTube ders videosu) gidebilir; saldırganın adresine giden yol kapalı.
+
+    Adresler koddaki gerçek kullanımdan çıkarıldı; joker yalnızca Google
+    (FCM) için. Yeni bir dış servis eklenirse ilgili satıra o adres de
+    eklenmeli, yoksa sessizce engellenir.
+
+    ⚠️ script-src'de 'unsafe-inline' bilinçli: Flutter'ın ve bu sayfanın
+    kendi satır-içi script'leri çalışsın diye. İstenen koruma (dışarı
+    gönderememe) connect-src duvarından gelir, script'i kilitlemekten değil.
+    'wasm-unsafe-eval' + worker-src blob: Flutter --wasm derlemesi içindir.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://www.gstatic.com https://accounts.google.com;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: blob: https://kstgkilkacurypxadavc.supabase.co https://i.ytimg.com;
+    media-src 'self' blob: data: https://kstgkilkacurypxadavc.supabase.co;
+    font-src 'self' data: https://fonts.gstatic.com;
+    connect-src 'self' https://kstgkilkacurypxadavc.supabase.co wss://kstgkilkacurypxadavc.supabase.co https://*.googleapis.com https://www.gstatic.com https://fonts.gstatic.com https://accounts.google.com;
+    frame-src https://www.youtube.com https://www.youtube-nocookie.com https://accounts.google.com;
+    worker-src 'self' blob:;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+
+  <!--
     NOT — 28 Ağustos 2026: BU SATIRI SİLME.
 
     Bu satır bir ara index.html özelleştirilirken düşmüş. Yokken iPhone
@@ -186,7 +224,7 @@
   -->
   <script>
     (function () {
-      var SURUM = '105';
+      var SURUM = '106';
       if (SURUM.charAt(0) === '_') return;
 
       var DOSYALAR = ['./', 'index.html', 'flutter_bootstrap.js',
