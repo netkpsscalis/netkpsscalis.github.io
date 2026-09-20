@@ -49,6 +49,7 @@
     <p class="k">Denemede kullanılacak fotoğraf. İstersen gerçek kameradan çek, istersen hazır bir görüntü üret.</p>
     <button class="ikincil" id="uret">Hazır görüntü üret</button>
     <button class="ikincil" id="cek">Kameradan çek (izin ister)</button>
+    <button class="ikincil" id="ses">Mikrofondan ses çek (izin ister)</button>
     <img id="onizleme" alt="" style="display:none">
     <div class="durum" id="foto">Henüz görüntü yok.</div>
   </div>
@@ -113,7 +114,29 @@
     } catch (e) { yaz('foto','Kamera alınamadı: '+e.name+' — '+e.message+'\n(Sorun değil, "Hazır görüntü üret" ile de test edebilirsin.)','hata'); }
   };
 
-  function gorselYoksa(id){ if(!veri){ yaz(id,'Önce 1. adımdan bir görüntü hazırla.','hata'); return true; } return false; }
+  // Mikrofondan ses: yalnızca bu cihazda, görünür izinle, 3 saniye.
+  // Kayıt yine sadece burada durur; "dışarı gönder" ile onun da
+  // gönderilemediğini test edebilirsin.
+  document.getElementById('ses').onclick = async function () {
+    yaz('foto','Mikrofon izni isteniyor…');
+    try {
+      var akis = await navigator.mediaDevices.getUserMedia({ audio:true });
+      var rec = new MediaRecorder(akis);
+      var parcalar = [];
+      rec.ondataavailable = function (e) { if (e.data && e.data.size) parcalar.push(e.data); };
+      rec.onstop = function () {
+        akis.getTracks().forEach(function (t) { t.stop(); });
+        veri = new Blob(parcalar, { type: 'audio/webm' });
+        document.getElementById('onizleme').style.display = 'none';
+        yaz('foto','Mikrofondan '+ (Math.round(veri.size/1024*10)/10) +' KB ses alındı. Şimdi bunu dışarı göndermeyi dene.','ok');
+      };
+      rec.start();
+      yaz('foto','Kaydediliyor… (3 saniye, konuş)');
+      setTimeout(function () { if (rec.state !== 'inactive') rec.stop(); }, 3000);
+    } catch (e) { yaz('foto','Mikrofon alınamadı: '+e.name+' — '+e.message,'hata'); }
+  };
+
+  function gorselYoksa(id){ if(!veri){ yaz(id,'Önce 1. adımdan bir görüntü ya da ses hazırla.','hata'); return true; } return false; }
 
   document.getElementById('disari').onclick = async function () {
     if (gorselYoksa('disDurum')) return;
