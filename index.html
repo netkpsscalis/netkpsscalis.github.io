@@ -49,7 +49,7 @@
     img-src 'self' data: blob: https://kstgkilkacurypxadavc.supabase.co https://i.ytimg.com;
     media-src 'self' blob: data: https://kstgkilkacurypxadavc.supabase.co;
     font-src 'self' data: https://fonts.gstatic.com;
-    connect-src 'self' https://kstgkilkacurypxadavc.supabase.co wss://kstgkilkacurypxadavc.supabase.co https://*.googleapis.com https://www.gstatic.com https://fonts.gstatic.com https://accounts.google.com;
+    connect-src 'self' blob: https://kstgkilkacurypxadavc.supabase.co wss://kstgkilkacurypxadavc.supabase.co https://*.googleapis.com https://www.gstatic.com https://fonts.gstatic.com https://accounts.google.com;
     frame-src https://www.youtube.com https://www.youtube-nocookie.com https://accounts.google.com;
     worker-src 'self' blob:;
     object-src 'none';
@@ -224,7 +224,7 @@
   -->
   <script>
     (function () {
-      var SURUM = '109';
+      var SURUM = '110';
       if (SURUM.charAt(0) === '_') return;
 
       var DOSYALAR = ['./', 'index.html', 'flutter_bootstrap.js',
