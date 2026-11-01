@@ -1025,6 +1025,7 @@ class CompiledApp {
       _4350: (x0,x1) => { x0.onmessage = x1 },
       _4457: x0 => x0.length,
       _4674: x0 => x0.readyState,
+      _4683: x0 => x0.protocol,
       _4687: (x0,x1) => { x0.binaryType = x1 },
       _4690: x0 => x0.code,
       _4691: x0 => x0.reason,
