@@ -149,6 +149,8 @@
       /* --gorunen-yukseklik aşağıdaki betikle güncelleniyor; betik hiç
          çalışmazsa 100vh'ye düşer ve eski davranış korunur. */
       height: var(--gorunen-yukseklik, 100vh);
+      /* Flutter yüklenene kadar simgenin yeşili: açılış animasyonu aynı zeminde başlar. */
+      background: #0F8060;
     }
   </style>
   <script>
@@ -224,7 +226,7 @@
   -->
   <script>
     (function () {
-      var SURUM = '121';
+      var SURUM = '122';
       if (SURUM.charAt(0) === '_') return;
 
       var DOSYALAR = ['./', 'index.html', 'flutter_bootstrap.js',

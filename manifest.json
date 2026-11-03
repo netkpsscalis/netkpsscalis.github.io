@@ -3,7 +3,7 @@
     "short_name": "KPSS NET",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#FAFAF8",
+    "background_color": "#0F8060",
     "theme_color": "#0F8060",
     "description": "Yapay zekâ destekli KPSS hazırlık koçun: günlük plan, soru çözümü, bilgi kartları ve denemeler.",
     "orientation": "portrait-primary",
