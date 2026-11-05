@@ -40041,7 +40041,7 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-c3q(){var s=A.je(B.b.ga0("0.3.0+126".split("+")),null)
+c3q(){var s=A.je(B.b.ga0("0.3.0+127".split("+")),null)
 return s==null?0:s},
 Y_:function Y_(a){var _=this
 _.b=_.a=0
@@ -42485,8 +42485,8 @@ return A.o($async$ah7,r)},
 c1F(a,b,c,d,e,f,g,h){var s=null,r=A.b([],t.p),q=B.e.by(d).length!==0
 if(q)r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aXw,s,s,s,s,s,h,!1,s,s,s,s,s,s,s,B.bO2,s,s))
 if(b&&q&&new A.bf(Date.now(),0,!1).el(c).a<9e8)r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aXF,s,s,s,s,s,f,!1,s,s,s,s,s,B.bNo,s,B.bN4,s,s))
-if(b)r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aXl,s,s,s,s,s,g,!1,s,s,s,s,s,s,s,B.bOC,s,s))
-r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aY_,s,s,s,s,s,e,!1,s,s,s,s,s,B.bOU,s,B.bOt,s,s))
+if(b)r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aXl,s,s,s,s,s,g,!1,s,s,s,s,s,s,s,B.bOB,s,s))
+r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aY_,s,s,s,s,s,e,!1,s,s,s,s,s,B.bOT,s,B.bOs,s,s))
 return r},
 aYX:function aYX(a,b){this.a=a
 this.b=b},
@@ -46060,7 +46060,7 @@ i=q?s:r.at
 if(i==null)i=0
 q=q?s:r.ax
 if(q==null)q=0
-return A.b([m,l,n.$10$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk$veri("\u0130statistikler","Serin ve en uzun serin","\xc7al\u0131\u015fma al\u0131\u015fkanl\u0131\u011f\u0131n","Hi\xe7 bozmad\u0131m.",B.buE,k,"istat",B.fK,B.cf,A.U(["seri",""+i,"enuzun",""+q],j,j)),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Ayarlar","Aray\xfcz se\xe7imi ve \xf6l\xe7\xfcm","Uygulaman\u0131n g\xf6r\xfcn\xfcm\xfc","G\xf6r\xfcn\xfcm\xfc de\u011fi\u015ftir.",B.buF,$.nD().a.d,"ayar",B.aWw,B.aIW),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Bildirimler","Hat\u0131rlatma, seri, s\u0131nav, d\xfcello","Ne zaman haber verelim","Haber ver bana.",B.buG,"Ayarla","bildirim",B.aWe,B.aNF),n.$8$ad$alt$balon$bolum$deger$gorsel$ikon$renk("Hesap","\xc7\u0131k\u0131\u015f ve hesap silme","Hesap i\u015fleri.",B.buH,"S\xfcr\xfcm "+B.b.gW("0.3.0+126".split("+")),"hesap",B.t3,B.aII)],t.V2)},
+return A.b([m,l,n.$10$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk$veri("\u0130statistikler","Serin ve en uzun serin","\xc7al\u0131\u015fma al\u0131\u015fkanl\u0131\u011f\u0131n","Hi\xe7 bozmad\u0131m.",B.buE,k,"istat",B.fK,B.cf,A.U(["seri",""+i,"enuzun",""+q],j,j)),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Ayarlar","Aray\xfcz se\xe7imi ve \xf6l\xe7\xfcm","Uygulaman\u0131n g\xf6r\xfcn\xfcm\xfc","G\xf6r\xfcn\xfcm\xfc de\u011fi\u015ftir.",B.buF,$.nD().a.d,"ayar",B.aWw,B.aIW),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Bildirimler","Hat\u0131rlatma, seri, s\u0131nav, d\xfcello","Ne zaman haber verelim","Haber ver bana.",B.buG,"Ayarla","bildirim",B.aWe,B.aNF),n.$8$ad$alt$balon$bolum$deger$gorsel$ikon$renk("Hesap","\xc7\u0131k\u0131\u015f ve hesap silme","Hesap i\u015fleri.",B.buH,"S\xfcr\xfcm "+B.b.gW("0.3.0+127".split("+")),"hesap",B.t3,B.aII)],t.V2)},
 czN(a){var s,r,q=a.a
 if(q==null)return""
 s=q.c
@@ -154343,7 +154343,7 @@ $.wj().sn(o==="kadin")
 l=A
 k=m
 s=4
-return A.c(n.Sy("1.5"),$async$H5)
+return A.c(n.Sy("1.6"),$async$H5)
 case 4:q=new l.aM(k,b)
 s=1
 break
@@ -156665,7 +156665,7 @@ $0(){return this.a.d=!0},
 $S:0}
 A.aBT.prototype={
 G(a){var s=null,r=A.D(a),q=$.OH().c,p=r.ax,o=A.b8(B.aWD,p.b,s,64),n=r.ok,m=A.u("G\xfcncelleme gerekli",s,s,s,s,s,n.f,B.G,s,s),l=q!=null&&B.e.by(q).length!==0?q:"Uygulaman\u0131n bu s\xfcr\xfcm\xfc art\u0131k desteklenmiyor. Devam etmek i\xe7in l\xfctfen g\xfcncelle."
-return A.en(!1,B.O,!0,s,A.cy(!0,A.ce(new A.S(B.ot,A.a8(A.b([o,B.ay,m,B.aG,A.u(l,s,s,s,s,s,n.y,B.G,s,s),B.kX,A.I2(B.aXC,s,B.alh,new A.bLm(),s),B.a2,A.u("S\xfcr\xfcm 0.3.0+126",s,s,s,s,s,n.Q,s,s,s)],t.p),B.j,B.h,B.B),s),s,s),B.H,!0),B.k,p.k2,0,s,s,s,s,s,B.bB)}}
+return A.en(!1,B.O,!0,s,A.cy(!0,A.ce(new A.S(B.ot,A.a8(A.b([o,B.ay,m,B.aG,A.u(l,s,s,s,s,s,n.y,B.G,s,s),B.kX,A.I2(B.aXC,s,B.ali,new A.bLm(),s),B.a2,A.u("S\xfcr\xfcm 0.3.0+127",s,s,s,s,s,n.Q,s,s,s)],t.p),B.j,B.h,B.B),s),s,s),B.H,!0),B.k,p.k2,0,s,s,s,s,s,B.bB)}}
 A.bLm.prototype={
 $0(){return $.OH().Ms()},
 $S:0}
@@ -156676,7 +156676,7 @@ s=k.e
 r=s==null
 q=A.b8(B.aWc,r?k.c:s,n,n)
 p=A.aO(A.u("Yeni s\xfcr\xfcm haz\u0131r.",n,n,n,n,n,A.bp(n,n,r?k.c:s,n,n,n,n,n,n,n,n,n,n,n,B.x,n,n,!0,n,n,n,n,n,n,n,n),n,n,n),1)
-o=A.di(B.alh,n,n,n,new A.bL4(),n,n)
+o=A.di(B.ali,n,n,n,new A.bL4(),n,n)
 return A.en(!1,B.O,!0,l,new A.S(B.aR8,A.aq(A.b([q,B.aZ,p,o,A.eU(n,n,n,A.b8(B.eE,r?k.c:s,n,n),n,n,this.c,n,n,n,"Kapat",n)],t.p),B.j,B.h,B.i,0,n),n),B.k,j,6,n,n,n,n,n,B.bB)}}
 A.bL4.prototype={
 $0(){return $.OH().Ms()},
@@ -159019,7 +159019,7 @@ n=this.b
 if(n.a>=20||!n.E(0,q))return
 p=this.gadH()
 if(p==null)return
-p.iX("hata_bildir",A.U(["p_mesaj",s,"p_yigin",r,"p_surum","0.3.0+126","p_platform","web","p_ekran",$.c3w],o,t.X),t.z).fo(new A.bc6())}catch(m){}},
+p.iX("hata_bildir",A.U(["p_mesaj",s,"p_yigin",r,"p_surum","0.3.0+127","p_platform","web","p_ekran",$.c3w],o,t.X),t.z).fo(new A.bc6())}catch(m){}},
 at2(a,b){var s,r=this.a
 if(r.length>=200)return
 s=A.x(t.N,t.X)
@@ -159039,7 +159039,7 @@ l=k
 B.b.Lq(i,0,J.aG(l))
 p=4
 s=7
-return A.c(m.iX("olay_yaz",A.U(["p_olaylar",l,"p_surum","0.3.0+126","p_platform","web"],t.N,t.X),t.z),$async$AH)
+return A.c(m.iX("olay_yaz",A.U(["p_olaylar",l,"p_surum","0.3.0+127","p_platform","web"],t.N,t.X),t.z),$async$AH)
 case 7:p=2
 s=6
 break
@@ -159338,7 +159338,7 @@ case 7:l=b
 s=l.a!=null&&m.f?8:9
 break
 case 8:s=10
-return A.c($.dt().El("1.5"),$async$Bz)
+return A.c($.dt().El("1.6"),$async$Bz)
 case 10:case 9:n.push(6)
 s=5
 break
@@ -159412,7 +159412,7 @@ if(l.a==null){m.ahq(g)
 n=[1]
 s=5
 break}s=11
-return A.c($.dt().El("1.5"),$async$vU)
+return A.c($.dt().El("1.6"),$async$vU)
 case 11:s=8
 break
 case 9:i=$.aP().b
@@ -159678,7 +159678,7 @@ if(n)n="Bekle\u2026"
 else n=p.d?"Kay\u0131t ol":"Giri\u015f yap"
 l.push(A.c0(A.u(n,o,o,o,o,o,o,o,o,o),o,m,o))
 l.push(B.aG)
-if(!p.d)l.push(A.di(B.bOs,B.bSB,o,o,p.e?o:p.gb1J(),o,o))
+if(!p.d)l.push(A.di(B.bOr,B.bSB,o,o,p.e?o:p.gb1J(),o,o))
 l.push(A.di(A.u(p.d?"Zaten hesab\u0131n var m\u0131? Giri\u015f yap":"Hesab\u0131n yok mu? Kay\u0131t ol",o,o,o,o,o,o,o,o,o),o,o,o,new A.bhN(p),o,o))
 return l},
 b43(a){A.ku(null,new A.bi3(),a,!0,null,!0,!1,t.H)}}
@@ -159866,7 +159866,7 @@ $1(a){return A.bSS(new A.bi2(),!1,0.7,1)},
 $S:283}
 A.bi2.prototype={
 $2(a,b){var s=null,r=A.D(a).ok.w
-return A.iO(A.a8(A.b([A.u("Ayd\u0131nlatma Metni (s\xfcr\xfcm 1.5)",s,s,s,s,s,r==null?s:r.bz(B.x),s,s,s),B.av,B.alp],t.p),B.w,B.h,B.i),b,B.aRD,s,B.ag)},
+return A.iO(A.a8(A.b([A.u("Ayd\u0131nlatma Metni (s\xfcr\xfcm 1.6)",s,s,s,s,s,r==null?s:r.bz(B.x),s,s,s),B.av,B.alh],t.p),B.w,B.h,B.i),b,B.aRD,s,B.ag)},
 $S:904}
 A.Qn.prototype={
 X(){return new A.a_A()},
@@ -159877,7 +159877,7 @@ var $async$O8=A.l(function(a,b){if(a===1){p.push(b)
 s=q}for(;;)switch(s){case 0:o.t(new A.bmg(o))
 q=3
 s=6
-return A.c($.dt().El("1.5"),$async$O8)
+return A.c($.dt().El("1.6"),$async$O8)
 case 6:o.a.a6d()
 q=1
 s=5
@@ -159895,14 +159895,14 @@ return A.o($async$O8,r)},
 G(a){var s,r,q,p,o,n,m=null,l=A.D(a),k=l.ax,j=l.ok,i=j.r
 i=A.u("Ayd\u0131nlatma metni g\xfcncellendi",m,m,m,m,m,i==null?m:i.bz(B.v),m,m,m)
 s=j.Q
-r=A.u("S\xfcr\xfcm 1.5",m,m,m,m,m,s,m,m,m)
+r=A.u("S\xfcr\xfcm 1.6",m,m,m,m,m,s,m,m,m)
 q=k.a===B.q?B.an.a3(0.45):B.bf
 p=A.aj(14)
 j=j.x
 o=j==null
 n=t.p
-p=A.ao(m,A.a8(A.b([A.u("Ne de\u011fi\u015fti?",m,m,m,m,m,o?m:j.bz(B.v),m,m,m),B.aU,B.bO6],n),B.w,B.h,B.i),B.k,m,m,new A.an(q,m,m,p,m,m,B.p),m,m,m,m,B.ei,m,m,m)
-j=A.b([i,B.aQ,r,B.ay,p,B.cZ,A.u("Metnin tamam\u0131",m,m,m,m,m,o?m:j.bz(B.x),m,m,m),B.a2,B.alp],n)
+p=A.ao(m,A.a8(A.b([A.u("Ne de\u011fi\u015fti?",m,m,m,m,m,o?m:j.bz(B.v),m,m,m),B.aU,B.bP1],n),B.w,B.h,B.i),B.k,m,m,new A.an(q,m,m,p,m,m,B.p),m,m,m,m,B.ei,m,m,m)
+j=A.b([i,B.aQ,r,B.ay,p,B.cZ,A.u("Metnin tamam\u0131",m,m,m,m,m,o?m:j.bz(B.x),m,m,m),B.a2,B.alh],n)
 i=this.e
 if(i!=null)B.b.D(j,A.b([B.aw,A.u(i,m,m,m,m,m,s==null?m:s.bc(k.fy),m,m,m)],n))
 j.push(B.cK)
@@ -160508,7 +160508,7 @@ return A.uY(r,s.f.a)},
 $S:0}
 A.bjV.prototype={
 $1(a){var s=null
-return A.cy(!0,A.a8(A.b([A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MH,s,s,s,s,s,new A.bjT(a),!1,s,s,s,s,s,s,s,B.alw,s,s),A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.zH,s,s,s,s,s,new A.bjU(a),!1,s,s,s,s,s,s,s,B.alo,s,s)],t.p),B.j,B.h,B.B),B.H,!0)},
+return A.cy(!0,A.a8(A.b([A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MH,s,s,s,s,s,new A.bjT(a),!1,s,s,s,s,s,s,s,B.alw,s,s),A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.zH,s,s,s,s,s,new A.bjU(a),!1,s,s,s,s,s,s,s,B.alp,s,s)],t.p),B.j,B.h,B.B),B.H,!0)},
 $S:68}
 A.bjT.prototype={
 $0(){return A.am(this.a,!1).c5("pick")},
@@ -161713,7 +161713,7 @@ B.b.D(s,A.c1F(a,l,q.f,q.d,new A.bkG(r,a,q),new A.bkH(r,a,q),new A.bkI(r,a,q),new
 if(!l){l=A.D(a).ok.x
 l=A.b([B.oh,new A.S(B.L4,A.u("Bu mesaj\u0131 neden bildiriyorsun?",n,n,n,n,n,l==null?n:l.bz(B.x),n,n,n),n)],p)
 B.b.D(l,new A.W(B.bci,new A.bkK(r,a,q),t.VD))
-l.push(A.dp(!1,n,!0,n,!0,n,n,n,!0,n,n,B.aXE,n,n,n,n,n,new A.bkL(r,a,q),!1,n,n,n,n,n,B.bO7,n,B.bPR,n,n))
+l.push(A.dp(!1,n,!0,n,!0,n,n,n,!0,n,n,B.aXE,n,n,n,n,n,new A.bkL(r,a,q),!1,n,n,n,n,n,B.bO6,n,B.bPR,n,n))
 l.push(B.oh)
 p=r.ax
 p=p==null?n:p.cx
@@ -161792,7 +161792,7 @@ $2(a,b){var s=null,r=t.s,q=t.zf
 r=A.F(new A.W(A.b([A.b(["spam","Spam / alakas\u0131z"],r),A.b(["hakaret","Hakaret"],r),A.b(["uygunsuz","Uygunsuz i\xe7erik"],r),A.b(["reklam","Reklam"],r),A.b(["diger","Di\u011fer"],r)],t.HD),new A.bla(this.a,b),q),q.i("a4.E"))
 q=t.p
 r=A.a8(A.b([B.bNV,B.aG,A.oI(B.dA,r,B.et,4,8),B.av,A.hl(s,B.aX,!1,s,!0,B.t,s,A.hD(),this.b,s,s,s,s,s,2,B.aYM,B.T,!0,s,!0,s,!1,s,B.bh,s,s,s,s,s,s,s,300,s,2,s,s,!1,"\u2022",s,s,s,s,s,!1,s,s,!1,s,!0,s,B.au,s,s,s,s,s,s,s,s,s,s,s,s,!0,B.a3,s,B.cl,s,s,s,s)],q),B.w,B.h,B.B)
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.blb(a),s,s),A.c0(B.alm,s,new A.blc(a),s)],q),r,s,B.bNI)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.blb(a),s,s),A.c0(B.aln,s,new A.blc(a),s)],q),r,s,B.bNI)},
 $S:263}
 A.bla.prototype={
 $1(a){var s=null,r=J.az(a),q=this.a
@@ -161813,7 +161813,7 @@ $S:0}
 A.bkl.prototype={
 $1(a){var s=null,r=this.a.y
 r=A.u("@"+(r==null?"Bilinmeyen":r)+" engellensin mi?",s,s,s,s,s,s,s,s,s)
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.bkj(a),s,s),A.c0(B.vH,s,new A.bkk(a),s)],t.p),B.bOh,s,r)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.bkj(a),s,s),A.c0(B.vH,s,new A.bkk(a),s)],t.p),B.bOg,s,r)},
 $S:18}
 A.bkj.prototype={
 $0(){return A.am(this.a,!1).c5(!1)},
@@ -161945,7 +161945,7 @@ if(m!=null)B.b.D(s,A.b([B.av,A.u(m,p,p,p,p,p,n==null?p:n.bc(o.ax.fy),p,p,p)],r))
 s.push(B.cZ)
 m=q.d
 r=m?p:q.gaFV()
-s.push(A.c0(m?B.j1:B.bOW,p,r,p))
+s.push(A.c0(m?B.j1:B.bOV,p,r,p))
 s.push(B.a2)
 s.push(A.u("Kabul etmezsen sohbet a\xe7\u0131lmaz; uygulaman\u0131n geri kalan\u0131n\u0131 kullanmaya devam edebilirsin.",p,p,p,p,p,n,B.G,p,p))
 return A.cy(!0,A.ea(s,p,p,B.au,p,p,!1),B.H,!0)},
@@ -162822,7 +162822,7 @@ if(!r){r=A.D(a).ok.x
 r=A.b([B.oh,new A.S(B.L4,A.u("Bu mesaj\u0131 neden bildiriyorsun?",s,s,s,s,s,r==null?s:r.bz(B.x),s,s,s),s)],t.p)
 B.b.D(r,new A.W(B.bjA,new A.boA(p,a,q),t.Ky))
 r.push(B.oh)
-r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.zJ,s,s,s,s,s,new A.boB(p,a),!1,s,s,s,s,s,B.bOa,s,A.u("@"+p.a.e+" ki\u015fisini engelle",s,s,s,s,s,s,s,s,s),s,s))
+r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.zJ,s,s,s,s,s,new A.boB(p,a),!1,s,s,s,s,s,B.bO9,s,A.u("@"+p.a.e+" ki\u015fisini engelle",s,s,s,s,s,s,s,s,s),s,s))
 B.b.D(o,r)}return A.cy(!0,A.iO(A.a8(o,B.w,B.h,B.B),s,s,s,B.ag),B.H,!0)},
 $S:68}
 A.boz.prototype={
@@ -163581,7 +163581,7 @@ break
 case 6:case 1:return A.n(q,r)
 case 2:return A.m(o.at(-1),r)}})
 return A.o($async$Or,r)},
-G(a){var s,r=this,q=null,p=A.D(a),o=A.e8(q,!0,q,q,q,q,B.bOk,q)
+G(a){var s,r=this,q=null,p=A.D(a),o=A.e8(q,!0,q,q,q,q,B.bOj,q)
 if(r.e)s=B.b1
 else{s=r.f
 if(s!=null)s=A.ce(new A.S(B.bz,A.u(s,q,q,q,q,q,q,B.G,q,q),q),q,q)
@@ -164638,7 +164638,7 @@ if(j!=null){g=f.z
 B.b.D(p,A.b([B.aG,A.u(j,B.bSm,m,m,m,m,g==null?m:g.bc(l.ax.fy),m,m,m)],o))}p.push(B.ay)
 j=n.f?m:n.gaVx()
 g=A.i5(m,m,B.a5x,m,m,m,m)
-p.push(A.c0(n.f?B.a5C:B.bOI,B.bS2,j,g))
+p.push(A.c0(n.f?B.a5C:B.bOH,B.bS2,j,g))
 return new A.S(new A.V(0,0,0,h.f.d),A.cy(!0,A.iO(A.a8(p,B.aT,B.h,B.B),m,B.rE,m,B.ag),B.H,!0),m)}}
 A.byE.prototype={
 $0(){return this.a.r="\u015eifreyi yaz."},
@@ -164765,10 +164765,10 @@ if(n.gQu()==="owner"){j=a0.b==="admin"
 h=A.b8(j?B.aWp:B.aVk,null,null,null)
 g=A.u(j?"Y\xf6neticilikten al":"Y\xf6netici yap",null,null,null,null,null,null,null,null,null)
 j=j?null:B.bO_
-i.push(A.dp(!1,null,null,null,!0,null,null,null,!0,null,null,h,null,null,null,null,null,new A.byM(n),!1,null,null,null,null,null,j,null,g,null,null))}if(n.gQu()==="owner")i.push(A.dp(!1,null,null,null,!0,null,null,null,!0,null,null,B.aY1,null,null,null,null,null,new A.byN(n),!1,null,null,null,null,null,B.bOd,null,B.bNC,null,null))
+i.push(A.dp(!1,null,null,null,!0,null,null,null,!0,null,null,h,null,null,null,null,null,new A.byM(n),!1,null,null,null,null,null,j,null,g,null,null))}if(n.gQu()==="owner")i.push(A.dp(!1,null,null,null,!0,null,null,null,!0,null,null,B.aY1,null,null,null,null,null,new A.byN(n),!1,null,null,null,null,null,B.bOc,null,B.bNC,null,null))
 j=n.c
 j.toString
-i.push(A.dp(!1,null,null,null,!0,null,null,null,!0,null,null,A.b8(B.aWh,A.D(j).ax.fy,null,null),null,null,null,null,null,new A.byO(n),!1,null,null,null,null,null,B.bOS,null,B.bNw,null,null))
+i.push(A.dp(!1,null,null,null,!0,null,null,null,!0,null,null,A.b8(B.aWh,A.D(j).ax.fy,null,null),null,null,null,null,null,new A.byO(n),!1,null,null,null,null,null,B.bOR,null,B.bNw,null,null))
 i.push(B.a2)
 j=t.N
 s=3
@@ -164849,7 +164849,7 @@ s.push(A.dp(!1,e,e,e,!0,e,e,e,!0,e,new A.bG("uye-"+l,o),new A.mv(m.d,m.e,40,e),e
 if(r.length!==0){b=A.b([B.av,B.bta],b)
 for(q=r.length,n=0;n<r.length;r.length===q||(0,A.K)(r),++n){m=r[n]
 p=m.c
-b.push(A.dp(!1,e,e,e,!0,e,e,e,!0,e,e,B.zJ,e,e,e,e,e,e,!1,e,e,e,e,e,e,e,A.u("@"+(p==null?"biri":p),e,e,e,e,e,e,e,e,e),A.di(B.alj,e,e,e,new A.bz_(f,m),e,e),e))}B.b.D(s,b)}b=A.mo(A.ea(s,e,e,B.aR_,e,e,!1),f.gahs())}return A.dc(a,e,b,e)}}
+b.push(A.dp(!1,e,e,e,!0,e,e,e,!0,e,e,B.zJ,e,e,e,e,e,e,!1,e,e,e,e,e,e,e,A.u("@"+(p==null?"biri":p),e,e,e,e,e,e,e,e,e),A.di(B.alk,e,e,e,new A.bz_(f,m),e,e),e))}B.b.D(s,b)}b=A.mo(A.ea(s,e,e,B.aR_,e,e,!1),f.gahs())}return A.dc(a,e,b,e)}}
 A.byV.prototype={
 $0(){return $.e7().UY(this.a.a.c.a)},
 $S:951}
@@ -165515,7 +165515,7 @@ $0(){return this.a.d=!1},
 $S:0}
 A.aYX.prototype={
 $1(a){var s=null,r=this.a,q=A.hl(s,B.aX,!0,s,!0,B.t,s,A.hD(),r,s,s,s,s,s,2,B.aYB,B.T,!0,s,!0,s,!1,s,B.bh,s,s,s,s,s,s,s,this.b,s,6,1,s,!1,"\u2022",s,s,s,s,s,!1,s,s,!1,s,!0,s,B.au,s,s,s,s,s,s,s,s,s,s,s,s,!0,B.a3,s,B.cl,s,s,s,s)
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.aYV(a),s,s),A.c0(B.vG,s,new A.aYW(a,r),s)],t.p),q,s,B.bOK)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.aYV(a),s,s),A.c0(B.vG,s,new A.aYW(a,r),s)],t.p),q,s,B.bOJ)},
 $S:18}
 A.aYV.prototype={
 $0(){return A.am(this.a,!1).dd()},
@@ -165525,7 +165525,7 @@ $0(){return A.am(this.a,!1).c5(B.e.by(this.b.a.a))},
 $S:0}
 A.aZ_.prototype={
 $1(a){var s=null,r=A.u(this.a,s,s,s,s,s,s,s,s,s)
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.aYY(a),s,s),A.c0(B.vF,s,new A.aYZ(a),s)],t.p),r,s,B.bOM)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.aYY(a),s,s),A.c0(B.vF,s,new A.aYZ(a),s)],t.p),r,s,B.bOL)},
 $S:18}
 A.aYY.prototype={
 $0(){return A.am(this.a,!1).c5(!1)},
@@ -165831,9 +165831,9 @@ p=A.u("G\xfc\xe7l\xfc oldu\u011fu dersler",i,i,i,i,i,s==null?i:s.bz(B.x),i,i,i)
 o=A.a5(r).i("W<1,nS>")
 r=A.F(new A.W(r,new A.bB6(a),o),o.i("a4.E"))
 B.b.D(h,A.b([B.ay,p,B.aU,A.oI(B.dA,r,B.et,8,8),B.aQ,A.u("Bu dersleri iyi biliyor \u2014 tak\u0131ld\u0131\u011f\u0131n yeri sorabilirsin.",i,i,i,i,i,s,i,i,i)],q))}h.push(B.cZ)
-if(b.ay)h.push(A.c7(A.I2(B.aXZ,i,B.bOH,new A.bB7(j),i),i,1/0))
+if(b.ay)h.push(A.c7(A.I2(B.aXZ,i,B.bOG,new A.bB7(j),i),i,1/0))
 else{s=A.b([],q)
-if(b.ch)s.push(A.c7(A.y0(B.aXf,B.alj,j.gb6k(),i),i,1/0))
+if(b.ch)s.push(A.c7(A.y0(B.aXf,B.alk,j.gb6k(),i),i,1/0))
 else{r=A.b([],q)
 if(j.r){p=b.ax
 o=p?j.gaZr():i
@@ -166236,7 +166236,7 @@ $0(){return this.a.CW=this.b},
 $S:0}
 A.Hj.prototype={
 G(a){var s=null
-return A.dc(A.e8(s,!0,s,s,s,s,B.bOw,s),s,B.aG2,s)}}
+return A.dc(A.e8(s,!0,s,s,s,s,B.bOv,s),s,B.aG2,s)}}
 A.Qh.prototype={
 X(){var s=null
 return new A.a_w(new A.dV(B.bW,$.aC()),A.va(0,s,s),A.kE(!0,s,!0,!0,s,s,!1),A.b([],t.Pn))}}
@@ -166910,7 +166910,7 @@ $S:374}
 A.bqp.prototype={
 $1(a){var s=null,r=this.a.e
 r=A.u((r==null?"D\u0131\u015f deneme":r)+" kayd\u0131 silinecek. Bu i\u015flem geri al\u0131namaz.",s,s,s,s,s,s,s,s,s)
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.bqn(a),s,s),A.c0(B.vF,s,new A.bqo(a),A.i5(A.D(a).ax.fy,s,s,s,s,s,s))],t.p),r,s,B.bOj)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.bqn(a),s,s),A.c0(B.vF,s,new A.bqo(a),A.i5(A.D(a).ax.fy,s,s,s,s,s,s))],t.p),r,s,B.bOi)},
 $S:18}
 A.bqn.prototype={
 $0(){A.am(this.a,!1).c5(!1)
@@ -167776,7 +167776,7 @@ $S:350}
 A.bxG.prototype={
 $1(a){var s=null,r=this.a
 r=A.u(r===0?"T\xfcm sorular\u0131 i\u015faretledin. Teslimden sonra i\u015faret de\u011fi\u015ftirilemez.":""+r+" soru bo\u015f g\xf6r\xfcn\xfcyor. Teslimden sonra i\u015faret de\u011fi\u015ftirilemez.",s,s,s,s,s,s,s,s,s)
-return A.h4(A.b([A.di(B.bPv,s,s,s,new A.bxE(a),s,s),A.c0(B.vE,s,new A.bxF(a),s)],t.p),r,s,B.bOB)},
+return A.h4(A.b([A.di(B.bPv,s,s,s,new A.bxE(a),s,s),A.c0(B.vE,s,new A.bxF(a),s)],t.p),r,s,B.bOA)},
 $S:18}
 A.bxE.prototype={
 $0(){A.am(this.a,!1).c5(!1)
@@ -167910,7 +167910,7 @@ break
 case 6:case 1:return A.n(q,r)
 case 2:return A.m(o.at(-1),r)}})
 return A.o($async$NJ,r)},
-G(a){var s,r,q,p,o=this,n=null,m=A.D(a),l=A.e8(n,!0,n,n,n,n,B.all,n),k=m.ok,j=k.r,i=t.p
+G(a){var s,r,q,p,o=this,n=null,m=A.D(a),l=A.e8(n,!0,n,n,n,n,B.alm,n),k=m.ok,j=k.r,i=t.p
 j=A.aq(A.b([new A.eB(B.m2,m.ax.b,52,n),B.cY,A.aO(A.u("Bize bildir",n,n,n,n,n,j==null?n:j.bz(B.v),n,n,n),1)],i),B.j,B.h,B.i,0,n)
 k=k.Q
 s=A.u("Akl\u0131na tak\u0131lan, hatal\u0131 buldu\u011fun ya da eklenmesini istedi\u011fin her \u015feyi yazabilirsin. Do\u011frudan bize ula\u015f\u0131r.",n,n,n,n,n,k,n,n,n)
@@ -167918,7 +167918,7 @@ r=A.hl(n,B.aX,!0,n,!0,B.t,n,A.hD(),o.d,n,n,n,n,n,2,A.xm(n,n,n,n,n,n,"",n,!0,n,n,
 k=A.u("G\xfcnde en fazla 5 ileti g\xf6nderebilirsin.",n,n,n,n,n,k,n,n,n)
 q=o.e
 p=q?n:o.gaH9()
-return A.dc(l,n,A.cy(!0,A.ea(A.b([j,B.av,s,B.aw,r,B.aQ,k,B.ay,A.c7(A.c0(q?B.j1:B.alm,n,p,n),n,1/0)],i),n,n,B.aRN,n,n,!1),B.H,!0),n)}}
+return A.dc(l,n,A.cy(!0,A.ea(A.b([j,B.av,s,B.aw,r,B.aQ,k,B.ay,A.c7(A.c0(q?B.j1:B.aln,n,p,n),n,1/0)],i),n,n,B.aRN,n,n,!1),B.H,!0),n)}}
 A.biJ.prototype={
 $0(){var s=this.a
 s.e=!0
@@ -168546,7 +168546,7 @@ A.azB.prototype={
 G(a){var s=null,r=this.e,q=A.eU(s,s,s,B.oG,s,s,r,s,s,s,s,s),p=this.c,o=A.u(p.gazk(),B.bSw,s,s,s,s,B.alg,B.G,s,s),n=A.aj(24),m=A.aO(new A.a3I("Sen",p.dx,p.fr,B.Jb,s),1),l=A.ao(s,s,B.k,B.aNb,s,s,s,70,s,s,s,s,s,1),k=p.r,j=p.f
 k=k?j+" \xb7 al\u0131\u015ft\u0131rma":j
 j=t.p
-return A.ea(A.b([new A.em(B.eb,s,s,q,s),o,B.ay,A.ao(s,A.aq(A.b([m,l,A.aO(new A.a3I(k,p.dy,p.fx,B.k5,s),1)],j),B.j,B.h,B.i,0,s),B.k,s,s,new A.an(B.l,s,s,n,s,s,B.p),s,s,s,s,B.or,s,s,s),B.av,B.bOA,B.bv,A.c0(B.bOO,s,this.d,A.i5(B.b5,B.c_,s,B.rB,new A.dT(A.aj(16),B.D),s,s)),A.di(B.alr,s,s,s,r,s,s)],j),s,s,B.KX,s,s,!1)}}
+return A.ea(A.b([new A.em(B.eb,s,s,q,s),o,B.ay,A.ao(s,A.aq(A.b([m,l,A.aO(new A.a3I(k,p.dy,p.fx,B.k5,s),1)],j),B.j,B.h,B.i,0,s),B.k,s,s,new A.an(B.l,s,s,n,s,s,B.p),s,s,s,s,B.or,s,s,s),B.av,B.bOz,B.bv,A.c0(B.bON,s,this.d,A.i5(B.b5,B.c_,s,B.rB,new A.dT(A.aj(16),B.D),s,s)),A.di(B.alr,s,s,s,r,s,s)],j),s,s,B.KX,s,s,!1)}}
 A.a3I.prototype={
 G(a){var s=this,r=null
 return A.a8(A.b([A.u(s.c,r,1,B.ak,r,r,A.bp(r,r,s.f,r,r,r,r,r,r,r,r,r,r,r,B.am,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),A.u(""+s.d,r,r,r,r,r,B.bJN,r,r,r),A.u(""+s.e+" do\u011fru",r,r,r,r,r,B.D7,r,r,r)],t.p),B.j,B.h,B.i)}}
@@ -168936,7 +168936,7 @@ s.e="Sonu\xe7 al\u0131namad\u0131. Puan\u0131n kay\u0131tl\u0131; D\xfcello sekm
 $S:0}
 A.buS.prototype={
 $1(a){var s=null
-return A.h4(A.b([A.di(B.vI,s,s,s,new A.buQ(a),s,s),A.c0(B.vE,s,new A.buR(a),s)],t.p),B.bNQ,s,B.bOP)},
+return A.h4(A.b([A.di(B.vI,s,s,s,new A.buQ(a),s,s),A.c0(B.vE,s,new A.buR(a),s)],t.p),B.bNQ,s,B.bOO)},
 $S:18}
 A.buQ.prototype={
 $0(){return A.am(this.a,!1).c5(!1)},
@@ -168992,7 +168992,7 @@ $1(a){return B.bXt},
 $S:1002}
 A.NN.prototype={
 G(a){var s=null,r=A.bO(a,s,t.l).w
-return A.ao(s,A.a8(A.b([A.ao(s,s,B.k,s,s,new A.an(B.rc,s,s,A.aj(2),s,s,B.p),s,4,s,s,s,s,s,42),B.aw,B.bOq,B.aw,new A.a3k("kelime-sec-tek",B.oD,B.b5,"Tek ki\u015filik","10 soru, 4 dakika. Kendi h\u0131z\u0131nda oyna, g\xfcn\xfcn s\u0131ralamas\u0131na gir.",new A.bGd(a),s),B.aG,new A.a3k("kelime-sec-yaris",B.m1,B.hB,"Canl\u0131 yar\u0131\u015f","Rakiple ayn\u0131 soru: \xf6nce bilen puan\u0131 al\u0131r. Rakip yoksa al\u0131\u015ft\u0131rma rakibi gelir.",new A.bGe(a),s)],t.p),B.j,B.h,B.B),B.k,s,s,B.apK,s,s,s,s,new A.V(16,14,16,16+r.r.d),s,s,s)}}
+return A.ao(s,A.a8(A.b([A.ao(s,s,B.k,s,s,new A.an(B.rc,s,s,A.aj(2),s,s,B.p),s,4,s,s,s,s,s,42),B.aw,B.bOp,B.aw,new A.a3k("kelime-sec-tek",B.oD,B.b5,"Tek ki\u015filik","10 soru, 4 dakika. Kendi h\u0131z\u0131nda oyna, g\xfcn\xfcn s\u0131ralamas\u0131na gir.",new A.bGd(a),s),B.aG,new A.a3k("kelime-sec-yaris",B.m1,B.hB,"Canl\u0131 yar\u0131\u015f","Rakiple ayn\u0131 soru: \xf6nce bilen puan\u0131 al\u0131r. Rakip yoksa al\u0131\u015ft\u0131rma rakibi gelir.",new A.bGe(a),s)],t.p),B.j,B.h,B.B),B.k,s,s,B.apK,s,s,s,s,new A.V(16,14,16,16+r.r.d),s,s,s)}}
 A.bGd.prototype={
 $0(){return A.am(this.a,!1).c5("tek")},
 $S:0}
@@ -169057,7 +169057,7 @@ k=A.aj(20)
 r=this.gabk()
 r=A.kh(0,A.kC(new A.eb(A.dn(m,m,m,new A.auK(r,r),B.Y),m),B.apN,B.d8))
 p=t.p
-o=A.aq(A.b([B.bP9,B.bd,A.ao(m,B.bOn,B.k,m,m,new A.an(B.hB,m,m,A.aj(8),m,m,B.p),m,m,m,m,B.rF,m,m,m)],p),B.j,B.h,B.i,0,m)
+o=A.aq(A.b([B.bP9,B.bd,A.ao(m,B.bOm,B.k,m,m,new A.an(B.hB,m,m,A.aj(8),m,m,B.p),m,m,m,m,B.rF,m,m,m)],p),B.j,B.h,B.i,0,m)
 n=A.b([],p)
 if(s.length!==0)n.push(A.u(s,m,m,m,m,m,B.al7,m,m,m))
 if(q!=null)n.push(A.u("G\xfcn\xfcn lideri: "+q.a+" \xb7 "+q.b,m,1,B.ak,m,m,B.bIV,m,m,m))
@@ -169125,12 +169125,12 @@ h=l.e
 if(h>0)i.push(new A.FS("Harf bonusu +"+h,B.b5,q))
 h=l.r
 if(h>0)i.push(new A.FS("S\u0131ralamaya +"+h,B.nU,q))
-k=A.b([B.bOX,k,B.a2,A.oI(B.DN,i,B.et,8,8)],j)
+k=A.b([B.bOW,k,B.a2,A.oI(B.DN,i,B.et,8,8)],j)
 i=l.w
 if(i!=null)B.b.D(k,A.b([B.av,A.u("G\xfcn\xfcn s\u0131ralamas\u0131nda "+A.r(i)+". s\u0131radas\u0131n",q,q,q,q,q,B.bKo,q,q,q)],j))
 i=l.x
 if(i!=null)B.b.D(k,A.b([B.aQ,A.u("En uzun kelimen: "+i,q,q,q,q,q,B.D7,q,q,q)],j))
-p=A.b([new A.em(B.eb,q,q,o,q),n,B.aw,A.ao(q,A.a8(k,B.j,B.h,B.i),B.k,q,q,new A.an(B.l,q,q,m,q,q,B.p),q,q,q,q,B.or,q,q,q),B.ay,A.aq(A.b([A.aO(A.c0(B.bN8,B.bSu,r.d,A.i5(B.b5,B.c_,q,B.rB,new A.dT(A.aj(16),B.D),q,q)),1),B.aZ,A.JA(B.alt,q,p,A.UO(q,q,q,q,q,q,q,q,q,B.l,q,q,B.aRX,q,new A.dT(A.aj(16),B.D),B.EQ,q,q,q,q))],j),B.j,B.h,B.i,0,q),B.cK,B.bOl,B.a2],j)
+p=A.b([new A.em(B.eb,q,q,o,q),n,B.aw,A.ao(q,A.a8(k,B.j,B.h,B.i),B.k,q,q,new A.an(B.l,q,q,m,q,q,B.p),q,q,q,q,B.or,q,q,q),B.ay,A.aq(A.b([A.aO(A.c0(B.bN8,B.bSu,r.d,A.i5(B.b5,B.c_,q,B.rB,new A.dT(A.aj(16),B.D),q,q)),1),B.aZ,A.JA(B.alt,q,p,A.UO(q,q,q,q,q,q,q,q,q,B.l,q,q,B.aRX,q,new A.dT(A.aj(16),B.D),B.EQ,q,q,q,q))],j),B.j,B.h,B.i,0,q),B.cK,B.bOk,B.a2],j)
 for(o=l.y,n=o.length,s=0;s<o.length;o.length===n||(0,A.K)(o),++s)p.push(new A.ar8(o[s],q))
 return A.ea(p,q,B.bSd,B.KX,q,q,!1)}}
 A.FS.prototype={
@@ -169284,7 +169284,7 @@ r=A.aq(r,B.j,B.h,B.i,0,m)
 q=n.f
 p=A.b([A.aO(new A.O6("tus-sil",B.aNI,B.aY4,q?n.d:m,m),3)],k)
 for(s=0;s<8;s=o){o=s+1
-p.push(new A.i4(2,B.cU,l.$3(B.b7y[s],o,10),m))}p.push(A.aO(new A.O6("tus-gonder",B.hB,B.bP1,q?n.e:m,m),4))
+p.push(new A.i4(2,B.cU,l.$3(B.b7y[s],o,10),m))}p.push(A.aO(new A.O6("tus-gonder",B.hB,B.bP0,q?n.e:m,m),4))
 return A.a8(A.b([j,r,A.aq(p,B.j,B.h,B.i,0,m)],k),B.j,B.h,B.B)}}
 A.aTQ.prototype={
 $3(a,b,c){var s,r=null,q=b/c*300+10
@@ -169993,7 +169993,7 @@ $0(){return this.a.b5z(this.b,this.c)},
 $S:0}
 A.bar.prototype={
 $1(a){var s=null
-return A.dc(A.e8(s,!0,s,s,s,s,B.bO8,s),s,A.LK(!0,!0,B.tP,B.da,this.b,s,s,s,s,J.k(this.a.c.h(0,"neighbours"),!0)),s)},
+return A.dc(A.e8(s,!0,s,s,s,s,B.bO7,s),s,A.LK(!0,!0,B.tP,B.da,this.b,s,s,s,s,J.k(this.a.c.h(0,"neighbours"),!0)),s)},
 $S:1017}
 A.af6.prototype={}
 A.YW.prototype={
@@ -170782,14 +170782,14 @@ case 5:case 4:return A.n(null,r)}})
 return A.o($async$HL,r)},
 G(a){var s,r,q,p,o,n,m,l,k=this,j=null
 if(!k.e){if(!k.r)return B.aj
-return A.a8(A.b([B.a4y,A.ee(A.dp(!1,j,j,j,!0,j,j,j,!0,j,j,A.b8(B.aVt,A.D(a).cy,j,j),j,j,j,j,j,j,!1,j,j,j,j,j,B.bOT,j,B.bON,A.di(B.hm,j,j,j,k.gb8f(),j,j),j),j,j,j,j)],t.p),B.w,B.h,B.i)}s=A.D(a)
+return A.a8(A.b([B.a4y,A.ee(A.dp(!1,j,j,j,!0,j,j,j,!0,j,j,A.b8(B.aVt,A.D(a).cy,j,j),j,j,j,j,j,j,!1,j,j,j,j,j,B.bOS,j,B.bOM,A.di(B.hm,j,j,j,k.gb8f(),j,j),j),j,j,j,j)],t.p),B.w,B.h,B.i)}s=A.D(a)
 r=A.bd(a,B.bY)
 q=k.d
 p=q.a
 q=A.u(p?B.e.dt(B.d.j(q.b),2,"0")+":00 \xb7 yaln\u0131zca o g\xfcn hi\xe7 \xe7al\u0131\u015fmad\u0131ysan":"Kapal\u0131",j,j,j,j,j,j,j,j,j)
 o=k.f?j:new A.biV(k)
 n=t.p
-p=A.b([A.Es(j,j,j,o,new A.eB(B.zA,r,44,j),q,B.bOY,p,j)],n)
+p=A.b([A.Es(j,j,j,o,new A.eB(B.zA,r,44,j),q,B.bOX,p,j)],n)
 r=k.d
 if(r.a){r=A.u(B.e.dt(B.d.j(r.b),2,"0")+":00",j,j,j,j,j,s.ok.w,j,j,j)
 p.push(A.dp(!1,j,j,j,!0,j,j,j,!0,j,j,B.bC7,j,j,j,j,j,k.f?j:k.gb2q(),!1,j,j,j,j,j,j,j,B.bP6,r,j))}p.push(B.dX)
@@ -170801,7 +170801,7 @@ p.push(B.dX)
 q=A.bd(a,B.bK)
 r=k.d
 o=k.f?j:new A.biX(k)
-p.push(A.Es(j,j,j,o,new A.eB(B.kk,q,44,j),B.bNr,B.bOz,r.e,j))
+p.push(A.Es(j,j,j,o,new A.eB(B.kk,q,44,j),B.bNr,B.bOy,r.e,j))
 p=A.ee(A.a8(p,B.j,B.h,B.i),j,j,j,j)
 r=A.bd(a,B.dk)
 q=k.d
@@ -170814,7 +170814,7 @@ o=A.Es(j,j,j,m,new A.eB(B.zE,r,44,j),B.bNF,B.bNY,o.d,j)
 r=A.bd(a,B.bY)
 m=k.d
 l=k.f?j:new A.bj_(k)
-return A.a8(A.b([B.a4y,B.bzC,p,B.aw,B.bzx,A.ee(A.a8(A.b([q,B.dX,o,B.dX,A.Es(j,j,j,l,new A.eB(B.m2,r,44,j),B.bPf,B.bOc,m.r,j)],n),B.j,B.h,B.i),j,j,j,j),B.aQ,k.aJg(s)],n),B.w,B.h,B.i)},
+return A.a8(A.b([B.a4y,B.bzC,p,B.aw,B.bzx,A.ee(A.a8(A.b([q,B.dX,o,B.dX,A.Es(j,j,j,l,new A.eB(B.m2,r,44,j),B.bPf,B.bOb,m.r,j)],n),B.j,B.h,B.i),j,j,j,j),B.aQ,k.aJg(s)],n),B.w,B.h,B.i)},
 aJg(a){return new A.iu($.A7(),new A.biN(this,a),null,null,t.x_)}}
 A.biT.prototype={
 $0(){var s=this.a
@@ -170892,7 +170892,7 @@ n=t.p
 n=A.b([A.aq(A.b([r,B.co,A.aO(A.u(s,m,m,m,m,m,o?m:p.tQ(q.cy,1.4),m,m,m),1)],n),B.j,B.h,B.i,0,m)],n)
 r=this.a.w
 if(r>=0){r=r===1?"Bu hesapta 1 cihaz kay\u0131tl\u0131.":"Bu hesapta "+r+" cihaz kay\u0131tl\u0131. Her birine ayr\u0131 bildirim gider."
-n.push(new A.S(B.rC,A.u(r,m,m,m,m,m,o?m:p.bc(q.cy),m,m,m),m))}if(!l)n.push(new A.em(B.eb,m,m,A.di(B.bOe,m,m,m,new A.biM(),m,m),m))
+n.push(new A.S(B.rC,A.u(r,m,m,m,m,m,o?m:p.bc(q.cy),m,m,m),m))}if(!l)n.push(new A.em(B.eb,m,m,A.di(B.bOd,m,m,m,new A.biM(),m,m),m))
 return new A.S(B.aS8,A.a8(n,B.w,B.h,B.i),m)},
 $S:1030}
 A.biM.prototype={
@@ -170979,17 +170979,17 @@ s.toString
 return A.ee(A.a8(A.b([q,B.dX,A.dp(!1,r,r,r,!0,r,r,r,!0,r,r,new A.eB(B.kj,A.bd(s,B.cP),44,r),r,r,r,r,r,r,!1,r,r,r,r,r,r,r,B.bPU,A.u(""+a.ax+" g\xfcn",r,r,r,r,r,B.d_,r,r,r),r)],t.p),B.j,B.h,B.i),r,r,r,r)},
 agK(a,b){var s=null,r=A.b([],t.p),q=b.ay,p=this.c
 if(q==null){p.toString
-r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eB(B.t1,A.bd(p,B.ht),44,s),s,s,s,s,s,this.gb1E(),!1,s,s,s,s,s,B.bOy,s,A.u("Hesab\u0131m\u0131 sil",s,s,s,s,s,A.bp(s,s,a.ax.fy,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,s))}else{p.toString
-r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eB(B.aWK,A.bd(p,B.by),44,s),s,s,s,s,s,this.gaIp(),!1,s,s,s,s,s,A.u("Talep tarihi: "+A.h5("d MMMM y","tr").eO(q),s,s,s,s,s,s,s,s,s),s,B.bOD,s,s))}r.push(B.dX)
+r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eB(B.t1,A.bd(p,B.ht),44,s),s,s,s,s,s,this.gb1E(),!1,s,s,s,s,s,B.bOx,s,A.u("Hesab\u0131m\u0131 sil",s,s,s,s,s,A.bp(s,s,a.ax.fy,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,s))}else{p.toString
+r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eB(B.aWK,A.bd(p,B.by),44,s),s,s,s,s,s,this.gaIp(),!1,s,s,s,s,s,A.u("Talep tarihi: "+A.h5("d MMMM y","tr").eO(q),s,s,s,s,s,s,s,s,s),s,B.bOC,s,s))}r.push(B.dX)
 q=a.ax
 p=q.ry
 if(p==null){p=q.u
 q=p==null?q.k3:p}else q=p
-r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eB(B.Mm,q,44,s),s,s,s,s,s,new A.bCc(),!1,s,s,s,s,s,s,s,B.bOv,s,s))
+r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eB(B.Mm,q,44,s),s,s,s,s,s,new A.bCc(),!1,s,s,s,s,s,s,s,B.bOu,s,s))
 return A.ee(A.a8(r,B.j,B.h,B.i),s,s,s,s)},
 abU(){return new A.iu($.nD(),new A.bBM(),null,null,t.Vq)},
 ai6(){return new A.iu($.aE0(),new A.bCh(),null,null,t.D0)},
-al7(a){var s=null,r=B.e.jZ("0.3.0+126","+"," ("),q=a.ok.Q
+al7(a){var s=null,r=B.e.jZ("0.3.0+127","+"," ("),q=a.ok.Q
 q=q==null?s:q.bc(a.cy)
 return A.ce(A.u("KPSS NET \xb7 s\xfcr\xfcm "+r+")",s,s,s,s,s,q,s,s,s),s,s)},
 agH(a,b){var s,r,q,p=this,o=null,n=p.r,m=n?o:p.gacz(),l=a.ax,k=l.b,j=A.dE(l.k2,2)
@@ -171400,9 +171400,9 @@ $1(a){return B.a3C},
 $S:389}
 A.bBZ.prototype={
 $1(a){var s=null,r=A.u(u.H,s,s,s,s,s,A.D(a).ok.Q,s,s,s),q=this.a.d,p=q==null,o=(p?s:q.f)==="kadin"?B.zK:s
-o=A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MK,s,s,s,s,s,new A.bBX(a),!1,s,s,s,s,s,s,s,B.aln,o,s)
+o=A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MK,s,s,s,s,s,new A.bBX(a),!1,s,s,s,s,s,s,s,B.alo,o,s)
 q=(p?s:q.f)==="erkek"?B.zK:s
-return A.cy(!0,A.a8(A.b([new A.S(B.aRB,r,s),o,A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MO,s,s,s,s,s,new A.bBY(a),!1,s,s,s,s,s,s,s,B.ali,q,s)],t.p),B.j,B.h,B.B),B.H,!0)},
+return A.cy(!0,A.a8(A.b([new A.S(B.aRB,r,s),o,A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MO,s,s,s,s,s,new A.bBY(a),!1,s,s,s,s,s,s,s,B.alj,q,s)],t.p),B.j,B.h,B.B),B.H,!0)},
 $S:68}
 A.bBX.prototype={
 $0(){return A.am(this.a,!1).c5("kadin")},
@@ -171424,7 +171424,7 @@ $0(){return this.a.x=!1},
 $S:0}
 A.bBP.prototype={
 $1(a){var s=null
-return A.cy(!0,A.a8(A.b([A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MH,s,s,s,s,s,new A.bBN(a),!1,s,s,s,s,s,s,s,B.alw,s,s),A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.zH,s,s,s,s,s,new A.bBO(a),!1,s,s,s,s,s,s,s,B.alo,s,s)],t.p),B.j,B.h,B.B),B.H,!0)},
+return A.cy(!0,A.a8(A.b([A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.MH,s,s,s,s,s,new A.bBN(a),!1,s,s,s,s,s,s,s,B.alw,s,s),A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.zH,s,s,s,s,s,new A.bBO(a),!1,s,s,s,s,s,s,s,B.alp,s,s)],t.p),B.j,B.h,B.B),B.H,!0)},
 $S:68}
 A.bBN.prototype={
 $0(){return A.am(this.a,!1).c5("pick")},
@@ -171483,7 +171483,7 @@ return null},
 $S:0}
 A.bCn.prototype={
 $1(a){var s=null
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.bCl(a),s,s),A.c0(B.bOJ,s,new A.bCm(a),A.i5(A.D(a).ax.fy,s,s,s,s,s,s))],t.p),B.bNm,s,B.bPm)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.bCl(a),s,s),A.c0(B.bOI,s,new A.bCm(a),A.i5(A.D(a).ax.fy,s,s,s,s,s,s))],t.p),B.bNm,s,B.bPm)},
 $S:18}
 A.bCl.prototype={
 $0(){A.am(this.a,!1).c5(!1)
@@ -172585,7 +172585,7 @@ return A.o($async$$2,r)},
 $S:1053}
 A.bDP.prototype={
 $1(a){var s=null
-return A.h4(A.b([A.di(B.vI,s,s,s,new A.bDN(a),s,s),A.c0(B.Db,s,new A.bDO(a),s)],t.p),B.bN3,s,B.bOb)},
+return A.h4(A.b([A.di(B.vI,s,s,s,new A.bDN(a),s,s),A.c0(B.Db,s,new A.bDO(a),s)],t.p),B.bN3,s,B.bOa)},
 $S:18}
 A.bDN.prototype={
 $0(){return A.am(this.a,!1).c5(!1)},
@@ -172648,7 +172648,7 @@ break
 case 6:case 1:return A.n(q,r)
 case 2:return A.m(o.at(-1),r)}})
 return A.o($async$Cb,r)},
-G(a){var s,r=null,q=A.D(a),p=A.e8(r,!1,r,r,r,r,B.bOg,r),o=this.e
+G(a){var s,r=null,q=A.D(a),p=A.e8(r,!1,r,r,r,r,B.bOf,r),o=this.e
 if(o!=null)o=A.ce(new A.S(B.bz,A.a8(A.b([A.u(o,r,r,r,r,r,r,B.G,r,r),B.ay,A.c0(B.alt,r,new A.bE_(a),r)],t.p),B.j,B.h,B.B),r),r,r)
 else{o=this.d
 if(o==null){o=q.ok
@@ -173117,7 +173117,7 @@ else{s=l.ry
 if(s==null){s=l.u
 l=s==null?l.k3:s}else l=s
 l=m.bc(l)
-m=l}m=A.u("Bildirdin, te\u015fekk\xfcrler \u2713",n,n,n,n,n,m,n,n,n)}else m=A.bUZ(B.aXr,n,B.bP0,new A.bD8(o,b))
+m=l}m=A.u("Bildirdin, te\u015fekk\xfcrler \u2713",n,n,n,n,n,m,n,n,n)}else m=A.bUZ(B.aXr,n,B.bP_,new A.bD8(o,b))
 p.push(new A.em(B.fm,n,n,m,n))
 return new A.S(B.yz,A.ee(new A.S(B.cT,A.a8(p,B.w,B.h,B.i),n),n,n,n,n),n)},
 Hq(a){return this.aZx(a)},
@@ -173213,7 +173213,7 @@ $0(){return this.a.Hq(this.b)},
 $S:0}
 A.bD6.prototype={
 $1(a){var s=null,r=t.p,q=A.a8(A.b([B.bPq,B.av,A.hl(s,B.aX,!1,s,!0,B.t,s,A.hD(),this.a,s,s,s,s,s,2,B.aYO,B.T,!0,s,!0,s,!1,s,B.bh,s,s,s,s,s,s,s,200,s,3,s,s,!1,"\u2022",s,s,s,s,s,!1,s,s,!1,s,!0,s,B.au,s,s,s,s,s,s,s,s,s,s,s,s,!0,B.a3,s,B.cl,s,s,s,s)],r),B.w,B.h,B.B)
-return A.h4(A.b([A.di(B.cO,s,s,s,new A.bD4(a),s,s),A.c0(B.all,s,new A.bD5(a),s)],r),q,s,B.bOQ)},
+return A.h4(A.b([A.di(B.cO,s,s,s,new A.bD4(a),s,s),A.c0(B.alm,s,new A.bD5(a),s)],r),q,s,B.bOP)},
 $S:18}
 A.bD4.prototype={
 $0(){return A.am(this.a,!1).c5(!1)},
@@ -173253,7 +173253,7 @@ $1(a){return A.aj2("topic_test",0,null,0,this.b,null,this.a.c)},
 $S:115}
 A.bQr.prototype={
 $1(a){var s=null,r=A.u("Bug\xfcnk\xfc "+this.a+" soruluk \xfccretsiz hakk\u0131n\u0131 tamamlad\u0131n. \xc7\xf6zd\xfcklerin kay\u0131tl\u0131; yar\u0131n kald\u0131\u011f\u0131n yerden devam edebilirsin.\n\nS\u0131n\u0131rs\u0131z \xe7\xf6zmek i\xe7in Premium.",s,s,s,s,s,s,s,s,s)
-return A.h4(A.b([A.di(B.Dc,s,s,s,new A.bQp(a),s,s),A.c0(B.pC,s,new A.bQq(a),s)],t.p),r,s,B.bOm)},
+return A.h4(A.b([A.di(B.Dc,s,s,s,new A.bQp(a),s,s),A.c0(B.pC,s,new A.bQq(a),s)],t.p),r,s,B.bOl)},
 $S:18}
 A.bQp.prototype={
 $0(){A.am(this.a,!1).c5(null)
@@ -173949,7 +173949,7 @@ if(f>0&&m.cy==null){d=A.aj(12)
 g.push(A.cT(s+62,A.du(A.ao(l,A.u("Sonraki soru "+B.c.fp(f)+" sn",l,l,l,l,l,B.bLP,l,l,l),B.k,l,l,new A.an(B.rf,l,l,d,l,l,B.p),l,l,l,l,B.lN,l,l,l),!0,l),l,l,12,l,l,l))}if(!q){f=i.e
 d=i.f
 j=Math.sqrt(f*f+d*d)>j.e-280}else j=!1
-if(j)g.push(A.cT(l,A.du(A.ce(A.ao(l,B.bOu,B.k,l,l,new A.an(B.aMB,l,l,A.aj(20),l,l,B.p),l,l,l,l,B.aR9,l,l,l),l,l),!0,l),l,l,0,0,h+14,l))
+if(j)g.push(A.cT(l,A.du(A.ce(A.ao(l,B.bOt,B.k,l,l,new A.an(B.aMB,l,l,A.aj(20),l,l,B.p),l,l,l,l,B.aR9,l,l,l),l,l),!0,l),l,l,0,0,h+14,l))
 if(m.ok.length!==0)g.push(A.du(A.j0(e,new A.bHL(m),l),!0,l))
 return g},
 aWa(){var s,r,q,p,o,n,m,l,k,j,i=null,h=this.d,g=h.aze(),f=A.fv(g,0,A.jm(5,"count",t.S),A.a5(g).c).fK(0),e=B.b.a5w(g,new A.bHl(this))
@@ -174993,7 +174993,7 @@ return A.c(A.Os(o,a,n.as==="premium"),$async$QW)
 case 3:p.tv()
 case 1:return A.n(q,r)}})
 return A.o($async$QW,r)},
-G(a){var s,r=this,q=null,p=A.D(a),o=A.e8(q,!0,q,q,q,q,B.bOG,q),n=r.w
+G(a){var s,r=this,q=null,p=A.D(a),o=A.e8(q,!0,q,q,q,q,B.bOF,q),n=r.w
 if(n!=null)n=new A.k2("Y\xfcklenemedi",n,r.gal4(),q)
 else if(r.d==null||r.e==null)n=B.b1
 else{n=A.b([A.u("Dersi a\xe7, konuya dokun \u2014 10 soruluk seans ba\u015flas\u0131n.",q,q,q,q,q,p.ok.Q,q,q,q),B.aw],t.p)
@@ -175827,7 +175827,7 @@ break
 case 5:return A.n(null,r)
 case 1:return A.m(p.at(-1),r)}})
 return A.o($async$Q3,r)},
-G(a){var s,r,q,p=null,o=A.D(a),n=A.e8(p,!0,p,p,p,p,B.bOF,p),m=t.p,l=A.b([],m)
+G(a){var s,r,q,p=null,o=A.D(a),n=A.e8(p,!0,p,p,p,p,B.bOE,p),m=t.p,l=A.b([],m)
 l.push(this.b7P(o))
 s=this.a.c
 r=o.ok
@@ -175836,7 +175836,7 @@ q=q==null?p:q.lN(B.x,1.4)
 m=A.b([A.u(s.d,p,p,p,p,p,q,p,p,p),B.a2],m)
 m.push(A.u("Web s\xfcr\xfcm\xfcnde videolar YouTube'da izlenir; uygulamadaysan izleme kayd\u0131n otomatik tutulur.",p,p,p,p,p,r.Q,p,p,p))
 m.push(B.aw)
-m.push(A.I2(B.aXt,p,B.bOx,this.gaim(),p))
+m.push(A.I2(B.aXt,p,B.bOw,this.gaim(),p))
 l.push(new A.S(B.au,A.a8(m,B.w,B.h,B.i),p))
 return A.dc(n,p,A.cy(!0,A.ea(l,p,p,p,p,p,!1),B.H,!0),p)},
 b7P(a){var s=null,r=this.a.c.e,q=A.b([],t.p)
@@ -176051,7 +176051,7 @@ return A.c(A.am(o,!1).d_(A.cR(new A.bKU(n,b),!1,null,t.y)),$async$Cz)
 case 4:p.r2()
 case 1:return A.n(q,r)}})
 return A.o($async$Cz,r)},
-G(a){var s,r=this,q=null,p=A.e8(q,!0,q,q,q,q,B.bOp,q)
+G(a){var s,r=this,q=null,p=A.e8(q,!0,q,q,q,q,B.bOo,q)
 if(r.w)s=B.b1
 else{s=r.x
 if(s!=null)s=new A.k2("Y\xfcklenemedi",s,r.gan8(),q)
@@ -176105,7 +176105,7 @@ n=n?r:o.c
 if(n==null)n="Konu"
 s=""+l
 s=m==null?s+q:m.c+" \xb7 "+s+q
-return new A.ep(B.t4,k,n,s,new A.bKN(p,a),A.c0(B.bP_,r,new A.bKO(p,a),A.i5(r,r,B.kW,B.f2,r,r,r)),r,r)},
+return new A.ep(B.t4,k,n,s,new A.bKN(p,a),A.c0(B.bOZ,r,new A.bKO(p,a),A.i5(r,r,B.kW,B.f2,r,r,r)),r,r)},
 $S:1082}
 A.bKN.prototype={
 $0(){var s=this.b
@@ -178540,7 +178540,7 @@ $1(a){return B.rI},
 $S:218}
 A.bLF.prototype={
 $1(a){var s=null,r=A.b([],t.p)
-if(this.a.a!=null)r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aXb,s,s,s,s,s,new A.bLD(a),!1,s,s,s,s,s,s,s,B.bOE,s,s))
+if(this.a.a!=null)r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.aXb,s,s,s,s,s,new A.bLD(a),!1,s,s,s,s,s,s,s,B.bOD,s,s))
 r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,B.ML,s,s,s,s,s,new A.bLE(a),!1,s,s,s,s,s,s,s,B.alq,s,s))
 return A.cy(!0,A.a8(r,B.j,B.h,B.B),B.H,!0)},
 $S:68}
@@ -193633,8 +193633,8 @@ B.aXP=new A.bR(B.fK,22,B.l,null,null)
 B.bd=new A.cV(8,null,null,null)
 B.bF=new A.m6(900)
 B.bJm=new A.L(!0,B.l,null,null,null,null,16,B.bF,null,1.1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOf=new A.af("RAK\u0130P ARA",null,B.bJm,null,null,null,null,null,null,null,null)
-B.b8x=s([B.aXP,B.bd,B.bOf],t.p)
+B.bOe=new A.af("RAK\u0130P ARA",null,B.bJm,null,null,null,null,null,null,null,null)
+B.b8x=s([B.aXP,B.bd,B.bOe],t.p)
 B.bz1=new A.DV(B.aV,B.h,B.B,B.j,null,B.es,null,0,B.b8x,null)
 B.asb=new A.iG(B.Q,null,null,B.bz1,null)
 B.bP2=new A.af("Bu denemede soru bulunamad\u0131.",null,null,null,null,null,null,null,null,null,null)
@@ -194168,9 +194168,9 @@ B.aPz=new A.pf(3,"restore")
 B.oi=new A.mX(null,B.aPz,null,null,null,null)
 B.aPH=new A.abs(null)
 B.aPI=new A.Ra(null,null,null,null,null,null,null,null,null)
-B.alk=new A.af("Belirtme",null,null,null,null,null,null,null,null,null,null)
-B.Kr=new A.iH(null,B.alk,B.fl,null,t.b7)
-B.Kq=new A.iH(null,B.alk,B.fl,null,t.kZ)
+B.all=new A.af("Belirtme",null,null,null,null,null,null,null,null,null,null)
+B.Kr=new A.iH(null,B.all,B.fl,null,t.b7)
+B.Kq=new A.iH(null,B.all,B.fl,null,t.kZ)
 B.aPJ=new A.Rc(null,null,null,null)
 B.aPK=new A.wN(null,null)
 B.aPL=new A.Bi(null,null,!1)
@@ -194677,12 +194677,12 @@ B.lZ=new A.lf(8,"int32")
 B.iB=new A.lf(9,"float16")
 B.II=new A.q(1,0.788235294117647,0.8352941176470589,0.9098039215686274,B.f)
 B.bMr=new A.L(!0,B.II,null,null,null,null,13.5,null,null,null,null,null,1.3,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOV=new A.af(u._,null,B.bMr,null,null,null,null,null,null,null,null)
-B.aTN=new A.Ib(0.72,null,B.Q,B.bOV,null)
+B.bOU=new A.af(u._,null,B.bMr,null,null,null,null,null,null,null,null)
+B.aTN=new A.Ib(0.72,null,B.Q,B.bOU,null)
 B.I8=new A.q(1,0.9529411764705882,0.9019607843137255,1,B.f)
 B.bMp=new A.L(!0,B.I8,null,null,null,null,13.5,null,null,null,null,null,1.3,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bO9=new A.af("\u0130pucunu oku, kelimeyi bul. Tak\u0131l\u0131rsan harf al. Tek ba\u015f\u0131na ya da canl\u0131 rakiple.",null,B.bMp,null,null,null,null,null,null,null,null)
-B.aTO=new A.Ib(0.62,null,B.Q,B.bO9,null)
+B.bO8=new A.af("\u0130pucunu oku, kelimeyi bul. Tak\u0131l\u0131rsan harf al. Tek ba\u015f\u0131na ya da canl\u0131 rakiple.",null,B.bMp,null,null,null,null,null,null,null,null)
+B.aTO=new A.Ib(0.62,null,B.Q,B.bO8,null)
 B.rT=new A.Sc(0)
 B.LO=new A.acr(1,"page")
 B.bA=new A.acr(2,"sequence")
@@ -195508,8 +195508,8 @@ B.Ol=s(["\u0416","\u0414","\u0428","\u0428","\u0411","\u0416","\u0418"],t.s)
 B.b2l=s(["de gener","de febrer","de mar\xe7","d\u2019abril","de maig","de juny","de juliol","d\u2019agost","de setembre","d\u2019octubre","de novembre","de desembre"],t.s)
 B.bNb=new A.af("Son 7 g\xfcn",null,null,null,null,null,null,null,null,null,null)
 B.aqu=new A.jX(7,null,B.bNb,t.lM)
-B.bOZ=new A.af("Son 30 g\xfcn",null,null,null,null,null,null,null,null,null,null)
-B.aqs=new A.jX(30,null,B.bOZ,t.lM)
+B.bOY=new A.af("Son 30 g\xfcn",null,null,null,null,null,null,null,null,null,null)
+B.aqs=new A.jX(30,null,B.bOY,t.lM)
 B.b2m=s([B.aqu,B.aqs],A.ac("B<jX<w>>"))
 B.b2n=s(["EEEE, d MMMM y\u202f'\u0433'.","d MMMM y\u202f'\u0433'.","d.MM.y\u202f'\u0433'.","d.MM.yy\u202f'\u0433'."],t.s)
 B.ut=new A.og(6,"scriptscript")
@@ -195536,10 +195536,10 @@ B.Op=s(["\u039a\u03c5\u03c1","\u0394\u03b5\u03c5","\u03a4\u03c1\u03af","\u03a4\u
 B.b2s=s(["\u041c\u042d\u04e8","\u041c\u042d"],t.s)
 B.Oq=s(["\u1007\u1014\u103a","\u1016\u1031","\u1019\u1010\u103a","\u1027","\u1019\u1031","\u1007\u103d\u1014\u103a","\u1007\u1030","\u1029","\u1005\u1000\u103a","\u1021\u1031\u102c\u1000\u103a","\u1014\u102d\u102f","\u1012\u102e"],t.s)
 B.Or=s(["Ch\u1ee7 Nh\u1eadt","Th\u1ee9 Hai","Th\u1ee9 Ba","Th\u1ee9 T\u01b0","Th\u1ee9 N\u0103m","Th\u1ee9 S\xe1u","Th\u1ee9 B\u1ea3y"],t.s)
-B.aln=new A.af("Kad\u0131n",null,null,null,null,null,null,null,null,null,null)
-B.aqt=new A.jX("kadin",B.MK,B.aln,t.Zx)
-B.ali=new A.af("Erkek",null,null,null,null,null,null,null,null,null,null)
-B.aqv=new A.jX("erkek",B.MO,B.ali,t.Zx)
+B.alo=new A.af("Kad\u0131n",null,null,null,null,null,null,null,null,null,null)
+B.aqt=new A.jX("kadin",B.MK,B.alo,t.Zx)
+B.alj=new A.af("Erkek",null,null,null,null,null,null,null,null,null,null)
+B.aqv=new A.jX("erkek",B.MO,B.alj,t.Zx)
 B.b2w=s([B.aqt,B.aqv],A.ac("B<jX<h>>"))
 B.Os=s(["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII"],t.s)
 B.Ot=s(["pr. Kr.","po Kr."],t.s)
@@ -202004,12 +202004,12 @@ B.al3=new A.L(!0,B.l,null,null,null,null,null,null,null,null,null,null,null,null
 B.bPu=new A.af("G\xf6rsel a\xe7\u0131lamad\u0131.",null,B.al3,null,null,null,null,null,null,null,null)
 B.btf=new A.S(B.bz,B.bPu,null)
 B.bJo=new A.L(!0,B.rc,null,null,null,null,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOi=new A.af("\xb7 al\u0131\u015ft\u0131rma solucan\u0131",null,B.bJo,null,null,null,null,null,null,null,null)
-B.btg=new A.S(B.KG,B.bOi,null)
+B.bOh=new A.af("\xb7 al\u0131\u015ft\u0131rma solucan\u0131",null,B.bJo,null,null,null,null,null,null,null,null)
+B.btg=new A.S(B.KG,B.bOh,null)
 B.aRm=new A.V(16,14,16,6)
 B.d_=new A.L(!0,null,null,null,null,null,null,B.x,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOo=new A.af("Ders",null,B.d_,null,null,null,null,null,null,null,null)
-B.aSU=new A.i4(3,B.cU,B.bOo,null)
+B.bOn=new A.af("Ders",null,B.d_,null,null,null,null,null,null,null,null)
+B.aSU=new A.i4(3,B.cU,B.bOn,null)
 B.bNf=new A.af("D",null,B.d_,B.G,null,null,null,null,null,null,null)
 B.aST=new A.i4(1,B.cU,B.bNf,null)
 B.bN7=new A.af("Y",null,B.d_,B.G,null,null,null,null,null,null,null)
@@ -202080,8 +202080,8 @@ B.bum=new A.b1c(0,"centroid")
 B.a36=new A.b1d(0,"evenOdd")
 B.Mz=new A.a6(983640,"MaterialIcons",!1)
 B.aY2=new A.bR(B.Mz,null,null,null,null)
-B.bOR=new A.af("Oda ayarlar\u0131",null,null,null,null,null,null,null,null,null,null)
-B.aZR=new A.of(B.aY2,B.bOR,null,null,null,null,null,null,null,null,!0,null,null,null,!1,null,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
+B.bOQ=new A.af("Oda ayarlar\u0131",null,null,null,null,null,null,null,null,null,null)
+B.aZR=new A.of(B.aY2,B.bOQ,null,null,null,null,null,null,null,null,!0,null,null,null,!1,null,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
 B.bun=new A.rw("ayarlar",B.aZR,null,t.wI)
 B.bPo=new A.af("\xdcyeler",null,null,null,null,null,null,null,null,null,null)
 B.aZP=new A.of(B.MM,B.bPo,null,null,null,null,null,null,null,null,!0,null,null,null,!1,null,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
@@ -202092,8 +202092,8 @@ B.aZS=new A.of(B.aXG,B.bNe,null,null,null,null,null,null,null,null,!0,null,null,
 B.bup=new A.rw("ayril",B.aZS,null,t.wI)
 B.aVC=new A.a6(63176,"MaterialIcons",!1)
 B.aXv=new A.bR(B.aVC,null,null,null,null)
-B.bOr=new A.af("Oday\u0131 kapat",null,null,null,null,null,null,null,null,null,null)
-B.aZQ=new A.of(B.aXv,B.bOr,null,null,null,null,null,null,null,null,!0,null,null,null,!1,null,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
+B.bOq=new A.af("Oday\u0131 kapat",null,null,null,null,null,null,null,null,null,null)
+B.aZQ=new A.of(B.aXv,B.bOq,null,null,null,null,null,null,null,null,!0,null,null,null,!1,null,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
 B.buq=new A.rw("kapat",B.aZQ,null,t.wI)
 B.bur=new A.JX(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bXJ=new A.aBT(null)
@@ -202670,8 +202670,8 @@ B.bPa=new A.af("Ayar kaydedilemedi.",null,null,null,null,null,null,null,null,nul
 B.bCq=new A.jC(B.bPa,null,null,null,null,null,null,null,null,null,null,null,null,B.bl,!1,null,null,null,B.t,null)
 B.bPK=new A.af("Sistem rakibi",null,null,null,null,null,null,null,null,null,null)
 B.bCr=new A.jC(B.bPK,null,null,null,null,null,null,null,null,null,null,null,null,B.bl,!1,null,null,null,B.t,null)
-B.bOL=new A.af("Oda a\xe7madan \xf6nce bir takma ad se\xe7.",null,null,null,null,null,null,null,null,null,null)
-B.bCs=new A.jC(B.bOL,null,null,null,null,null,null,null,null,null,null,null,null,B.bl,!1,null,null,null,B.t,null)
+B.bOK=new A.af("Oda a\xe7madan \xf6nce bir takma ad se\xe7.",null,null,null,null,null,null,null,null,null,null)
+B.bCs=new A.jC(B.bOK,null,null,null,null,null,null,null,null,null,null,null,null,B.bl,!1,null,null,null,B.t,null)
 B.bPn=new A.af("Bildirimin al\u0131nd\u0131, te\u015fekk\xfcrler.",null,null,null,null,null,null,null,null,null,null)
 B.bCt=new A.jC(B.bPn,null,null,null,null,null,null,null,null,null,null,null,null,B.bl,!1,null,null,null,B.t,null)
 B.bNa=new A.af("Profil foto\u011fraf\u0131n kaydedildi.",null,null,null,null,null,null,null,null,null,null)
@@ -203186,18 +203186,19 @@ B.al8=new A.L(!0,B.l,null,null,null,null,20,B.am,null,null,null,null,null,null,n
 B.bNq=new A.af("Bilgi Solucan\u0131",null,B.al8,null,null,null,null,null,null,null,null)
 B.bNr=new A.af("100, 60, 30, 14, 7, 3 ve 1 g\xfcn kala",null,null,null,null,null,null,null,null,null,null)
 B.bNs=new A.af("\u015eifreli oda",null,null,null,null,null,null,null,null,null,null)
+B.alh=new A.af('KPSS NET, hesab\u0131n\u0131 olu\u015fturmak ve sana ki\u015fisel \xe7al\u0131\u015fma plan\u0131 sunabilmek i\xe7in \u015fu verileri i\u015fler: ad, e-posta, hedef ve s\u0131nav bilgileri, \xe7\xf6zd\xfc\u011f\xfcn sorular ve uygulama i\xe7i ilerlemen.\n\nVerilerin yaln\u0131zca bu ama\xe7larla kullan\u0131l\u0131r; \xfc\xe7\xfcnc\xfc ki\u015filerle pazarlama ama\xe7l\u0131 payla\u015f\u0131lmaz. Verilerin, Avrupa Birli\u011fi s\u0131n\u0131rlar\u0131 i\xe7indeki (Frankfurt) sunucularda \u015fifreli olarak saklan\u0131r.\n\nSORULAR YAPAY ZEK\xc2 \u0130LE \xdcRET\u0130L\u0130YOR\n\nUygulamadaki sorular, bilgi kartlar\u0131 ve \xe7\xf6z\xfcmler yapay zek\xe2 ile \xfcretilir ve yay\u0131na al\u0131nmadan \xf6nce g\xf6zden ge\xe7irilir. Buna ra\u011fmen hatal\u0131 ya da tart\u0131\u015fmal\u0131 bir soruyla kar\u015f\u0131la\u015fabilirsin.\n\n\u2022 Her sorunun alt\u0131nda "hatal\u0131 bildir" se\xe7ene\u011fi var. Bildirdi\u011fin sorular incelenip d\xfczeltilir ya da yay\u0131ndan kald\u0131r\u0131l\u0131r.\n\u2022 Sorular, \xd6SYM\'nin \xe7\u0131km\u0131\u015f sorular\u0131n\u0131n kopyas\u0131 DE\u011e\u0130LD\u0130R; s\u0131nav desenine g\xf6re haz\u0131rlanm\u0131\u015f \xf6zg\xfcn sorulard\u0131r.\n\u2022 Uygulama bir haz\u0131rl\u0131k arac\u0131d\u0131r; resm\xee bir kaynak de\u011fildir ve \xd6SYM ile hi\xe7bir ili\u015fkisi yoktur.\n\nSOHBET VE TOPLULUK\n\nUygulamada ders odalar\u0131, \xf6zel mesajla\u015fma, d\xfcello ve liderlik tablosu bulunur. Bu b\xf6l\xfcmleri kullanmak iste\u011fe ba\u011fl\u0131d\u0131r.\n\n\u2022 SOHBETTE \u0130NSAN OLMAYAN HESAPLAR VARDIR. Odalar\u0131 canl\u0131 tutmak, d\xfcelloda rakip bulunamad\u0131\u011f\u0131nda e\u015fle\u015fme sa\u011flamak ve soru sormak i\xe7in bot hesaplar kullan\u0131l\u0131r. Bu hesaplar adlar\u0131n\u0131n yan\u0131nda "bot" rozetiyle i\u015faretlidir ve liderlik tablosunda da g\xf6r\xfcn\xfcrler.\n\u2022 Sohbette ger\xe7ek ad\u0131n hi\xe7bir zaman g\xf6r\xfcnmez; yaln\u0131zca kendi se\xe7ti\u011fin takma ad g\xf6r\xfcn\xfcr.\n\u2022 Ders odalar\u0131 herkese a\xe7\u0131k alanlard\u0131r. Buradaki mesajlar y\xf6netici taraf\u0131ndan her zaman g\xf6r\xfcnt\xfclenebilir ve saklan\u0131r.\n\u2022 Kullan\u0131c\u0131lar\u0131n a\xe7t\u0131\u011f\u0131 odalar (\u015fifreli olanlar dahil) ders odalar\u0131yla ayn\u0131 kurallara tabidir: mesajlar otomatik taran\u0131r, \u015fik\xe2yet edilebilir ve y\xf6netici taraf\u0131ndan g\xf6r\xfcnt\xfclenebilir. \u015eifre yaln\u0131zca odaya kimin kat\u0131labilece\u011fini belirler; yaz\u0131\u015fmay\u0131 gizli yapmaz. 5 g\xfcn mesaj yaz\u0131lmayan oda kendili\u011finden kapan\u0131r; kapanan odan\u0131n mesajlar\u0131 30 g\xfcn sonra silinir.\n\u2022 Payla\u015f\u0131lan i\xe7erikler, kural ihlallerini yakalamak i\xe7in otomatik olarak taran\u0131r. E\u015fle\u015fme oldu\u011funda ilgili mesaj y\xf6neticinin incelemesine d\xfc\u015fer.\n\u2022 \xd6zel mesajlar\u0131nda serbest okuma yap\u0131lmaz. \u0130\xe7eri\u011fin incelenmesi yaln\u0131zca (a) otomatik tarama bir kural ihlali i\u015faretlerse ya da (b) bir kullan\u0131c\u0131 \u015fik\xe2yette bulunursa m\xfcmk\xfcnd\xfcr; her inceleme gerek\xe7esiyle birlikte kayda ge\xe7er.\n\u2022 Sohbette ve \xf6zel mesajda foto\u011fraf ve ses g\xf6nderebilirsin. Bu dosyalar sunucuda saklan\u0131r ve mesaj\u0131 g\xf6rebilen herkes taraf\u0131ndan a\xe7\u0131labilir. Yaz\u0131l\u0131 mesajlar\u0131 tarayan otomatik filtre g\xf6rsele ve sese BAKAMAZ; bunlar\u0131n denetimi \u015fik\xe2yet ve y\xf6netici incelemesiyle yap\u0131l\u0131r.\n\u2022 Odalarda se\xe7enekli soru payla\u015fabilirsin. Kimin hangi se\xe7ene\u011fi i\u015faretledi\u011fi ba\u015fkalar\u0131na g\xf6sterilmez; yaln\u0131zca toplam da\u011f\u0131l\u0131m g\xf6r\xfcn\xfcr.\n\u2022 Profil bilgilerini (hedef s\u0131nav, \u015fehir, b\xf6l\xfcm, tan\u0131t\u0131m) girmek zorunda de\u011filsin; girdiklerini tek tek gizleyebilirsin.\n\u2022 Liderlik tablosunda takma ad\u0131n ve puan\u0131n di\u011fer kullan\u0131c\u0131lara g\xf6r\xfcn\xfcr. Bu g\xf6r\xfcn\xfcrl\xfc\u011f\xfc profil ayarlar\u0131ndan kapatabilirsin.\n\u2022 Sohbet ve mesaj kay\u0131tlar\u0131 en fazla 12 ay saklan\u0131r; hesab\u0131n\u0131 silmen h\xe2linde bu s\xfcre beklenmeden silinir.\n\u2022 Kurallara ayk\u0131r\u0131 davran\u0131\u015fta mesaj\u0131n silinebilir, sohbette yazman ge\xe7ici olarak durdurulabilir ya da sohbet eri\u015fimin kapat\u0131labilir. Uygulaman\u0131n \xe7al\u0131\u015fma b\xf6l\xfcmleri bundan etkilenmez.\n\nUYGULAMA SA\u011eLI\u011eI KAYITLARI\n\nUygulamay\u0131 iyile\u015ftirmek i\xe7in iki teknik kay\u0131t tutulur:\n\n\u2022 Uygulama bir hata verirse hatan\u0131n teknik a\xe7\u0131klamas\u0131, uygulama s\xfcr\xfcm\xfc, cihaz t\xfcr\xfc (web, Android) ve hangi b\xf6l\xfcmde oldu\u011fun.\n\u2022 Hangi b\xf6l\xfcmlerin a\xe7\u0131ld\u0131\u011f\u0131: uygulaman\u0131n a\xe7\u0131lmas\u0131, sekme de\u011fi\u015ftirmen, bir oyunu ba\u015flatman gibi.\n\nYazd\u0131klar\u0131n, soru cevaplar\u0131n ve mesajlar\u0131n bu kay\u0131tlara girmez. Kay\u0131tlar\u0131 yaln\u0131zca uygulama i\u015fletmecisi g\xf6r\xfcr; kullan\u0131m kay\u0131tlar\u0131 180 g\xfcn, hata kay\u0131tlar\u0131 90 g\xfcn sonra kendili\u011finden silinir.\n\nHESAP S\u0130LME\n\nDiledi\u011fin an Profil > Hesap b\xf6l\xfcm\xfcnden hesab\u0131n\u0131n silinmesini talep edebilirsin. Talep etti\u011fin g\xfcnden 30 g\xfcn sonra hesab\u0131n ve ki\u015fisel verilerin sunucudan kal\u0131c\u0131 olarak silinir; bu s\xfcre i\xe7inde vazge\xe7ebilirsin. Silme her g\xfcn otomatik olarak \xe7al\u0131\u015f\u0131r ve geri al\u0131namaz. Yaln\u0131zca kimli\u011finden ar\u0131nd\u0131r\u0131lm\u0131\u015f, anonim istatistikler korunur.\n\nUygulamay\u0131 silmi\u015f olsan da silme talebinde bulunabilirsin: netkpsscalis.github.io/hesap-silme.html adresindeki y\xf6nergeyi izlemen yeterli.\n\nNot: Bu metin, yay\u0131na \xe7\u0131kmadan \xf6nce bir hukuk\xe7u taraf\u0131ndan g\xf6zden ge\xe7irilecek taslak s\xfcr\xfcmd\xfcr.',null,null,null,null,null,null,null,null,null,null)
 B.bNt=new A.af("Geri d\xf6n",null,null,null,null,null,null,null,null,null,null)
 B.bIS=new A.L(!0,B.l,null,null,null,null,15,B.x,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bNu=new A.af("Ger\xe7ek s\u0131nav provas\u0131",null,B.bIS,null,null,null,null,null,null,null,null)
 B.Db=new A.af("\xc7\u0131k",null,null,null,null,null,null,null,null,null,null)
 B.al9=new A.L(!0,null,null,null,null,null,15,B.x,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bNv=new A.af("G\xfcnl\xfck hedef",null,B.al9,null,null,null,null,null,null,null,null)
-B.alh=new A.af("G\xfcncelle",null,null,null,null,null,null,null,null,null,null)
+B.ali=new A.af("G\xfcncelle",null,null,null,null,null,null,null,null,null,null)
 B.bNw=new A.af("Odadan \xe7\u0131kar",null,null,null,null,null,null,null,null,null,null)
 B.bLu=new A.L(!0,B.l,null,null,null,null,20,B.x,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bNx=new A.af("K",null,B.bLu,null,null,null,null,null,null,null,null)
 B.bNy=new A.af("S\xfcre doldu \u23f1\ufe0f",null,null,null,null,null,null,null,null,null,null)
-B.alj=new A.af("Engeli kald\u0131r",null,null,null,null,null,null,null,null,null,null)
+B.alk=new A.af("Engeli kald\u0131r",null,null,null,null,null,null,null,null,null,null)
 B.bNz=new A.af("Seans \xf6zeti",null,null,null,null,null,null,null,null,null,null)
 B.bNA=new A.af("Deneme ba\u015flat\u0131lamad\u0131",null,null,null,null,null,null,null,null,null,null)
 B.bNB=new A.af("Mesajlar\u0131n\u0131 g\xf6rmezsin ve yaz\u0131\u015famazs\u0131n\u0131z. \u0130stedi\u011fin zaman geri alabilirsin.",null,null,null,null,null,null,null,null,null,null)
@@ -203230,74 +203231,73 @@ B.bO1=new A.af("Deneme Merkezi",null,null,null,null,null,null,null,null,null,nul
 B.bO2=new A.af("Kopyala",null,null,null,null,null,null,null,null,null,null)
 B.bO3=new A.af("Mesaj bildirimleri",null,null,null,null,null,null,null,null,null,null)
 B.bO4=new A.af("Bildim",null,null,null,null,null,null,null,null,null,null)
-B.all=new A.af("Bildir",null,null,null,null,null,null,null,null,null,null)
+B.alm=new A.af("Bildir",null,null,null,null,null,null,null,null,null,null)
 B.bO5=new A.af("E-posta adresini de\u011fi\u015ftir",null,null,null,null,null,null,null,null,null,null)
-B.bO6=new A.af('Uygulaman\u0131n sa\u011fl\u0131\u011f\u0131 i\xe7in iki teknik kay\u0131t eklendi: uygulama hata verirse hatan\u0131n teknik a\xe7\u0131klamas\u0131, bir de hangi b\xf6l\xfcmlerin a\xe7\u0131ld\u0131\u011f\u0131 (\xf6r. "D\xfcello sekmesi a\xe7\u0131ld\u0131"). Yazd\u0131klar\u0131n, cevaplar\u0131n ve mesajlar\u0131n bu kay\u0131tlara girmez. Kay\u0131tlar en fazla 180 g\xfcn saklan\u0131r.',null,null,null,null,null,null,null,null,null,null)
-B.bO7=new A.af("Kendin yazars\u0131n",null,null,null,null,null,null,null,null,null,null)
-B.bO8=new A.af("Soru haritas\u0131",null,null,null,null,null,null,null,null,null,null)
-B.bOa=new A.af("Bir daha yaz\u0131\u015famazs\u0131n\u0131z",null,null,null,null,null,null,null,null,null,null)
+B.bO6=new A.af("Kendin yazars\u0131n",null,null,null,null,null,null,null,null,null,null)
+B.bO7=new A.af("Soru haritas\u0131",null,null,null,null,null,null,null,null,null,null)
+B.bO9=new A.af("Bir daha yaz\u0131\u015famazs\u0131n\u0131z",null,null,null,null,null,null,null,null,null,null)
 B.Dc=new A.af("Anlad\u0131m",null,null,null,null,null,null,null,null,null,null)
-B.bOb=new A.af("Yar\u0131\u015ftan \xe7\u0131k\u0131ls\u0131n m\u0131?",null,null,null,null,null,null,null,null,null,null)
-B.bOc=new A.af("Duyurular",null,null,null,null,null,null,null,null,null,null)
-B.alm=new A.af("G\xf6nder",null,null,null,null,null,null,null,null,null,null)
-B.alo=new A.af("Foto\u011fraf\u0131 kald\u0131r",null,null,null,null,null,null,null,null,null,null)
-B.bOd=new A.af("Sen y\xf6netici olarak kal\u0131rs\u0131n",null,null,null,null,null,null,null,null,null,null)
-B.bOe=new A.af("Bu cihaz\u0131 bildirime a\xe7",null,null,null,null,null,null,null,null,null,null)
-B.alp=new A.af('KPSS NET, hesab\u0131n\u0131 olu\u015fturmak ve sana ki\u015fisel \xe7al\u0131\u015fma plan\u0131 sunabilmek i\xe7in \u015fu verileri i\u015fler: ad, e-posta, hedef ve s\u0131nav bilgileri, \xe7\xf6zd\xfc\u011f\xfcn sorular ve uygulama i\xe7i ilerlemen.\n\nVerilerin yaln\u0131zca bu ama\xe7larla kullan\u0131l\u0131r; \xfc\xe7\xfcnc\xfc ki\u015filerle pazarlama ama\xe7l\u0131 payla\u015f\u0131lmaz. Verilerin, Avrupa Birli\u011fi s\u0131n\u0131rlar\u0131 i\xe7indeki (Frankfurt) sunucularda \u015fifreli olarak saklan\u0131r.\n\nSORULAR YAPAY ZEK\xc2 \u0130LE \xdcRET\u0130L\u0130YOR\n\nUygulamadaki sorular, bilgi kartlar\u0131 ve \xe7\xf6z\xfcmler yapay zek\xe2 ile \xfcretilir ve yay\u0131na al\u0131nmadan \xf6nce g\xf6zden ge\xe7irilir. Buna ra\u011fmen hatal\u0131 ya da tart\u0131\u015fmal\u0131 bir soruyla kar\u015f\u0131la\u015fabilirsin.\n\n\u2022 Her sorunun alt\u0131nda "hatal\u0131 bildir" se\xe7ene\u011fi var. Bildirdi\u011fin sorular incelenip d\xfczeltilir ya da yay\u0131ndan kald\u0131r\u0131l\u0131r.\n\u2022 Sorular, \xd6SYM\'nin \xe7\u0131km\u0131\u015f sorular\u0131n\u0131n kopyas\u0131 DE\u011e\u0130LD\u0130R; s\u0131nav desenine g\xf6re haz\u0131rlanm\u0131\u015f \xf6zg\xfcn sorulard\u0131r.\n\u2022 Uygulama bir haz\u0131rl\u0131k arac\u0131d\u0131r; resm\xee bir kaynak de\u011fildir ve \xd6SYM ile hi\xe7bir ili\u015fkisi yoktur.\n\nSOHBET VE TOPLULUK\n\nUygulamada ders odalar\u0131, \xf6zel mesajla\u015fma, d\xfcello ve liderlik tablosu bulunur. Bu b\xf6l\xfcmleri kullanmak iste\u011fe ba\u011fl\u0131d\u0131r.\n\n\u2022 SOHBETTE \u0130NSAN OLMAYAN HESAPLAR VARDIR. Odalar\u0131 canl\u0131 tutmak, d\xfcelloda rakip bulunamad\u0131\u011f\u0131nda e\u015fle\u015fme sa\u011flamak ve soru sormak i\xe7in bot hesaplar kullan\u0131l\u0131r. Bu hesaplar adlar\u0131n\u0131n yan\u0131nda "bot" rozetiyle i\u015faretlidir ve liderlik tablosunda da g\xf6r\xfcn\xfcrler.\n\u2022 Sohbette ger\xe7ek ad\u0131n hi\xe7bir zaman g\xf6r\xfcnmez; yaln\u0131zca kendi se\xe7ti\u011fin takma ad g\xf6r\xfcn\xfcr.\n\u2022 Ders odalar\u0131 herkese a\xe7\u0131k alanlard\u0131r. Buradaki mesajlar y\xf6netici taraf\u0131ndan her zaman g\xf6r\xfcnt\xfclenebilir ve saklan\u0131r.\n\u2022 Kullan\u0131c\u0131lar\u0131n a\xe7t\u0131\u011f\u0131 odalar (\u015fifreli olanlar dahil) ders odalar\u0131yla ayn\u0131 kurallara tabidir: mesajlar otomatik taran\u0131r, \u015fik\xe2yet edilebilir ve y\xf6netici taraf\u0131ndan g\xf6r\xfcnt\xfclenebilir. \u015eifre yaln\u0131zca odaya kimin kat\u0131labilece\u011fini belirler; yaz\u0131\u015fmay\u0131 gizli yapmaz. 5 g\xfcn mesaj yaz\u0131lmayan oda kendili\u011finden kapan\u0131r; kapanan odan\u0131n mesajlar\u0131 30 g\xfcn sonra silinir.\n\u2022 Payla\u015f\u0131lan i\xe7erikler, kural ihlallerini yakalamak i\xe7in otomatik olarak taran\u0131r. E\u015fle\u015fme oldu\u011funda ilgili mesaj y\xf6neticinin incelemesine d\xfc\u015fer.\n\u2022 \xd6zel mesajlar\u0131nda serbest okuma yap\u0131lmaz. \u0130\xe7eri\u011fin incelenmesi yaln\u0131zca (a) otomatik tarama bir kural ihlali i\u015faretlerse ya da (b) bir kullan\u0131c\u0131 \u015fik\xe2yette bulunursa m\xfcmk\xfcnd\xfcr; her inceleme gerek\xe7esiyle birlikte kayda ge\xe7er.\n\u2022 Sohbette ve \xf6zel mesajda foto\u011fraf ve ses g\xf6nderebilirsin. Bu dosyalar sunucuda saklan\u0131r ve mesaj\u0131 g\xf6rebilen herkes taraf\u0131ndan a\xe7\u0131labilir. Yaz\u0131l\u0131 mesajlar\u0131 tarayan otomatik filtre g\xf6rsele ve sese BAKAMAZ; bunlar\u0131n denetimi \u015fik\xe2yet ve y\xf6netici incelemesiyle yap\u0131l\u0131r.\n\u2022 Odalarda se\xe7enekli soru payla\u015fabilirsin. Kimin hangi se\xe7ene\u011fi i\u015faretledi\u011fi ba\u015fkalar\u0131na g\xf6sterilmez; yaln\u0131zca toplam da\u011f\u0131l\u0131m g\xf6r\xfcn\xfcr.\n\u2022 Profil bilgilerini (hedef s\u0131nav, \u015fehir, b\xf6l\xfcm, tan\u0131t\u0131m) girmek zorunda de\u011filsin; girdiklerini tek tek gizleyebilirsin.\n\u2022 Liderlik tablosunda takma ad\u0131n ve puan\u0131n di\u011fer kullan\u0131c\u0131lara g\xf6r\xfcn\xfcr. Bu g\xf6r\xfcn\xfcrl\xfc\u011f\xfc profil ayarlar\u0131ndan kapatabilirsin.\n\u2022 Sohbet ve mesaj kay\u0131tlar\u0131 en fazla 12 ay saklan\u0131r; hesab\u0131n\u0131 silmen h\xe2linde bu s\xfcre beklenmeden silinir.\n\u2022 Kurallara ayk\u0131r\u0131 davran\u0131\u015fta mesaj\u0131n silinebilir, sohbette yazman ge\xe7ici olarak durdurulabilir ya da sohbet eri\u015fimin kapat\u0131labilir. Uygulaman\u0131n \xe7al\u0131\u015fma b\xf6l\xfcmleri bundan etkilenmez.\n\nK\u0130L\u0130TL\u0130 DEFTER\n\nUygulamada, yaln\u0131zca bir gizli kodla a\xe7\u0131lan \xf6zel bir yaz\u0131\u015fma b\xf6l\xfcm\xfc bulunur. A\u015fa\u011f\u0131dakiler bu b\xf6l\xfcm\xfcn bilerek se\xe7ilmi\u015f davran\u0131\u015flar\u0131d\u0131r:\n\n\u2022 Men\xfcde g\xf6r\xfcnmez. A\xe7mak i\xe7in Mesajlar ekran\u0131ndaki arama \xe7ubu\u011funa gizli kodu yaz\u0131p aramaya basmak gerekir. Kod yanl\u0131\u015fsa hi\xe7bir \u015fey olmaz; yazd\u0131\u011f\u0131n metin s\u0131radan bir arama olarak kal\u0131r.\n\u2022 Uygulama arka plana al\u0131nd\u0131\u011f\u0131nda bu b\xf6l\xfcm kendili\u011finden kapan\u0131r. Sebebi, telefonun "son uygulamalar" ekran\u0131nda i\xe7eri\u011fin g\xf6r\xfcnmemesidir.\n\u2022 Bu deftere mesaj geldi\u011finde gelen bildirim defterden s\xf6z etmez; s\u0131radan bir uygulama bildirimi gibi g\xf6r\xfcn\xfcr. Ama\xe7, telefona bakan bir ba\u015fkas\u0131n\u0131n b\xf6yle bir b\xf6l\xfcm\xfcn varl\u0131\u011f\u0131n\u0131 anlamamas\u0131d\u0131r.\n\u2022 Buradaki yaz\u0131\u015fmalar otomatik filtreden ge\xe7mez, \u015fik\xe2yet edilemez ve moderasyon kuyru\u011funa d\xfc\u015fmez.\n\u2022 Defterler kullan\u0131c\u0131lar taraf\u0131ndan a\xe7\u0131lamaz. Yaln\u0131zca uygulama i\u015fletmecisi tan\u0131mlar ve gizli kodu payla\u015ft\u0131\u011f\u0131 ki\u015filerle kullan\u0131l\u0131r.\n\nUYGULAMA SA\u011eLI\u011eI KAYITLARI\n\nUygulamay\u0131 iyile\u015ftirmek i\xe7in iki teknik kay\u0131t tutulur:\n\n\u2022 Uygulama bir hata verirse hatan\u0131n teknik a\xe7\u0131klamas\u0131, uygulama s\xfcr\xfcm\xfc, cihaz t\xfcr\xfc (web, Android) ve hangi b\xf6l\xfcmde oldu\u011fun.\n\u2022 Hangi b\xf6l\xfcmlerin a\xe7\u0131ld\u0131\u011f\u0131: uygulaman\u0131n a\xe7\u0131lmas\u0131, sekme de\u011fi\u015ftirmen, bir oyunu ba\u015flatman gibi.\n\nYazd\u0131klar\u0131n, soru cevaplar\u0131n ve mesajlar\u0131n bu kay\u0131tlara girmez. Kay\u0131tlar\u0131 yaln\u0131zca uygulama i\u015fletmecisi g\xf6r\xfcr; kullan\u0131m kay\u0131tlar\u0131 180 g\xfcn, hata kay\u0131tlar\u0131 90 g\xfcn sonra kendili\u011finden silinir.\n\nHESAP S\u0130LME\n\nDiledi\u011fin an Profil > Hesap b\xf6l\xfcm\xfcnden hesab\u0131n\u0131n silinmesini talep edebilirsin. Talep etti\u011fin g\xfcnden 30 g\xfcn sonra hesab\u0131n ve ki\u015fisel verilerin sunucudan kal\u0131c\u0131 olarak silinir; bu s\xfcre i\xe7inde vazge\xe7ebilirsin. Silme her g\xfcn otomatik olarak \xe7al\u0131\u015f\u0131r ve geri al\u0131namaz. Yaln\u0131zca kimli\u011finden ar\u0131nd\u0131r\u0131lm\u0131\u015f, anonim istatistikler korunur.\n\nUygulamay\u0131 silmi\u015f olsan da silme talebinde bulunabilirsin: netkpsscalis.github.io/hesap-silme.html adresindeki y\xf6nergeyi izlemen yeterli.\n\nNot: Bu metin, yay\u0131na \xe7\u0131kmadan \xf6nce bir hukuk\xe7u taraf\u0131ndan g\xf6zden ge\xe7irilecek taslak s\xfcr\xfcmd\xfcr.',null,null,null,null,null,null,null,null,null,null)
+B.bOa=new A.af("Yar\u0131\u015ftan \xe7\u0131k\u0131ls\u0131n m\u0131?",null,null,null,null,null,null,null,null,null,null)
+B.bOb=new A.af("Duyurular",null,null,null,null,null,null,null,null,null,null)
+B.aln=new A.af("G\xf6nder",null,null,null,null,null,null,null,null,null,null)
+B.alp=new A.af("Foto\u011fraf\u0131 kald\u0131r",null,null,null,null,null,null,null,null,null,null)
+B.bOc=new A.af("Sen y\xf6netici olarak kal\u0131rs\u0131n",null,null,null,null,null,null,null,null,null,null)
+B.bOd=new A.af("Bu cihaz\u0131 bildirime a\xe7",null,null,null,null,null,null,null,null,null,null)
 B.alq=new A.af("Yeniden \xe7\xf6z",null,null,null,null,null,null,null,null,null,null)
-B.bOg=new A.af("Yerle\u015ftirme Sonucu",null,null,null,null,null,null,null,null,null,null)
+B.bOf=new A.af("Yerle\u015ftirme Sonucu",null,null,null,null,null,null,null,null,null,null)
 B.vE=new A.af("Bitir",null,null,null,null,null,null,null,null,null,null)
 B.vF=new A.af("Sil",null,null,null,null,null,null,null,null,null,null)
 B.Dd=new A.af("Ba\u015fla",null,null,null,null,null,null,null,null,null,null)
-B.bOh=new A.af("Bu ki\u015finin mesajlar\u0131n\u0131 bir daha g\xf6rmezsin. \u0130stedi\u011fin zaman Ben sekmesinden engeli kald\u0131rabilirsin.",null,null,null,null,null,null,null,null,null,null)
+B.bOg=new A.af("Bu ki\u015finin mesajlar\u0131n\u0131 bir daha g\xf6rmezsin. \u0130stedi\u011fin zaman Ben sekmesinden engeli kald\u0131rabilirsin.",null,null,null,null,null,null,null,null,null,null)
 B.alr=new A.af("Kapat",null,B.al3,null,null,null,null,null,null,null,null)
-B.bOj=new A.af("Sonucu sil?",null,null,null,null,null,null,null,null,null,null)
+B.bOi=new A.af("Sonucu sil?",null,null,null,null,null,null,null,null,null,null)
 B.De=new A.af("Kontrol et",null,null,null,null,null,null,null,null,null,null)
-B.bOk=new A.af("D\xfcello kontrol\xfc",null,null,null,null,null,null,null,null,null,null)
+B.bOj=new A.af("D\xfcello kontrol\xfc",null,null,null,null,null,null,null,null,null,null)
 B.vG=new A.af("Kaydet",null,null,null,null,null,null,null,null,null,null)
-B.bOl=new A.af("Cevaplar",null,B.al1,null,null,null,null,null,null,null,null)
-B.bOm=new A.af("G\xfcnl\xfck hakk\u0131n doldu",null,null,null,null,null,null,null,null,null,null)
+B.bOk=new A.af("Cevaplar",null,B.al1,null,null,null,null,null,null,null,null)
+B.bOl=new A.af("G\xfcnl\xfck hakk\u0131n doldu",null,null,null,null,null,null,null,null,null,null)
 B.alb=new A.L(!0,B.c_,null,null,null,null,10.5,B.am,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOn=new A.af("YEN\u0130",null,B.alb,null,null,null,null,null,null,null,null)
-B.bOp=new A.af("Yanl\u0131\u015flar\u0131m",null,null,null,null,null,null,null,null,null,null)
+B.bOm=new A.af("YEN\u0130",null,B.alb,null,null,null,null,null,null,null,null)
+B.bOo=new A.af("Yanl\u0131\u015flar\u0131m",null,null,null,null,null,null,null,null,null,null)
 B.bJ_=new A.L(!0,B.l,null,null,null,null,20,B.bF,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOq=new A.af("Nas\u0131l oynamak istersin?",null,B.bJ_,null,null,null,null,null,null,null,null)
-B.bOs=new A.af("\u015eifremi unuttum",null,null,null,null,null,null,null,null,null,null)
-B.bOt=new A.af("Sadece benden sil",null,null,null,null,null,null,null,null,null,null)
-B.bOu=new A.af("S\u0131n\u0131ra yakla\u015f\u0131yorsun",null,B.D8,null,null,null,null,null,null,null,null)
-B.bOv=new A.af("\xc7\u0131k\u0131\u015f yap",null,null,null,null,null,null,null,null,null,null)
-B.bOw=new A.af("Ko\xe7",null,null,null,null,null,null,null,null,null,null)
-B.bOx=new A.af("YouTube'da izle",null,null,null,null,null,null,null,null,null,null)
-B.bOy=new A.af("30 g\xfcn i\xe7inde ki\u015fisel verilerin kal\u0131c\u0131 silinir.",null,null,null,null,null,null,null,null,null,null)
-B.bOz=new A.af("S\u0131nav geri say\u0131m\u0131",null,null,null,null,null,null,null,null,null,null)
+B.bOp=new A.af("Nas\u0131l oynamak istersin?",null,B.bJ_,null,null,null,null,null,null,null,null)
+B.bOr=new A.af("\u015eifremi unuttum",null,null,null,null,null,null,null,null,null,null)
+B.bOs=new A.af("Sadece benden sil",null,null,null,null,null,null,null,null,null,null)
+B.bOt=new A.af("S\u0131n\u0131ra yakla\u015f\u0131yorsun",null,B.D8,null,null,null,null,null,null,null,null)
+B.bOu=new A.af("\xc7\u0131k\u0131\u015f yap",null,null,null,null,null,null,null,null,null,null)
+B.bOv=new A.af("Ko\xe7",null,null,null,null,null,null,null,null,null,null)
+B.bOw=new A.af("YouTube'da izle",null,null,null,null,null,null,null,null,null,null)
+B.bOx=new A.af("30 g\xfcn i\xe7inde ki\u015fisel verilerin kal\u0131c\u0131 silinir.",null,null,null,null,null,null,null,null,null,null)
+B.bOy=new A.af("S\u0131nav geri say\u0131m\u0131",null,null,null,null,null,null,null,null,null,null)
 B.bKy=new A.L(!0,B.xI,null,null,null,null,13.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bOA=new A.af("S\u0131ralama puan\u0131n yaln\u0131z bildi\u011fin sorulardan gelir; yanl\u0131\u015f denemeler puan d\xfc\u015f\xfcrmez.",null,B.bKy,B.G,null,null,null,null,null,null,null)
-B.bOB=new A.af("Denemeyi bitiriyor musun?",null,null,null,null,null,null,null,null,null,null)
-B.bOC=new A.af("Herkesten sil",null,null,null,null,null,null,null,null,null,null)
-B.bOD=new A.af("Silme talebini geri al",null,null,null,null,null,null,null,null,null,null)
+B.bOz=new A.af("S\u0131ralama puan\u0131n yaln\u0131z bildi\u011fin sorulardan gelir; yanl\u0131\u015f denemeler puan d\xfc\u015f\xfcrmez.",null,B.bKy,B.G,null,null,null,null,null,null,null)
+B.bOA=new A.af("Denemeyi bitiriyor musun?",null,null,null,null,null,null,null,null,null,null)
+B.bOB=new A.af("Herkesten sil",null,null,null,null,null,null,null,null,null,null)
+B.bOC=new A.af("Silme talebini geri al",null,null,null,null,null,null,null,null,null,null)
 B.als=new A.af("Profilim",null,null,null,null,null,null,null,null,null,null)
-B.bOE=new A.af("Sonucunu g\xf6r",null,null,null,null,null,null,null,null,null,null)
-B.bOF=new A.af("Konu anlat\u0131m\u0131",null,null,null,null,null,null,null,null,null,null)
-B.bOG=new A.af("Sorular",null,null,null,null,null,null,null,null,null,null)
-B.bOH=new A.af("Profilimi d\xfczenle",null,null,null,null,null,null,null,null,null,null)
-B.bOI=new A.af("Odaya kat\u0131l",null,null,null,null,null,null,null,null,null,null)
-B.bOJ=new A.af("Evet, sil",null,null,null,null,null,null,null,null,null,null)
-B.bOK=new A.af("Mesaj\u0131 d\xfczenle",null,null,null,null,null,null,null,null,null,null)
-B.bOM=new A.af("Herkesten silinsin mi?",null,null,null,null,null,null,null,null,null,null)
-B.bON=new A.af("Bildirim ayarlar\u0131 y\xfcklenemedi",null,null,null,null,null,null,null,null,null,null)
-B.bOO=new A.af("Bir el daha",null,B.ald,null,null,null,null,null,null,null,null)
-B.bOP=new A.af("Oyundan \xe7\u0131k?",null,null,null,null,null,null,null,null,null,null)
-B.bOQ=new A.af("Hatal\u0131 soru bildir",null,null,null,null,null,null,null,null,null,null)
-B.bOS=new A.af("Engeli kald\u0131rana kadar geri kat\u0131lamaz",null,null,null,null,null,null,null,null,null,null)
-B.bOT=new A.af("Ba\u011flant\u0131n\u0131 kontrol edip tekrar dene.",null,null,null,null,null,null,null,null,null,null)
-B.bOU=new A.af("Kar\u015f\u0131 tarafta durmaya devam eder",null,null,null,null,null,null,null,null,null,null)
-B.bOW=new A.af("Okudum, kabul ediyorum",null,null,null,null,null,null,null,null,null,null)
-B.bOX=new A.af("Toplam puan",null,B.D7,null,null,null,null,null,null,null,null)
-B.bOY=new A.af("G\xfcnl\xfck hat\u0131rlatma",null,null,null,null,null,null,null,null,null,null)
-B.bP_=new A.af("\xc7\xf6z",null,null,null,null,null,null,null,null,null,null)
-B.bP0=new A.af("Bu soruda hata var",null,null,null,null,null,null,null,null,null,null)
+B.bOD=new A.af("Sonucunu g\xf6r",null,null,null,null,null,null,null,null,null,null)
+B.bOE=new A.af("Konu anlat\u0131m\u0131",null,null,null,null,null,null,null,null,null,null)
+B.bOF=new A.af("Sorular",null,null,null,null,null,null,null,null,null,null)
+B.bOG=new A.af("Profilimi d\xfczenle",null,null,null,null,null,null,null,null,null,null)
+B.bOH=new A.af("Odaya kat\u0131l",null,null,null,null,null,null,null,null,null,null)
+B.bOI=new A.af("Evet, sil",null,null,null,null,null,null,null,null,null,null)
+B.bOJ=new A.af("Mesaj\u0131 d\xfczenle",null,null,null,null,null,null,null,null,null,null)
+B.bOL=new A.af("Herkesten silinsin mi?",null,null,null,null,null,null,null,null,null,null)
+B.bOM=new A.af("Bildirim ayarlar\u0131 y\xfcklenemedi",null,null,null,null,null,null,null,null,null,null)
+B.bON=new A.af("Bir el daha",null,B.ald,null,null,null,null,null,null,null,null)
+B.bOO=new A.af("Oyundan \xe7\u0131k?",null,null,null,null,null,null,null,null,null,null)
+B.bOP=new A.af("Hatal\u0131 soru bildir",null,null,null,null,null,null,null,null,null,null)
+B.bOR=new A.af("Engeli kald\u0131rana kadar geri kat\u0131lamaz",null,null,null,null,null,null,null,null,null,null)
+B.bOS=new A.af("Ba\u011flant\u0131n\u0131 kontrol edip tekrar dene.",null,null,null,null,null,null,null,null,null,null)
+B.bOT=new A.af("Kar\u015f\u0131 tarafta durmaya devam eder",null,null,null,null,null,null,null,null,null,null)
+B.bOV=new A.af("Okudum, kabul ediyorum",null,null,null,null,null,null,null,null,null,null)
+B.bOW=new A.af("Toplam puan",null,B.D7,null,null,null,null,null,null,null,null)
+B.bOX=new A.af("G\xfcnl\xfck hat\u0131rlatma",null,null,null,null,null,null,null,null,null,null)
+B.bOZ=new A.af("\xc7\xf6z",null,null,null,null,null,null,null,null,null,null)
+B.bP_=new A.af("Bu soruda hata var",null,null,null,null,null,null,null,null,null,null)
 B.bKH=new A.L(!0,B.c_,null,null,null,null,13.5,B.bF,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bP1=new A.af("G\xd6NDER",null,B.bKH,null,null,null,null,null,null,null,null)
+B.bP0=new A.af("G\xd6NDER",null,B.bKH,null,null,null,null,null,null,null,null)
+B.bP1=new A.af("Art\u0131k kullan\u0131lmayan bir yaz\u0131\u015fma b\xf6l\xfcm\xfc uygulamadan ve bu metinden \xe7\u0131kar\u0131ld\u0131. Di\u011fer b\xf6l\xfcmlerde bir de\u011fi\u015fiklik yok.",null,null,null,null,null,null,null,null,null,null)
 B.bP3=new A.af("Yeniden dene",null,null,null,null,null,null,null,null,null,null)
 B.bP4=new A.af("Kal",null,null,null,null,null,null,null,null,null,null)
 B.bP5=new A.af("\u0130\u015faretlerin kay\u0131tl\u0131 kal\u0131r ve d\xf6n\xfcnce kald\u0131\u011f\u0131n yerden devam edersin. Ama dikkat: s\xfcren i\u015flemeye devam eder.",null,null,null,null,null,null,null,null,null,null)
