@@ -40045,7 +40045,7 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-c53(){var s=A.iR(B.b.ga0("0.3.0+129".split("+")),null)
+c53(){var s=A.iR(B.b.ga0("0.3.0+130".split("+")),null)
 return s==null?0:s},
 Yu:function Yu(a){var _=this
 _.b=_.a=0
@@ -44267,9 +44267,11 @@ _.k2=15
 _.k3=5
 _.k4=0
 _.ok=g
-_.p2=_.p1=null
-_.p4=_.p3=!1
-_.R8=null
+_.p1=null
+_.p2=!1
+_.p3=null
+_.R8=_.p4=!1
+_.RG=null
 _.fd$=h
 _.cw$=i
 _.c=_.a=null},
@@ -46108,7 +46110,7 @@ i=q?s:r.at
 if(i==null)i=0
 q=q?s:r.ax
 if(q==null)q=0
-return A.b([m,l,n.$10$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk$veri("\u0130statistikler","Serin ve en uzun serin","\xc7al\u0131\u015fma al\u0131\u015fkanl\u0131\u011f\u0131n","Hi\xe7 bozmad\u0131m.",B.bvw,k,"istat",B.fM,B.ch,A.T(["seri",""+i,"enuzun",""+q],j,j)),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Ayarlar","Aray\xfcz se\xe7imi ve \xf6l\xe7\xfcm","Uygulaman\u0131n g\xf6r\xfcn\xfcm\xfc","G\xf6r\xfcn\xfcm\xfc de\u011fi\u015ftir.",B.bvx,$.nG().a.d,"ayar",B.aWR,B.aJg),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Bildirimler","Hat\u0131rlatma, seri, s\u0131nav, d\xfcello","Ne zaman haber verelim","Haber ver bana.",B.bvy,"Ayarla","bildirim",B.aWy,B.aO_),n.$8$ad$alt$balon$bolum$deger$gorsel$ikon$renk("Hesap","\xc7\u0131k\u0131\u015f ve hesap silme","Hesap i\u015fleri.",B.bvz,"S\xfcr\xfcm "+B.b.gW("0.3.0+129".split("+")),"hesap",B.t4,B.aJ2)],t.V2)},
+return A.b([m,l,n.$10$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk$veri("\u0130statistikler","Serin ve en uzun serin","\xc7al\u0131\u015fma al\u0131\u015fkanl\u0131\u011f\u0131n","Hi\xe7 bozmad\u0131m.",B.bvw,k,"istat",B.fM,B.ch,A.T(["seri",""+i,"enuzun",""+q],j,j)),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Ayarlar","Aray\xfcz se\xe7imi ve \xf6l\xe7\xfcm","Uygulaman\u0131n g\xf6r\xfcn\xfcm\xfc","G\xf6r\xfcn\xfcm\xfc de\u011fi\u015ftir.",B.bvx,$.nG().a.d,"ayar",B.aWR,B.aJg),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Bildirimler","Hat\u0131rlatma, seri, s\u0131nav, d\xfcello","Ne zaman haber verelim","Haber ver bana.",B.bvy,"Ayarla","bildirim",B.aWy,B.aO_),n.$8$ad$alt$balon$bolum$deger$gorsel$ikon$renk("Hesap","\xc7\u0131k\u0131\u015f ve hesap silme","Hesap i\u015fleri.",B.bvz,"S\xfcr\xfcm "+B.b.gW("0.3.0+130".split("+")),"hesap",B.t4,B.aJ2)],t.V2)},
 cBI(a){var s,r,q=a.a
 if(q==null)return""
 s=q.c
@@ -157215,7 +157217,7 @@ $0(){return this.a.d=!0},
 $S:0}
 A.aCu.prototype={
 G(a){var s=null,r=A.D(a),q=$.P6().c,p=r.ax,o=A.b8(B.aWY,p.b,s,64),n=r.ok,m=A.u("G\xfcncelleme gerekli",s,s,s,s,s,n.f,B.F,s,s),l=q!=null&&B.e.by(q).length!==0?q:"Uygulaman\u0131n bu s\xfcr\xfcm\xfc art\u0131k desteklenmiyor. Devam etmek i\xe7in l\xfctfen g\xfcncelle."
-return A.eo(!1,B.P,!0,s,A.cy(!0,A.cd(new A.S(B.ou,A.a9(A.b([o,B.ay,m,B.aE,A.u(l,s,s,s,s,s,n.y,B.F,s,s),B.j2,A.acs(B.aXZ,B.alA,new A.bMR()),B.a1,A.u("S\xfcr\xfcm 0.3.0+129",s,s,s,s,s,n.Q,s,s,s)],t.p),B.j,B.h,B.B),s),s,s),B.H,!0),B.k,p.k2,0,s,s,s,s,s,B.bB)}}
+return A.eo(!1,B.P,!0,s,A.cy(!0,A.cd(new A.S(B.ou,A.a9(A.b([o,B.ay,m,B.aE,A.u(l,s,s,s,s,s,n.y,B.F,s,s),B.j2,A.acs(B.aXZ,B.alA,new A.bMR()),B.a1,A.u("S\xfcr\xfcm 0.3.0+130",s,s,s,s,s,n.Q,s,s,s)],t.p),B.j,B.h,B.B),s),s,s),B.H,!0),B.k,p.k2,0,s,s,s,s,s,B.bB)}}
 A.bMR.prototype={
 $0(){return $.P6().MD()},
 $S:0}
@@ -159809,7 +159811,7 @@ n=this.b
 if(n.a>=20||!n.E(0,q))return
 p=this.gadU()
 if(p==null)return
-p.iY("hata_bildir",A.T(["p_mesaj",s,"p_yigin",r,"p_surum","0.3.0+129","p_platform","web","p_ekran",$.c59],o,t.X),t.z).fo(new A.bdo())}catch(m){}},
+p.iY("hata_bildir",A.T(["p_mesaj",s,"p_yigin",r,"p_surum","0.3.0+130","p_platform","web","p_ekran",$.c59],o,t.X),t.z).fo(new A.bdo())}catch(m){}},
 atf(a,b){var s,r=this.a
 if(r.length>=200)return
 s=A.x(t.N,t.X)
@@ -159829,7 +159831,7 @@ l=k
 B.b.LA(i,0,J.aG(l))
 p=4
 s=7
-return A.c(m.iY("olay_yaz",A.T(["p_olaylar",l,"p_surum","0.3.0+129","p_platform","web"],t.N,t.X),t.z),$async$AO)
+return A.c(m.iY("olay_yaz",A.T(["p_olaylar",l,"p_surum","0.3.0+130","p_platform","web"],t.N,t.X),t.z),$async$AO)
 case 7:p=2
 s=6
 break
@@ -171998,7 +172000,7 @@ r.push(A.dp(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eC(B.My,q,44,s),s,s,s,s,s,new A.bDH()
 return A.eg(A.a9(r,B.j,B.h,B.i),s,s,s,s)},
 ac6(){return new A.iw($.nG(),new A.bDg(),null,null,t.Vq)},
 aij(){return new A.iw($.aEC(),new A.bDM(),null,null,t.D0)},
-alk(a){var s=null,r=B.e.k_("0.3.0+129","+"," ("),q=a.ok.Q
+alk(a){var s=null,r=B.e.k_("0.3.0+130","+"," ("),q=a.ok.Q
 q=q==null?s:q.bc(a.cy)
 return A.cd(A.u("KPSS NET \xb7 s\xfcr\xfcm "+r+")",s,s,s,s,s,q,s,s,s),s,s)},
 agU(a,b){var s,r,q,p=this,o=null,n=p.r,m=n?o:p.gacM(),l=a.ax,k=l.b,j=A.dF(l.k2,2)
@@ -174903,8 +174905,8 @@ m.x=a
 if(m.ay!==B.DY){m.d.y+=k
 l=m.f
 l.sn(l.a+1)
-return}if(m.p4){l=m.d
-l.Q=l.Q-3.2*k}if(m.p3){l=m.d
+return}if(m.R8){l=m.d
+l.Q=l.Q-3.2*k}if(m.p4){l=m.d
 l.Q=l.Q+3.2*k}l=m.d
 l.b9h(k)
 s=l.a.h(0,l.d)
@@ -174914,7 +174916,7 @@ q=l.a
 l.a=q+(s.e-q)*r
 q=l.b
 l.b=q+(s.f-q)*r
-p=m.R8
+p=m.RG
 if(p!=null){q=p.giE()
 o=Math.min(s.w,1500)
 n=l.c
@@ -174933,20 +174935,24 @@ s=new DataView(new ArrayBuffer(3))
 s.setUint16(0,B.c.ai(B.c.a_(B.c.a_(p,6.283185307179586)+6.283185307179586,6.283185307179586)/6.283185307179586*65535),!0)
 s.setUint8(2,o?1:0)
 q.a.E(0,J.fE(B.bd.gaB(s)))}},
-aeL(a){var s,r=this,q=r.R8,p=r.d,o=p.a.h(0,p.d)
-if(q==null||o==null||r.cy!=null)return
-s=r.e.aq9(o.e,o.f,q)
-p.Q=Math.atan2(a.b-s.b,a.a-s.a)},
+aeL(a){var s,r,q,p,o=this
+if(o.p2)return
+s=o.RG
+r=o.d
+q=r.a.h(0,r.d)
+if(s==null||q==null||o.cy!=null)return
+p=o.e.aq9(q.e,q.f,s)
+r.Q=Math.atan2(a.b-p.b,a.a-p.a)},
 b6u(a,b){var s=b instanceof A.n9||b instanceof A.rf,r=b.b
-if(r.k(0,B.eL))this.p4=s
-else if(r.k(0,B.eM))this.p3=s
+if(r.k(0,B.eL))this.R8=s
+else if(r.k(0,B.eM))this.p4=s
 else if(r.k(0,B.An)||r.k(0,B.f8))this.d.as=s
 else return B.hN
 return B.fN},
 G(a){var s=null
 return A.dd(s,B.nX,A.m6(!0,s,A.kf(new A.bJg(this,a)),s,s,s,this.r,!0,s,s,s,this.gb6t(),s,s),s)},
 b2J(){var s,r=this,q=null,p=A.b([new A.ed(A.dn(q,q,q,new A.amh(r.d,r.e,r.cx,r.f),B.Y),q)],t.p),o=r.p1
-if(o!=null&&r.p2!=null){s=r.p2
+if(o!=null&&r.p3!=null){s=r.p3
 s.toString
 p.push(A.dv(A.dn(q,q,q,new A.asi(o,s,q),B.Y),!0,q))}return A.ml(A.pI(B.dI,A.cD(B.ai,p,B.t,B.cM,q),q,new A.bJ0(r),new A.bJ1(r),q,new A.bJ2(r),q,q,new A.bJ3(r)),B.aZ,q,q,q,new A.bJ4(r))},
 b7L(a){var s,r,q,p,o,n,m=this,l=null,k=A.bQ(a,B.eb,t.l).w.r,j=m.d,i=j.a.h(0,j.d),h=k.b,g=h+8,f=A.cU(l,A.dv(m.aWo(),!0,l),l,l,10,l,g,l),e=m.f,d=t.p
@@ -175078,7 +175084,7 @@ $0(){},
 $S:0}
 A.bJg.prototype={
 $2(a,b){var s,r,q,p,o,n,m=null,l=this.a
-l.R8=new A.N(A.R(1/0,b.a,b.b),A.R(1/0,b.c,b.d))
+l.RG=new A.N(A.R(1/0,b.a,b.b),A.R(1/0,b.c,b.d))
 s=t.p
 r=A.b([l.b2J()],s)
 if(l.ay===B.DY)B.b.D(r,l.b7L(this.b))
@@ -175103,14 +175109,16 @@ A.bJ4.prototype={
 $1(a){return this.a.aeL(a.gdz())},
 $S:244}
 A.bJ1.prototype={
-$1(a){var s=this.a
-if(a.geF()===B.dK)s.d.as=!0
-else s.t(new A.bIZ(s,a))},
+$1(a){var s
+if(a.geF()===B.dK){s=this.a
+if(!s.p2)s.d.as=!0}else{s=this.a
+s.p2=!0
+s.t(new A.bIZ(s,a))}},
 $S:58}
 A.bIZ.prototype={
 $0(){var s=this.a,r=this.b
 s.p1=r.gdz()
-s.p2=r.gdz()},
+s.p3=r.gdz()},
 $S:0}
 A.bJ2.prototype={
 $1(a){var s,r,q
@@ -175123,12 +175131,13 @@ if(q.ge0()>6)s.d.Q=Math.atan2(q.b,q.a)
 s.t(new A.bIY(s,a))},
 $S:237}
 A.bIY.prototype={
-$0(){return this.a.p2=this.b.gdz()},
+$0(){return this.a.p3=this.b.gdz()},
 $S:0}
 A.bJ3.prototype={
-$1(a){var s=this.a
-if(a.geF()===B.dK)s.d.as=!1
-else s.t(new A.bIX(s))},
+$1(a){var s
+if(a.geF()===B.dK){s=this.a
+if(!s.p2)s.d.as=!1}else{s=this.a
+s.t(new A.bIX(s))}},
 $S:175}
 A.bIX.prototype={
 $0(){return this.a.p1=null},
