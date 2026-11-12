@@ -40593,7 +40593,7 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-caZ(){var s=A.j2(B.b.ga2("0.3.0+147".split("+")),null)
+caZ(){var s=A.j2(B.b.ga2("0.3.0+148".split("+")),null)
 return s==null?0:s},
 ZH:function ZH(a){var _=this
 _.b=_.a=0
@@ -47614,7 +47614,7 @@ i=q?s:r.at
 if(i==null)i=0
 q=q?s:r.ax
 if(q==null)q=0
-return A.b([m,l,n.$10$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk$veri("\u0130statistikler","Serin ve en uzun serin","\xc7al\u0131\u015fma al\u0131\u015fkanl\u0131\u011f\u0131n","Hi\xe7 bozmad\u0131m.",B.bxm,k,"istat",B.fS,B.cn,A.T(["seri",""+i,"enuzun",""+q],j,j)),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Ayarlar","Aray\xfcz se\xe7imi ve \xf6l\xe7\xfcm","Uygulaman\u0131n g\xf6r\xfcn\xfcm\xfc","G\xf6r\xfcn\xfcm\xfc de\u011fi\u015ftir.",B.bxn,$.nU().a.d,"ayar",B.aYo,B.aKi),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Bildirimler","Hat\u0131rlatma, seri, s\u0131nav, d\xfcello","Ne zaman haber verelim","Haber ver bana.",B.bxo,"Ayarla","bildirim",B.aY5,B.aPo),n.$8$ad$alt$balon$bolum$deger$gorsel$ikon$renk("Hesap","\xc7\u0131k\u0131\u015f ve hesap silme","Hesap i\u015fleri.",B.bxp,"S\xfcr\xfcm "+B.b.gY("0.3.0+147".split("+")),"hesap",B.tp,B.aK2)],t.V2)},
+return A.b([m,l,n.$10$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk$veri("\u0130statistikler","Serin ve en uzun serin","\xc7al\u0131\u015fma al\u0131\u015fkanl\u0131\u011f\u0131n","Hi\xe7 bozmad\u0131m.",B.bxm,k,"istat",B.fS,B.cn,A.T(["seri",""+i,"enuzun",""+q],j,j)),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Ayarlar","Aray\xfcz se\xe7imi ve \xf6l\xe7\xfcm","Uygulaman\u0131n g\xf6r\xfcn\xfcm\xfc","G\xf6r\xfcn\xfcm\xfc de\u011fi\u015ftir.",B.bxn,$.nU().a.d,"ayar",B.aYo,B.aKi),n.$9$ad$alt$altBaslik$balon$bolum$deger$gorsel$ikon$renk("Bildirimler","Hat\u0131rlatma, seri, s\u0131nav, d\xfcello","Ne zaman haber verelim","Haber ver bana.",B.bxo,"Ayarla","bildirim",B.aY5,B.aPo),n.$8$ad$alt$balon$bolum$deger$gorsel$ikon$renk("Hesap","\xc7\u0131k\u0131\u015f ve hesap silme","Hesap i\u015fleri.",B.bxp,"S\xfcr\xfcm "+B.b.gY("0.3.0+148".split("+")),"hesap",B.tp,B.aK2)],t.V2)},
 cIE(a){var s,r,q=a.a
 if(q==null)return""
 s=q.c
@@ -160541,7 +160541,7 @@ $0(){return this.a.d=!0},
 $S:0}
 A.aEB.prototype={
 E(a){var s=null,r=A.B(a),q=$.Q3().c,p=r.ax,o=A.aW(B.aYv,p.b,s,s,64),n=r.ok,m=A.t("G\xfcncelleme gerekli",s,s,s,s,s,n.f,B.H,s,s),l=q!=null&&B.e.b6(q).length!==0?q:"Uygulaman\u0131n bu s\xfcr\xfcm\xfc art\u0131k desteklenmiyor. Devam etmek i\xe7in l\xfctfen g\xfcncelle."
-return A.dN(!1,B.O,!0,s,A.cu(!0,A.cb(new A.Q(B.oJ,A.a9(A.b([o,B.aF,m,B.aM,A.t(l,s,s,s,s,s,n.y,B.H,s,s),B.je,A.adZ(B.NQ,B.amx,new A.bS1()),B.a3,A.t("S\xfcr\xfcm 0.3.0+147",s,s,s,s,s,n.Q,s,s,s)],t.p),B.j,B.h,B.w),s),s,s),B.F,!0),B.k,p.k2,0,s,s,s,s,s,B.bh)}}
+return A.dN(!1,B.O,!0,s,A.cu(!0,A.cb(new A.Q(B.oJ,A.a9(A.b([o,B.aF,m,B.aM,A.t(l,s,s,s,s,s,n.y,B.H,s,s),B.je,A.adZ(B.NQ,B.amx,new A.bS1()),B.a3,A.t("S\xfcr\xfcm 0.3.0+148",s,s,s,s,s,n.Q,s,s,s)],t.p),B.j,B.h,B.w),s),s,s),B.F,!0),B.k,p.k2,0,s,s,s,s,s,B.bh)}}
 A.bS1.prototype={
 $0(){return $.Q3().NE()},
 $S:0}
@@ -163246,7 +163246,7 @@ n=this.b
 if(n.a>=20||!n.F(0,q))return
 p=this.gage()
 if(p==null)return
-p.hL("hata_bildir",A.T(["p_mesaj",s,"p_yigin",r,"p_surum","0.3.0+147","p_platform","web","p_ekran",$.cb6],o,t.X),t.z).f9(new A.bgk())}catch(m){}},
+p.hL("hata_bildir",A.T(["p_mesaj",s,"p_yigin",r,"p_surum","0.3.0+148","p_platform","web","p_ekran",$.cb6],o,t.X),t.z).f9(new A.bgk())}catch(m){}},
 WJ(a,b){var s,r=this.a
 if(r.length>=200)return
 s=A.x(t.N,t.X)
@@ -163266,7 +163266,7 @@ l=k
 B.b.AM(i,0,J.aH(l))
 p=4
 s=7
-return A.c(m.hL("olay_yaz",A.T(["p_olaylar",l,"p_surum","0.3.0+147","p_platform","web"],t.N,t.X),t.z),$async$Bh)
+return A.c(m.hL("olay_yaz",A.T(["p_olaylar",l,"p_surum","0.3.0+148","p_platform","web"],t.N,t.X),t.z),$async$Bh)
 case 7:p=2
 s=6
 break
@@ -164122,7 +164122,7 @@ $1(a){return A.bZU(new A.bmN(),!1,0.7,1)},
 $S:380}
 A.bmN.prototype={
 $2(a,b){var s=null,r=A.B(a).ok.w
-return A.iE(A.a9(A.b([A.t("Ayd\u0131nlatma Metni (s\xfcr\xfcm 1.7)",s,s,s,s,s,r==null?s:r.bz(B.y),s,s,s),B.aw,B.amK],t.p),B.x,B.h,B.i),b,B.G,B.aTr,s,B.af)},
+return A.iE(A.a9(A.b([A.t("Ayd\u0131nlatma Metni (s\xfcr\xfcm 1.7)",s,s,s,s,s,r==null?s:r.bz(B.y),s,s,s),B.aw,B.amI],t.p),B.x,B.h,B.i),b,B.G,B.aTr,s,B.af)},
 $S:917}
 A.RN.prototype={
 V(){return new A.a1m()},
@@ -164158,7 +164158,7 @@ j=j.x
 o=j==null
 n=t.p
 p=A.ao(m,A.a9(A.b([A.t("Ne de\u011fi\u015fti?",m,m,m,m,m,o?m:j.bz(B.u),m,m,m),B.b1,B.bR5],n),B.x,B.h,B.i),B.k,m,m,new A.am(q,m,m,p,m,m,B.p),m,m,m,m,B.ep,m,m,m)
-j=A.b([i,B.aU,r,B.aF,p,B.d_,A.t("Metnin tamam\u0131",m,m,m,m,m,o?m:j.bz(B.y),m,m,m),B.a3,B.amK],n)
+j=A.b([i,B.aU,r,B.aF,p,B.d_,A.t("Metnin tamam\u0131",m,m,m,m,m,o?m:j.bz(B.y),m,m,m),B.a3,B.amI],n)
 i=this.e
 if(i!=null)B.b.B(j,A.b([B.ax,A.t(i,m,m,m,m,m,s==null?m:s.b5(k.fy),m,m,m)],n))
 j.push(B.cP)
@@ -164166,7 +164166,7 @@ k=this.d
 i=k?m:this.gaNp()
 j.push(A.bX(k?B.jd:B.bRQ,m,i,m))
 j.push(B.aM)
-j.push(A.t("Onaylamadan devam edemezsin. Hesab\u0131n\u0131 silmek istersen yardim@kpsskocum.app adresine yazabilirsin.",m,m,m,m,m,s,B.H,m,m))
+j.push(A.t("Onaylamadan devam edemezsin. Hesab\u0131n\u0131 silmek istersen kpssnet.destek@gmail.com adresine yazabilirsin.",m,m,m,m,m,s,B.H,m,m))
 return A.dh(m,m,A.cu(!0,A.ek(j,m,m,B.at,m,m,!1),B.F,!0),m)}}
 A.brb.prototype={
 $0(){var s=this.a
@@ -167546,7 +167546,7 @@ e=e!=null&&e!==r}else e=!1
 e=A.b([A.aq(A.b([k,j,d.ant(a0,i,"@"+g,f,e)],h),B.j,B.h,B.i,0,c),new A.eO(new A.buo(a1,a0),c)],h)
 if(s){s=a1.y
 k=A.b([A.aP(A.bX(A.t(s?"Devam et":"Kabul et ve oyna",c,c,c,c,c,c,c,c,c),c,new A.bup(d,a1),c),1)],h)
-if(!s)B.b.B(k,A.b([B.b0,A.KH(B.amI,c,new A.buq(d,a1),c)],h))
+if(!s)B.b.B(k,A.b([B.b0,A.KH(B.amJ,c,new A.buq(d,a1),c)],h))
 B.b.B(e,A.b([B.aM,A.aq(k,B.j,B.h,B.i,0,c)],h))}if(!n||o==="expired"){s=A.b([A.aP(A.yD(B.NM,B.DV,new A.bur(d,a1),c),1)],h)
 if(a2){o=a.ry
 if(o==null){o=a.u
@@ -167583,7 +167583,7 @@ $S:153}
 A.buz.prototype={
 $1(a){var s=null,r=this.a.c
 r=A.t("@"+(r==null?"Bilinmeyen":r)+" ile d\xfcello yapmayacaks\u0131n.",s,s,s,s,s,s,s,s,s)
-return A.fM(A.b([A.d1(B.cC,s,s,s,new A.bux(a),s,s),A.bX(B.amI,s,new A.buy(a),s)],t.p),r,s,B.bTm)},
+return A.fM(A.b([A.d1(B.cC,s,s,s,new A.bux(a),s,s),A.bX(B.amJ,s,new A.buy(a),s)],t.p),r,s,B.bTm)},
 $S:19}
 A.bux.prototype={
 $0(){return A.al(this.a,!1).bX(!1)},
@@ -169760,7 +169760,7 @@ $0(){return A.a8d(this.b,this.a.c,"kpss_net_"+Date.now()+".jpg")},
 $S:0}
 A.b1l.prototype={
 $3(a,b,c){var s
-if(b==null)s=c?B.amJ:B.r8
+if(b==null)s=c?B.amK:B.r8
 else s=A.ne(b,new A.b1j(),B.FQ,null,null,null)
 return s},
 $C:"$3",
@@ -177361,7 +177361,7 @@ r.push(A.d8(!1,s,s,s,!0,s,s,s,!0,s,s,new A.eW(B.A4,q,44,s),s,s,s,s,new A.bHP(),!
 return A.e6(A.a9(r,B.j,B.h,B.i),s,s,s,s)},
 aeh(){return new A.ht($.nU(),new A.bHo(),null,null,t.Vq)},
 akR(){return new A.ht($.aGK(),new A.bHU(),null,null,t.D0)},
-anZ(a){var s=null,r=B.e.ke("0.3.0+147","+"," ("),q=a.ok.Q
+anZ(a){var s=null,r=B.e.ke("0.3.0+148","+"," ("),q=a.ok.Q
 q=q==null?s:q.b5(a.cy)
 return A.cb(A.t("KPSS NET \xb7 s\xfcr\xfcm "+r+")",s,s,s,s,s,q,s,s,s),s,s)},
 ajl(a,b){var s,r,q,p=this,o=null,n=p.r,m=n?o:p.gaf_(),l=a.ax,k=l.b,j=A.dF(l.k2,2)
@@ -209744,8 +209744,8 @@ B.bvF=new A.Q(B.aSl,B.aY,null)
 B.bRR=new A.af("G\xf6rsel a\xe7\u0131lamad\u0131",null,null,B.H,null,null,null,null,null,null,null)
 B.a0G=new A.Q(B.kp,B.bRR,null)
 B.amj=new A.N(!0,B.l,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amJ=new A.af("G\xf6rsel a\xe7\u0131lamad\u0131.",null,B.amj,null,null,null,null,null,null,null,null)
-B.bvI=new A.Q(B.bA,B.amJ,null)
+B.amK=new A.af("G\xf6rsel a\xe7\u0131lamad\u0131.",null,B.amj,null,null,null,null,null,null,null,null)
+B.bvI=new A.Q(B.bA,B.amK,null)
 B.bNn=new A.N(!0,B.op,null,null,null,null,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bSl=new A.af("\xb7 al\u0131\u015ft\u0131rma solucan\u0131",null,B.bNn,null,null,null,null,null,null,null,null)
 B.bvJ=new A.Q(B.z1,B.bSl,null)
@@ -211143,8 +211143,9 @@ B.bTu=new A.af("\xc7al\u0131\u015f",null,null,null,null,null,null,null,null,null
 B.bTv=new A.af("Hesab\u0131n\u0131 silmek istiyor musun?",null,null,null,null,null,null,null,null,null,null)
 B.bTy=new A.af("Payla\u015f",null,null,null,null,null,null,null,null,null,null)
 B.bTz=new A.af("Bu soruyu incelememiz i\xe7in i\u015faretliyoruz. \u0130stersen k\u0131saca ne oldu\u011funu yazabilirsin (opsiyonel).",null,null,null,null,null,null,null,null,null,null)
+B.amI=new A.af('KPSS NET, hesab\u0131n\u0131 olu\u015fturmak ve sana ki\u015fisel \xe7al\u0131\u015fma plan\u0131 sunabilmek i\xe7in \u015fu verileri i\u015fler: ad, e-posta, hedef ve s\u0131nav bilgileri, \xe7\xf6zd\xfc\u011f\xfcn sorular ve uygulama i\xe7i ilerlemen.\n\nVerilerin yaln\u0131zca bu ama\xe7larla kullan\u0131l\u0131r; \xfc\xe7\xfcnc\xfc ki\u015filerle pazarlama ama\xe7l\u0131 payla\u015f\u0131lmaz. Verilerin, Avrupa Birli\u011fi s\u0131n\u0131rlar\u0131 i\xe7indeki (Frankfurt) sunucularda \u015fifreli olarak saklan\u0131r.\n\nSORULAR YAPAY ZEK\xc2 \u0130LE \xdcRET\u0130L\u0130YOR\n\nUygulamadaki sorular, bilgi kartlar\u0131 ve \xe7\xf6z\xfcmler yapay zek\xe2 ile \xfcretilir ve yay\u0131na al\u0131nmadan \xf6nce g\xf6zden ge\xe7irilir. Buna ra\u011fmen hatal\u0131 ya da tart\u0131\u015fmal\u0131 bir soruyla kar\u015f\u0131la\u015fabilirsin.\n\n\u2022 Her sorunun alt\u0131nda "hatal\u0131 bildir" se\xe7ene\u011fi var. Bildirdi\u011fin sorular incelenip d\xfczeltilir ya da yay\u0131ndan kald\u0131r\u0131l\u0131r.\n\u2022 Sorular, \xd6SYM\'nin \xe7\u0131km\u0131\u015f sorular\u0131n\u0131n kopyas\u0131 DE\u011e\u0130LD\u0130R; s\u0131nav desenine g\xf6re haz\u0131rlanm\u0131\u015f \xf6zg\xfcn sorulard\u0131r.\n\u2022 Uygulama bir haz\u0131rl\u0131k arac\u0131d\u0131r; resm\xee bir kaynak de\u011fildir ve \xd6SYM ile hi\xe7bir ili\u015fkisi yoktur.\n\nSOHBET VE TOPLULUK\n\nUygulamada ders odalar\u0131, \xf6zel mesajla\u015fma, d\xfcello ve liderlik tablosu bulunur. Bu b\xf6l\xfcmleri kullanmak iste\u011fe ba\u011fl\u0131d\u0131r.\n\n\u2022 SOHBETTE \u0130NSAN OLMAYAN HESAPLAR VARDIR. Odalar\u0131 canl\u0131 tutmak, d\xfcelloda rakip bulunamad\u0131\u011f\u0131nda e\u015fle\u015fme sa\u011flamak ve soru sormak i\xe7in bot hesaplar kullan\u0131l\u0131r. Bu hesaplar adlar\u0131n\u0131n yan\u0131nda "bot" rozetiyle i\u015faretlidir ve liderlik tablosunda da g\xf6r\xfcn\xfcrler.\n\u2022 Sohbette ger\xe7ek ad\u0131n hi\xe7bir zaman g\xf6r\xfcnmez; yaln\u0131zca kendi se\xe7ti\u011fin takma ad g\xf6r\xfcn\xfcr.\n\u2022 Ders odalar\u0131 herkese a\xe7\u0131k alanlard\u0131r. Buradaki mesajlar y\xf6netici taraf\u0131ndan her zaman g\xf6r\xfcnt\xfclenebilir ve saklan\u0131r.\n\u2022 Kullan\u0131c\u0131lar\u0131n a\xe7t\u0131\u011f\u0131 odalar (\u015fifreli olanlar dahil) ders odalar\u0131yla ayn\u0131 kurallara tabidir: mesajlar otomatik taran\u0131r, \u015fik\xe2yet edilebilir ve y\xf6netici taraf\u0131ndan g\xf6r\xfcnt\xfclenebilir. \u015eifre yaln\u0131zca odaya kimin kat\u0131labilece\u011fini belirler; yaz\u0131\u015fmay\u0131 gizli yapmaz. 5 g\xfcn mesaj yaz\u0131lmayan oda kendili\u011finden kapan\u0131r; kapanan odan\u0131n mesajlar\u0131 30 g\xfcn sonra silinir.\n\u2022 Payla\u015f\u0131lan i\xe7erikler, kural ihlallerini yakalamak i\xe7in otomatik olarak taran\u0131r. E\u015fle\u015fme oldu\u011funda ilgili mesaj y\xf6neticinin incelemesine d\xfc\u015fer.\n\u2022 \xd6zel mesajlar\u0131nda serbest okuma yap\u0131lmaz. \u0130\xe7eri\u011fin incelenmesi yaln\u0131zca (a) otomatik tarama bir kural ihlali i\u015faretlerse ya da (b) bir kullan\u0131c\u0131 \u015fik\xe2yette bulunursa m\xfcmk\xfcnd\xfcr; her inceleme gerek\xe7esiyle birlikte kayda ge\xe7er.\n\u2022 Sohbette ve \xf6zel mesajda foto\u011fraf ve ses g\xf6nderebilirsin. Bu dosyalar sunucuda saklan\u0131r ve mesaj\u0131 g\xf6rebilen herkes taraf\u0131ndan a\xe7\u0131labilir. Yaz\u0131l\u0131 mesajlar\u0131 tarayan otomatik filtre g\xf6rsele ve sese BAKAMAZ; bunlar\u0131n denetimi \u015fik\xe2yet ve y\xf6netici incelemesiyle yap\u0131l\u0131r.\n\u2022 Odalarda se\xe7enekli soru payla\u015fabilirsin. Kimin hangi se\xe7ene\u011fi i\u015faretledi\u011fi ba\u015fkalar\u0131na g\xf6sterilmez; yaln\u0131zca toplam da\u011f\u0131l\u0131m g\xf6r\xfcn\xfcr.\n\u2022 Profil bilgilerini (hedef s\u0131nav, \u015fehir, b\xf6l\xfcm, tan\u0131t\u0131m) girmek zorunda de\u011filsin; girdiklerini tek tek gizleyebilirsin.\n\u2022 Liderlik tablosunda takma ad\u0131n ve puan\u0131n di\u011fer kullan\u0131c\u0131lara g\xf6r\xfcn\xfcr. Bu g\xf6r\xfcn\xfcrl\xfc\u011f\xfc profil ayarlar\u0131ndan kapatabilirsin.\n\u2022 Sohbet ve mesaj kay\u0131tlar\u0131 en fazla 12 ay saklan\u0131r; hesab\u0131n\u0131 silmen h\xe2linde bu s\xfcre beklenmeden silinir.\n\u2022 Kurallara ayk\u0131r\u0131 davran\u0131\u015fta mesaj\u0131n silinebilir, sohbette yazman ge\xe7ici olarak durdurulabilir ya da sohbet eri\u015fimin kapat\u0131labilir. Uygulaman\u0131n \xe7al\u0131\u015fma b\xf6l\xfcmleri bundan etkilenmez.\n\nUYGULAMA SA\u011eLI\u011eI KAYITLARI\n\nUygulamay\u0131 iyile\u015ftirmek i\xe7in iki teknik kay\u0131t tutulur:\n\n\u2022 Uygulama bir hata verirse hatan\u0131n teknik a\xe7\u0131klamas\u0131, uygulama s\xfcr\xfcm\xfc, cihaz t\xfcr\xfc (web, Android) ve hangi b\xf6l\xfcmde oldu\u011fun.\n\u2022 Hangi b\xf6l\xfcmlerin a\xe7\u0131ld\u0131\u011f\u0131: uygulaman\u0131n a\xe7\u0131lmas\u0131, sekme de\u011fi\u015ftirmen, bir oyunu ba\u015flatman gibi.\n\nYazd\u0131klar\u0131n, soru cevaplar\u0131n ve mesajlar\u0131n bu kay\u0131tlara girmez. Kay\u0131tlar\u0131 yaln\u0131zca uygulama i\u015fletmecisi g\xf6r\xfcr; kullan\u0131m kay\u0131tlar\u0131 180 g\xfcn, hata kay\u0131tlar\u0131 90 g\xfcn sonra kendili\u011finden silinir.\n\nABONEL\u0130K VE \xd6DEME\n\nPremium abonelik yaln\u0131zca Google Play ya da App Store \xfczerinden sat\u0131n al\u0131n\u0131r. \xd6demeyi ma\u011faza al\u0131r; kart ya da banka bilgilerin bize hi\xe7bir zaman ula\u015fmaz.\n\n\u2022 Sat\u0131n alman\u0131n do\u011frulanmas\u0131 i\xe7in hesap numaran ve sat\u0131n alma bilgileri (paket, sat\u0131n alma ve biti\u015f tarihi, ma\u011fazan\u0131n i\u015flem numaras\u0131) \xf6deme do\u011frulama hizmeti RevenueCat (Amerika Birle\u015fik Devletleri) ile payla\u015f\u0131l\u0131r ve ondan al\u0131n\u0131r.\n\u2022 Bu bilgiler yaln\u0131zca aboneli\u011fini a\xe7mak, yenilemek, iptal ve iade durumunu i\u015flemek i\xe7in kullan\u0131l\u0131r ve abonelik kayd\u0131nda saklan\u0131r.\n\u2022 \u0130ptal ve iade, ma\u011fazan\u0131n kendi hesap ayarlar\u0131ndan yap\u0131l\u0131r. Hesab\u0131n\u0131 silmek aboneli\u011fi iptal etmez.\n\nHESAP S\u0130LME\n\nDiledi\u011fin an Profil > Hesap b\xf6l\xfcm\xfcnden hesab\u0131n\u0131n silinmesini talep edebilirsin. Talep etti\u011fin g\xfcnden 30 g\xfcn sonra hesab\u0131n ve ki\u015fisel verilerin sunucudan kal\u0131c\u0131 olarak silinir; bu s\xfcre i\xe7inde vazge\xe7ebilirsin. Silme her g\xfcn otomatik olarak \xe7al\u0131\u015f\u0131r ve geri al\u0131namaz. Yaln\u0131zca kimli\u011finden ar\u0131nd\u0131r\u0131lm\u0131\u015f, anonim istatistikler korunur.\n\nUygulamay\u0131 silmi\u015f olsan da silme talebinde bulunabilirsin: netkpsscalis.github.io/hesap-silme.html adresindeki y\xf6nergeyi izlemen yeterli.\n\n\u0130LET\u0130\u015e\u0130M\n\nKi\u015fisel verilerinle ilgili soru ve ba\u015fvurular\u0131n i\xe7in: kpssnet.destek@gmail.com',null,null,null,null,null,null,null,null,null,null)
 B.bTA=new A.af("Bir daha birbirinize yazamazs\u0131n\u0131z ve odalarda mesajlar\u0131n\u0131 g\xf6rmezsin. \u0130stedi\u011fin zaman Ben sekmesinden kald\u0131rabilirsin.",null,null,null,null,null,null,null,null,null,null)
-B.amI=new A.af("Reddet",null,null,null,null,null,null,null,null,null,null)
+B.amJ=new A.af("Reddet",null,null,null,null,null,null,null,null,null,null)
 B.w9=new A.af("Devam et",null,null,null,null,null,null,null,null,null,null)
 B.bTC=new A.af("Tahmini KPSS puan\u0131n (P3)",null,B.w4,null,null,null,null,null,null,null,null)
 B.cC=new A.af("Vazge\xe7",null,null,null,null,null,null,null,null,null,null)
@@ -211153,7 +211154,6 @@ B.bTE=new A.af("Hangi dersten oynayal\u0131m?",null,B.ami,null,null,null,null,nu
 B.bTF=new A.af("Haritaya d\xf6n",null,null,null,null,null,null,null,null,null,null)
 B.bTG=new A.af("CANLI",null,B.amr,null,null,null,null,null,null,null,null)
 B.bTH=new A.af("Konu Anlat\u0131mlar\u0131",null,null,null,null,null,null,null,null,null,null)
-B.amK=new A.af('KPSS NET, hesab\u0131n\u0131 olu\u015fturmak ve sana ki\u015fisel \xe7al\u0131\u015fma plan\u0131 sunabilmek i\xe7in \u015fu verileri i\u015fler: ad, e-posta, hedef ve s\u0131nav bilgileri, \xe7\xf6zd\xfc\u011f\xfcn sorular ve uygulama i\xe7i ilerlemen.\n\nVerilerin yaln\u0131zca bu ama\xe7larla kullan\u0131l\u0131r; \xfc\xe7\xfcnc\xfc ki\u015filerle pazarlama ama\xe7l\u0131 payla\u015f\u0131lmaz. Verilerin, Avrupa Birli\u011fi s\u0131n\u0131rlar\u0131 i\xe7indeki (Frankfurt) sunucularda \u015fifreli olarak saklan\u0131r.\n\nSORULAR YAPAY ZEK\xc2 \u0130LE \xdcRET\u0130L\u0130YOR\n\nUygulamadaki sorular, bilgi kartlar\u0131 ve \xe7\xf6z\xfcmler yapay zek\xe2 ile \xfcretilir ve yay\u0131na al\u0131nmadan \xf6nce g\xf6zden ge\xe7irilir. Buna ra\u011fmen hatal\u0131 ya da tart\u0131\u015fmal\u0131 bir soruyla kar\u015f\u0131la\u015fabilirsin.\n\n\u2022 Her sorunun alt\u0131nda "hatal\u0131 bildir" se\xe7ene\u011fi var. Bildirdi\u011fin sorular incelenip d\xfczeltilir ya da yay\u0131ndan kald\u0131r\u0131l\u0131r.\n\u2022 Sorular, \xd6SYM\'nin \xe7\u0131km\u0131\u015f sorular\u0131n\u0131n kopyas\u0131 DE\u011e\u0130LD\u0130R; s\u0131nav desenine g\xf6re haz\u0131rlanm\u0131\u015f \xf6zg\xfcn sorulard\u0131r.\n\u2022 Uygulama bir haz\u0131rl\u0131k arac\u0131d\u0131r; resm\xee bir kaynak de\u011fildir ve \xd6SYM ile hi\xe7bir ili\u015fkisi yoktur.\n\nSOHBET VE TOPLULUK\n\nUygulamada ders odalar\u0131, \xf6zel mesajla\u015fma, d\xfcello ve liderlik tablosu bulunur. Bu b\xf6l\xfcmleri kullanmak iste\u011fe ba\u011fl\u0131d\u0131r.\n\n\u2022 SOHBETTE \u0130NSAN OLMAYAN HESAPLAR VARDIR. Odalar\u0131 canl\u0131 tutmak, d\xfcelloda rakip bulunamad\u0131\u011f\u0131nda e\u015fle\u015fme sa\u011flamak ve soru sormak i\xe7in bot hesaplar kullan\u0131l\u0131r. Bu hesaplar adlar\u0131n\u0131n yan\u0131nda "bot" rozetiyle i\u015faretlidir ve liderlik tablosunda da g\xf6r\xfcn\xfcrler.\n\u2022 Sohbette ger\xe7ek ad\u0131n hi\xe7bir zaman g\xf6r\xfcnmez; yaln\u0131zca kendi se\xe7ti\u011fin takma ad g\xf6r\xfcn\xfcr.\n\u2022 Ders odalar\u0131 herkese a\xe7\u0131k alanlard\u0131r. Buradaki mesajlar y\xf6netici taraf\u0131ndan her zaman g\xf6r\xfcnt\xfclenebilir ve saklan\u0131r.\n\u2022 Kullan\u0131c\u0131lar\u0131n a\xe7t\u0131\u011f\u0131 odalar (\u015fifreli olanlar dahil) ders odalar\u0131yla ayn\u0131 kurallara tabidir: mesajlar otomatik taran\u0131r, \u015fik\xe2yet edilebilir ve y\xf6netici taraf\u0131ndan g\xf6r\xfcnt\xfclenebilir. \u015eifre yaln\u0131zca odaya kimin kat\u0131labilece\u011fini belirler; yaz\u0131\u015fmay\u0131 gizli yapmaz. 5 g\xfcn mesaj yaz\u0131lmayan oda kendili\u011finden kapan\u0131r; kapanan odan\u0131n mesajlar\u0131 30 g\xfcn sonra silinir.\n\u2022 Payla\u015f\u0131lan i\xe7erikler, kural ihlallerini yakalamak i\xe7in otomatik olarak taran\u0131r. E\u015fle\u015fme oldu\u011funda ilgili mesaj y\xf6neticinin incelemesine d\xfc\u015fer.\n\u2022 \xd6zel mesajlar\u0131nda serbest okuma yap\u0131lmaz. \u0130\xe7eri\u011fin incelenmesi yaln\u0131zca (a) otomatik tarama bir kural ihlali i\u015faretlerse ya da (b) bir kullan\u0131c\u0131 \u015fik\xe2yette bulunursa m\xfcmk\xfcnd\xfcr; her inceleme gerek\xe7esiyle birlikte kayda ge\xe7er.\n\u2022 Sohbette ve \xf6zel mesajda foto\u011fraf ve ses g\xf6nderebilirsin. Bu dosyalar sunucuda saklan\u0131r ve mesaj\u0131 g\xf6rebilen herkes taraf\u0131ndan a\xe7\u0131labilir. Yaz\u0131l\u0131 mesajlar\u0131 tarayan otomatik filtre g\xf6rsele ve sese BAKAMAZ; bunlar\u0131n denetimi \u015fik\xe2yet ve y\xf6netici incelemesiyle yap\u0131l\u0131r.\n\u2022 Odalarda se\xe7enekli soru payla\u015fabilirsin. Kimin hangi se\xe7ene\u011fi i\u015faretledi\u011fi ba\u015fkalar\u0131na g\xf6sterilmez; yaln\u0131zca toplam da\u011f\u0131l\u0131m g\xf6r\xfcn\xfcr.\n\u2022 Profil bilgilerini (hedef s\u0131nav, \u015fehir, b\xf6l\xfcm, tan\u0131t\u0131m) girmek zorunda de\u011filsin; girdiklerini tek tek gizleyebilirsin.\n\u2022 Liderlik tablosunda takma ad\u0131n ve puan\u0131n di\u011fer kullan\u0131c\u0131lara g\xf6r\xfcn\xfcr. Bu g\xf6r\xfcn\xfcrl\xfc\u011f\xfc profil ayarlar\u0131ndan kapatabilirsin.\n\u2022 Sohbet ve mesaj kay\u0131tlar\u0131 en fazla 12 ay saklan\u0131r; hesab\u0131n\u0131 silmen h\xe2linde bu s\xfcre beklenmeden silinir.\n\u2022 Kurallara ayk\u0131r\u0131 davran\u0131\u015fta mesaj\u0131n silinebilir, sohbette yazman ge\xe7ici olarak durdurulabilir ya da sohbet eri\u015fimin kapat\u0131labilir. Uygulaman\u0131n \xe7al\u0131\u015fma b\xf6l\xfcmleri bundan etkilenmez.\n\nUYGULAMA SA\u011eLI\u011eI KAYITLARI\n\nUygulamay\u0131 iyile\u015ftirmek i\xe7in iki teknik kay\u0131t tutulur:\n\n\u2022 Uygulama bir hata verirse hatan\u0131n teknik a\xe7\u0131klamas\u0131, uygulama s\xfcr\xfcm\xfc, cihaz t\xfcr\xfc (web, Android) ve hangi b\xf6l\xfcmde oldu\u011fun.\n\u2022 Hangi b\xf6l\xfcmlerin a\xe7\u0131ld\u0131\u011f\u0131: uygulaman\u0131n a\xe7\u0131lmas\u0131, sekme de\u011fi\u015ftirmen, bir oyunu ba\u015flatman gibi.\n\nYazd\u0131klar\u0131n, soru cevaplar\u0131n ve mesajlar\u0131n bu kay\u0131tlara girmez. Kay\u0131tlar\u0131 yaln\u0131zca uygulama i\u015fletmecisi g\xf6r\xfcr; kullan\u0131m kay\u0131tlar\u0131 180 g\xfcn, hata kay\u0131tlar\u0131 90 g\xfcn sonra kendili\u011finden silinir.\n\nABONEL\u0130K VE \xd6DEME\n\nPremium abonelik yaln\u0131zca Google Play ya da App Store \xfczerinden sat\u0131n al\u0131n\u0131r. \xd6demeyi ma\u011faza al\u0131r; kart ya da banka bilgilerin bize hi\xe7bir zaman ula\u015fmaz.\n\n\u2022 Sat\u0131n alman\u0131n do\u011frulanmas\u0131 i\xe7in hesap numaran ve sat\u0131n alma bilgileri (paket, sat\u0131n alma ve biti\u015f tarihi, ma\u011fazan\u0131n i\u015flem numaras\u0131) \xf6deme do\u011frulama hizmeti RevenueCat (Amerika Birle\u015fik Devletleri) ile payla\u015f\u0131l\u0131r ve ondan al\u0131n\u0131r.\n\u2022 Bu bilgiler yaln\u0131zca aboneli\u011fini a\xe7mak, yenilemek, iptal ve iade durumunu i\u015flemek i\xe7in kullan\u0131l\u0131r ve abonelik kayd\u0131nda saklan\u0131r.\n\u2022 \u0130ptal ve iade, ma\u011fazan\u0131n kendi hesap ayarlar\u0131ndan yap\u0131l\u0131r. Hesab\u0131n\u0131 silmek aboneli\u011fi iptal etmez.\n\nHESAP S\u0130LME\n\nDiledi\u011fin an Profil > Hesap b\xf6l\xfcm\xfcnden hesab\u0131n\u0131n silinmesini talep edebilirsin. Talep etti\u011fin g\xfcnden 30 g\xfcn sonra hesab\u0131n ve ki\u015fisel verilerin sunucudan kal\u0131c\u0131 olarak silinir; bu s\xfcre i\xe7inde vazge\xe7ebilirsin. Silme her g\xfcn otomatik olarak \xe7al\u0131\u015f\u0131r ve geri al\u0131namaz. Yaln\u0131zca kimli\u011finden ar\u0131nd\u0131r\u0131lm\u0131\u015f, anonim istatistikler korunur.\n\nUygulamay\u0131 silmi\u015f olsan da silme talebinde bulunabilirsin: netkpsscalis.github.io/hesap-silme.html adresindeki y\xf6nergeyi izlemen yeterli.\n\nNot: Bu metin, yay\u0131na \xe7\u0131kmadan \xf6nce bir hukuk\xe7u taraf\u0131ndan g\xf6zden ge\xe7irilecek taslak s\xfcr\xfcmd\xfcr.',null,null,null,null,null,null,null,null,null,null)
 B.bTI=new A.af("S\u0131nav tarihi",null,null,null,null,null,null,null,null,null,null)
 B.bTJ=new A.af("Takma ad se\xe7",null,null,null,null,null,null,null,null,null,null)
 B.bTK=new A.af("Yeni foto\u011fraf se\xe7",null,null,null,null,null,null,null,null,null,null)
